@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Other stuff</h1>
+    <h1>Games &amp; Tools</h1>
 
     <div style="margin-bottom: 30px;">
-      And here are some other stuff I've made or heavily contributed to, which are totally different than the stuff from earlier.
+      Game development projects and Unity tools — from a mobile card game with 1M+ downloads to published Asset Store extensions.
     </div>
     <ProjectsList v-bind:projects="projects" />
   </div>

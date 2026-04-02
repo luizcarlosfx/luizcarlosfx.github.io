@@ -98,11 +98,11 @@ h1 {
   }
 
   .main {
-    padding: 0px 40px 40px 180px;
+    padding: 0px 40px 40px 80px;
   }
 
   .main, .header, .footer {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 }

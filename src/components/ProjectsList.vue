@@ -51,9 +51,6 @@ export default Vue.extend({
   },
   methods: {
     showDetails: function (item: ProjectData) {
-      // if (event) {
-      //   alert(event.target);
-      // }
       this.popupTitle = item.name;
       this.popupColor = item.accentColor;
       this.popupContent = item.htmlDescription;
@@ -67,8 +64,8 @@ export default Vue.extend({
 <style scoped>
 
 .project-item {
-  height: 300px;
-  margin-bottom: 20px;
+  height: 250px;
+  margin-bottom: 12px;
   width: 100%;
   cursor: pointer;
   position: relative;
@@ -105,11 +102,11 @@ filter: brightness(120%);
 
 @media only screen and (min-width: 620px){
   .projects-list {
-    max-width: 900px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 12px;
+    grid-auto-rows: 280px;
   }
 
   .project-item {
@@ -125,7 +122,5 @@ filter: brightness(120%);
     grid-row-end: span 2;
   }
 }
-
-
 
 </style>
