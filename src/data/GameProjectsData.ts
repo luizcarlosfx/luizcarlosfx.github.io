@@ -197,4 +197,44 @@ export default [
         </ul>
     </div>
     `, "#FF9800"),
+
+    new ProjectData("painter-sim", "Industrial Painter Simulator", "img/projects/painter-sim.png", `
+    <div class="paragraph">
+        A <strong>multi-user VR simulation</strong> of an industrial painting machine, developed for a major multinational corporation. The application supports both <strong>VR and desktop modes</strong> within the same shared environment, allowing teams to collaborate regardless of hardware.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/jnUIvtkdHCs" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Full development of the simulation codebase</li>
+            <li>Multi-user networking with simultaneous VR and desktop participants</li>
+            <li>Layer system and animation logic for the painting machine</li>
+            <li>Cross-platform experience (VR headset + non-VR desktop)</li>
+        </ul>
+    </div>
+    `, "#546E7A"),
+
+    new ProjectData("dupont-vr", "DuPont — VR Product Tour", "img/projects/dupont-vr.png", `
+    <div class="paragraph">
+        A <strong>VR city tour experience</strong> developed for <strong>DuPont</strong>'s internal event <strong>"Next Generation DuPont"</strong>, which ran over 3 consecutive days and was experienced by <strong>800+ attendees</strong>. Built using the Oculus DK2, the application guides users through an interactive virtual city, highlighting DuPont products integrated into everyday environments — showcasing the company's presence in daily life.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/KZkpDJGheIk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Full development of the VR experience</li>
+            <li>Interactive city environment with product discovery points</li>
+            <li>Built for Oculus DK2 — one of the earliest commercial VR development kits</li>
+        </ul>
+    </div>
+    <div class="paragraph center">
+        <img class="pc-screenshot" src="img/projects/dupont-event-1.jpg" alt="DuPont Next Generation event" />
+        <img class="pc-screenshot" src="img/projects/dupont-event-2.jpg" alt="Attendees experiencing the VR tour" />
+        <img class="pc-screenshot" src="img/projects/dupont-event-3.jpg" alt="Event booth" />
+    </div>
+    `, "#EF6C00"),
 ];

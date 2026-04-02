@@ -168,4 +168,33 @@ export default [
         </div>
     </div>
     `, "#9E9E9E"),
+
+    new ProjectData("sanja-runner", "Sanja Runner", "img/projects/sanja-runner.png", `
+    <div class="paragraph">
+        <strong>Sanja Runner</strong> is an educational 2D adventure game developed in 2016 for the city of S&atilde;o Jos&eacute; dos Campos, Brazil. Players run through five levels based on real tourist landmarks — from Parque do Banhado to Parque Vicentina Aranha — collecting scrolls with educational content and answering quizzes along the way.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/inHtwPzmylE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Built for PC and Android, the game features a content management system that allows educators to customize scrolls and quiz questions through a web interface — making it adaptable for different subjects and learning goals.
+    </div>
+    `, "#8BC34A"),
+
+    new ProjectData("hyundai-vr", "Hyundai — VR Archery", "img/projects/hyundai-vr.png", `
+    <div class="paragraph">
+        A <strong>VR archery game</strong> developed for <strong>Hyundai</strong> as a brand activation at the 2017 Auto Show (<em>Feira do Autom&oacute;vel</em>). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/KMV1TCsMhX8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Full development of the VR game</li>
+            <li>Archery mechanics and physics for VR controllers</li>
+            <li>Event-ready experience optimized for booth demonstrations</li>
+        </ul>
+    </div>
+    `, "#0C4DA2"),
 ];
