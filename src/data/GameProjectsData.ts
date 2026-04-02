@@ -237,4 +237,20 @@ export default [
         <img class="pc-screenshot" src="img/projects/dupont-event-3.jpg" alt="Event booth" />
     </div>
     `, "#EF6C00"),
+
+    new ProjectData("climatempo-vr", "Climatempo — VR Experience", "img/projects/climatempo-vr.png", `
+    <div class="paragraph">
+        A <strong>VR experience</strong> developed for <strong><a href="https://www.climatempo.com.br/" target="_blank">Climatempo</a></strong> and <strong>Kersys</strong> for the <strong>RM Vale 2016</strong> event. The application takes users through interactive scenes showcasing weather and environmental data in an immersive format.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/-JgiY85GKkc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Full development of the VR application</li>
+            <li>Scene navigation and transition system</li>
+        </ul>
+    </div>
+    `, "#1976D2"),
 ];
