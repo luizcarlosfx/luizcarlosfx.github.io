@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-bottom: 80px;">
+  <div style="margin-bottom: 80px; max-width: 1200px; margin-left: auto; margin-right: auto;">
     <h1>Luiz Carlos da Silva Junior</h1>
 
     <div class="paragraph">
