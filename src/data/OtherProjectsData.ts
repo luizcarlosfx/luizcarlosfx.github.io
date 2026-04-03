@@ -134,11 +134,17 @@ export default [
         A <strong>VR racing experience</strong> developed for a Brazilian motorized wheelchair company. The game was showcased at <strong>Rock in Rio 2017</strong>, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
     </div>
     <div class="paragraph">
+        A key challenge was integrating an <strong>HTC Vive Tracker</strong> mounted on the wheelchair's handlebar, translating real-world steering input into in-game vehicle controls for a fully immersive driving experience.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/1reoW8gjKrw" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
         Key contributions:
         <ul>
+            <li>Integrated HTC Vive Tracker for real-world handlebar-to-game steering input</li>
             <li>Customized Unity's vehicle physics system for wheelchair-based controls</li>
             <li>Implemented multiplayer racing for competitive on-site play</li>
-            <li>Designed levels and tuned the driving experience</li>
         </ul>
     </div>
     `, "#FF9800"),
