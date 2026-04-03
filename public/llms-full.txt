@@ -1,0 +1,359 @@
+# Luiz Carlos da Silva Junior — Portfolio
+
+> XR Engineer with 10+ years of experience architecting real-time 3D systems in Unity for industrial, medical, and training applications.
+> Founder and CTO of FormulaXR, delivering production XR platforms to companies including Embraer, Nestlé, and Becton Dickinson.
+
+Website: https://luizcarlosfx.github.io
+Email: luizcarlos.sfx@gmail.com
+LinkedIn: https://www.linkedin.com/in/luizcarloxr/
+GitHub: https://github.com/luizcarlosfx
+Discord: luizcarlosfx
+
+Specialized in cross-platform XR architecture (Quest, mobile, PC, WebGL), real-time networking, and performance optimization for constrained devices. Available for remote work.
+
+---
+
+## Resume
+
+### Experience
+
+#### Founder & CTO — FormulaXR (2015 – Present)
+
+- Architected XRProj, a multi-platform XR content creation system (VR, AR, mobile, PC, WebGL) adopted by Embraer, Nestlé, Ball Corporation, and Aegea
+- Delivered VR surgical training simulations for Becton Dickinson, Ortosíntese, and Hospital Beneficência Portuguesa, enabling scalable training with LMS integration and step-by-step evaluation systems
+- Built and shipped XRTracker, a commercial Unity plugin for markerless 6DOF object tracking using custom computer vision
+- Migrated a production multiplayer medical VR platform from Photon PUN to FishNet, improving scalability and reducing hosting costs
+- Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery
+
+Tech stack: Unity, C#, Photon PUN, FishNet, ASP.NET Core, WebGL, Quest, HoloLens, Android, iOS
+
+### Technical Skills
+
+- **XR Development**: VR / AR / MR (Unity — primary, Unreal Engine)
+- **Programming**: C#, C++, JavaScript, TypeScript, Java
+- **Networking**: Photon PUN, FishNet, Netcode for GameObjects, real-time multiplayer architectures
+- **Real-Time Systems**: Interaction systems, simulation, object tracking, computer vision
+- **Performance**: Optimization for mobile VR (Quest, Android, iOS)
+- **Backend**: ASP.NET Core
+- **Platforms**: Quest, PC, Mobile, WebGL
+
+### Game Development
+
+- Implemented real-time multiplayer networking for a mobile game with 1M+ downloads and a 4.6 rating
+- Developed a VR basketball experience using Unreal Engine for Meta Quest
+- Developed gameplay systems using Unreal Engine's Gameplay Ability System (GAS)
+- Currently developing an independent title for release in 2026
+
+### Education
+
+**B.Sc. Computer Science — IBTA** (2011 – 2015)
+Instituto Brasileiro de Tecnologia Avançada
+
+### Languages
+
+- Portuguese: Native
+- English: Conversational
+
+---
+
+## Industry & Simulation Projects
+
+### XRProj
+
+**XRProj** is a production multi-platform XR content creation system that enables teams to bring CAD projects into VR (PC and Quest), AR (Android and iOS), HoloLens, and WebGL — all from a single unified pipeline.
+
+As **Lead Developer and Architect**, I drove this project from initial concept through nearly four years of continuous development, building every major system including real-time networking, serialization, and cross-platform deployment.
+
+Adopted by **Embraer, Nestlé, Ball Corporation, and Aegea** for CAD visualization, assembly validation, and collaborative design review.
+
+Key contributions:
+
+- Architected the full project from concept to production
+- Performance optimization for constrained platforms (Quest, Android, iOS)
+- Built native CAD-to-XR model conversion pipeline (CAD and polygon formats)
+- Implemented real-time multi-user system using Photon Unity Networking
+- Developed and integrated backend services (ASP.NET Core)
+- Led cross-functional teams across full project lifecycle
+
+Learn more at xrproj.com (https://www.xrproj.com)
+
+---
+
+### XRTracker
+
+**XRTracker** is a markerless 3D object tracking SDK for Unity that delivers **6DOF pose estimation with sub-centimeter precision** — no scanning, markers, or cloud training required.
+
+Built from the ground up with a **native C++ computer vision core and GPU-accelerated rendering**, it achieves 4–8ms per frame on mobile devices. Three tracking algorithms — silhouette, edge, and depth — can be used individually or combined for maximum robustness, even in low-light and low-contrast industrial environments.
+
+Key features:
+
+- Markerless model-based tracking with three composable algorithms (silhouette, edge, depth)
+- No-code setup — fully configurable through the Unity Inspector
+- Tracking model generation from any 3D mesh (FBX, OBJ, glTF) directly in the editor
+- Cross-platform: Windows, iOS (ARKit), Android (ARCore)
+- Designed for Industry 4.0: Poka-Yoke workflows, assembly guidance, and task validation
+
+Visit xrtracker.net (https://xrtracker.net) or read the documentation (https://docs.xrtracker.net)
+
+---
+
+### Virtua — Medical VR Training
+
+**Virtua** is a VR medical training platform developed for **Becton Dickinson (BD)**, a multinational healthcare company. The application trains healthcare professionals on catheter system procedures, and doubles as a sales demonstration tool for hospital procurement teams.
+
+A key innovation was the **artist-friendly task authoring system** — a step-by-step procedure builder that allows medical content creators to define training sequences without any programming knowledge.
+
+Key contributions:
+
+- Designed and built an extensible task system for step-by-step medical procedures
+- Developed a grading and evaluation system with configurable action assessments
+- Integrated with BD's Learning Management System (LMS) for tracking and certification
+- Built runtime procedure loading via Asset Bundles for content scalability
+
+---
+
+### FormulaXR — Educational Portal
+
+A **full-stack educational platform** built for **FormulaXR** that hosts 40+ interactive science simulations powered by Unity. Students explore subjects like Biology, Chemistry, and Physics through hands-on 3D experiences — from food chain ecosystems to interactive periodic tables.
+
+I developed the **entire backend and frontend** using ASP.NET Core and Blazor WebAssembly, as well as the **core Unity package** used to produce all simulations. A custom communication layer bridges Unity WebGL builds and the portal, tracking student progress, evaluating actions, and reporting results in real time.
+
+Key contributions:
+
+- Full-stack development of the web portal (ASP.NET Core + Blazor WebAssembly)
+- Architected the core Unity simulation package used across all 40+ simulations
+- Built the communication bridge between Unity WebGL and the portal for real-time progress tracking and evaluation
+- Student action tracking, grading, and reporting system
+
+Visit formulaxr.com (https://formulaxr.com)
+
+---
+
+### OrtoVR — Surgical Training
+
+**OrtoVR** is a VR training application developed for **Ortosíntese**, a Brazilian orthopedic company. The software instructs surgeons on the proper use of prosthetic tools and was featured as a key demonstration at a major healthcare fair in 2018.
+
+Key contributions:
+
+- Architected the full project structure
+- Designed and implemented a VR task system for guided surgical procedures
+- Refined a custom VR interaction system for precise instrument handling
+- Integrated network code for collaborative training sessions
+
+---
+
+### VR Surgery — Hospital BP
+
+A **proof-of-concept** developed for **Hospital Beneficência Portuguesa de São Paulo (BP)** — one of Brazil's most prestigious healthcare institutions, recognized among the world's best hospitals for seven consecutive years. The project simulates surgical procedures using a robotic arm controlled through a VR headset, exploring the intersection of hardware integration and immersive simulation.
+
+Key contributions:
+
+- Integrated hardware drivers for robotic arm control
+- Developed the VR interface and UI for surgical interaction
+- Refactored and stabilized the existing codebase
+
+---
+
+### Virtual Classroom
+
+A **multi-user virtual classroom** developed in collaboration with the City Hall of São José dos Campos, Brazil. This project laid the foundation for several core systems I continue to use across all my VR projects today.
+
+Key contributions:
+
+- Built an extensible VR interaction system (teleportation, object manipulation) reused across subsequent projects
+- Developed a modular VR networking layer designed for easy extension
+- Performance optimization for smooth multi-user experiences
+
+---
+
+### Forklift Safety Training
+
+A **VR forklift training simulator** developed for **Nestlé**. The application walks operators through critical safety checkpoints — pre-operation inspection, environment awareness, load handling — and evaluates whether each step is performed correctly in real time.
+
+Custom-built in **Unity for Meta Quest**.
+
+Key contributions:
+
+- Full development of the VR training simulator
+- Real-time evaluation system for safety checkpoints
+- Forklift physics and controls tuned for VR
+- Performance optimization for Meta Quest
+
+---
+
+### Industrial Painter Simulator
+
+A **multi-user VR simulation** of an industrial painting machine, developed for a major multinational corporation. The application supports both **VR and desktop modes** within the same shared environment, allowing teams to collaborate regardless of hardware.
+
+Key contributions:
+
+- Full development of the simulation codebase
+- Multi-user networking with simultaneous VR and desktop participants
+- Layer system and animation logic for the painting machine
+- Cross-platform experience (VR headset + non-VR desktop)
+
+---
+
+### DuPont — VR Product Tour
+
+A **VR city tour experience** developed for **DuPont**'s internal event **"Next Generation DuPont"**, which ran over 3 consecutive days and was experienced by **800+ attendees**. Built using the Oculus DK2, the application guides users through an interactive virtual city, highlighting DuPont products integrated into everyday environments — showcasing the company's presence in daily life.
+
+Key contributions:
+
+- Full development of the VR experience
+- Interactive city environment with product discovery points
+- Built for Oculus DK2 — one of the earliest commercial VR development kits
+
+---
+
+### Climatempo — VR Experience
+
+A **VR experience** developed for **Climatempo (https://www.climatempo.com.br/)** and **Kersys** for the **RM Vale 2016** event. The application takes users through interactive scenes showcasing weather and environmental data in an immersive format.
+
+Key contributions:
+
+- Full development of the VR application
+- Scene navigation and transition system
+
+---
+
+## Games & Tools
+
+### Truco Animado
+
+**Truco Animado** is a multiplayer mobile card game based on Truco, one of Brazil's most popular card games. With **over 1 million downloads** on Google Play and a **4.6/5 star rating** across 23,000+ reviews, it's one of the top Truco games on the platform.
+
+Brought in to implement multiplayer, I discovered the existing codebase couldn't support the feature reliably. I **rebuilt the entire game logic from scratch**, restructuring it for maintainability, extensibility, and real-time networking.
+
+Key contributions:
+
+- Rewrote core gameplay systems for clean architecture and extensibility
+- Developed the matchmaking and lobby system
+- Implemented real-time multiplayer networking
+
+Available on Google Play (https://play.google.com/store/apps/details?id=br.com.delotech.trucoindie)
+
+---
+
+### VR Racing Game
+
+A **VR racing experience** developed for a Brazilian motorized wheelchair company. The game was showcased at **Rock in Rio 2017**, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
+
+Key contributions:
+
+- Customized Unity's vehicle physics system for wheelchair-based controls
+- Implemented multiplayer racing for competitive on-site play
+- Designed levels and tuned the driving experience
+
+---
+
+### VR Basketball
+
+**VR Basketball** is an immersive VR experience built in **Unreal Engine 5 with C++** for **Meta Quest 2**. Gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
+
+Key highlights:
+
+- Built with Unreal Engine 5 targeting Meta Quest 2
+- Gameplay and interaction systems implemented in C++
+- Physics-based ball handling and throwing mechanics
+- Optimized for standalone headset performance
+
+---
+
+### Fox Trot
+
+**Fox Trot** is a Web3 endless runner where players can purchase NFTs to customize their character. Built for WebGL with a focus on performance and extensibility.
+
+Key contributions:
+
+- Optimized the project for smooth WebGL performance
+- Developed the core endless runner system
+- Created extensible obstacle, collectible, and daily reward systems
+
+Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
+
+---
+
+### Mercenary Rush
+
+**Mercenary Rush** is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project was a deep dive into real-time networking, Unity's Mecanim animation system, and custom editor tooling.
+
+Key contributions:
+
+- Built a responsive 2D platformer character controller
+- Implemented real-time networking for fast-paced multiplayer gameplay
+- Created custom editor tools (inspectors, windows, menus) for rapid iteration
+
+---
+
+### Donkey Kong 2 — Clone
+
+A love letter to my childhood favorite — a faithful recreation of **Donkey Kong** built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.
+
+Watch the development playlist on YouTube (https://www.youtube.com/playlist?list=PLedBjvIQnDOFqD_1fc-kaYi6rJwkAHIXX)
+
+Key contributions:
+
+- Built custom editor tools for sprite cutting and positioning from raw spritesheets
+- Developed a 2D character controller with dual playable characters
+- Created collectible, damage, and NPC systems
+
+---
+
+### Rick Dangerous — Remake
+
+A remake of the classic arcade game **Rick Dangerous**, developed as a mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
+
+Key contributions:
+
+- Led and mentored a team of junior developers and artists
+- Established workflows and taught fundamental game development skills
+- Built the character system, trap mechanics, and NPC behaviors
+- Created reusable prefabs and tilemaps for level designers
+
+Playable in the browser on itch.io (https://luizcarlosfx.itch.io/rick-dangerous)
+
+---
+
+### Pivot Editor
+
+**Pivot Editor** is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
+
+Key contributions:
+
+- Designed and built the custom Editor Window
+- Implemented pivot manipulation logic with visual handles
+- Published and maintained the asset on the Unity Asset Store
+
+Available on the Unity Asset Store (http://u3d.as/kT1)
+
+---
+
+### Sanja Runner
+
+**Sanja Runner** is an educational 2D adventure game developed in 2016 for the city of São José dos Campos, Brazil. Players run through five levels based on real tourist landmarks — from Parque do Banhado to Parque Vicentina Aranha — collecting scrolls with educational content and answering quizzes along the way.
+
+Built for PC and Android, the game features a content management system that allows educators to customize scrolls and quiz questions through a web interface — making it adaptable for different subjects and learning goals.
+
+---
+
+### Hyundai — VR Archery
+
+A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
+
+Key contributions:
+
+- Full development of the VR game
+- Archery mechanics and physics for VR controllers
+- Event-ready experience optimized for booth demonstrations
+
+---
+
+## Contact
+
+Available for remote XR engineering and game development roles. Whether it's industrial simulations, medical training, or shipping a game — I'm interested.
+
+- Email: luizcarlos.sfx@gmail.com
+- LinkedIn: https://www.linkedin.com/in/luizcarloxr/
+- GitHub: https://github.com/luizcarlosfx
+- Discord: luizcarlosfx

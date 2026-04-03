@@ -1,0 +1,21 @@
+# Luiz Carlos da Silva Junior
+
+> XR Engineer with 10+ years of experience architecting real-time 3D systems in Unity for industrial, medical, and training applications. Founder and CTO of FormulaXR.
+
+## Links
+
+- [Full content for LLMs](https://luizcarlosfx.github.io/llms-full.txt): Complete portfolio content in plain text
+- [Website](https://luizcarlosfx.github.io): Portfolio website
+- [LinkedIn](https://www.linkedin.com/in/luizcarloxr/)
+- [GitHub](https://github.com/luizcarlosfx)
+- [XRProj](https://www.xrproj.com): Multi-platform XR content creation system
+- [XRTracker](https://xrtracker.net): Markerless 6DOF object tracking SDK for Unity
+- [FormulaXR](https://formulaxr.com): Educational XR platform
+
+## Sections
+
+- About
+- Resume
+- Industry & Simulation Projects
+- Games & Tools
+- Contact
