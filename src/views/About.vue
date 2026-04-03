@@ -8,7 +8,7 @@
         Founder and CTO of <strong>FormulaXR</strong>, delivering production XR platforms to companies including Embraer, Nestl&eacute;, and Becton Dickinson.
       </div>
 
-      <div style="margin-top: 20px;">Explore my <router-link class="highlight-link" to="/game-projects">INDUSTRY &amp; SIMULATION</router-link>, <router-link class="highlight-link" to="/other-projects">GAMES &amp; TOOLS</router-link>, or check out my <router-link class="highlight-link" to="/resume">RESUME</router-link> for the full picture.</div>
+      <div style="margin-top: 20px;">Explore my <router-link class="highlight-link" to="/simulation">INDUSTRY &amp; SIMULATION</router-link>, <router-link class="highlight-link" to="/games">GAMES &amp; TOOLS</router-link>, or check out my <router-link class="highlight-link" to="/resume">RESUME</router-link> for the full picture.</div>
 
       <div style="margin-top: 40px;">Specialized in cross-platform XR architecture (Quest, mobile, PC, WebGL), real-time networking, and performance optimization for constrained devices. <strong>Available for remote work.</strong> Reach me at <a class="highlight-link" href="mailto:luizcarlos.sfx@gmail.com">luizcarlos.sfx@gmail.com</a> or <router-link class="highlight-link" to="/contact">CONTACT</router-link>.</div>
     </div>

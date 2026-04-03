@@ -236,15 +236,18 @@ Available on Google Play (https://play.google.com/store/apps/details?id=br.com.d
 
 ---
 
-### VR Racing Game
+### Rick Dangerous — Remake
 
-A **VR racing experience** developed for a Brazilian motorized wheelchair company. The game was showcased at **Rock in Rio 2017**, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
+A remake of the classic arcade game **Rick Dangerous**, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
 
 Key contributions:
 
-- Customized Unity's vehicle physics system for wheelchair-based controls
-- Implemented multiplayer racing for competitive on-site play
-- Designed levels and tuned the driving experience
+- Led and mentored a team of junior developers and artists
+- Established workflows and taught fundamental game development skills
+- Built the character system, trap mechanics, and NPC behaviors
+- Created reusable prefabs and tilemaps for level designers
+
+Playable in the browser on itch.io (https://luizcarlosfx.itch.io/rick-dangerous)
 
 ---
 
@@ -263,16 +266,15 @@ Key highlights:
 
 ---
 
-### Fox Trot
+### Hyundai — VR Archery
 
-**Fox Trot** is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
+A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
 
 Key contributions:
 
-- Optimized the project for smooth WebGL performance
-- Developed core gameplay systems (obstacles, collectibles, daily rewards)
-
-Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
+- Full development of the VR game
+- Archery mechanics and physics for VR controllers
+- Event-ready experience optimized for booth demonstrations
 
 ---
 
@@ -302,18 +304,15 @@ Key contributions:
 
 ---
 
-### Rick Dangerous — Remake
+### VR Racing Game
 
-A remake of the classic arcade game **Rick Dangerous**, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
+A **VR racing experience** developed for a Brazilian motorized wheelchair company. The game was showcased at **Rock in Rio 2017**, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
 
 Key contributions:
 
-- Led and mentored a team of junior developers and artists
-- Established workflows and taught fundamental game development skills
-- Built the character system, trap mechanics, and NPC behaviors
-- Created reusable prefabs and tilemaps for level designers
-
-Playable in the browser on itch.io (https://luizcarlosfx.itch.io/rick-dangerous)
+- Customized Unity's vehicle physics system for wheelchair-based controls
+- Implemented multiplayer racing for competitive on-site play
+- Designed levels and tuned the driving experience
 
 ---
 
@@ -339,15 +338,16 @@ Built for PC and Android, the game features a content management system that all
 
 ---
 
-### Hyundai — VR Archery
+### Fox Trot
 
-A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
+**Fox Trot** is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
 
 Key contributions:
 
-- Full development of the VR game
-- Archery mechanics and physics for VR controllers
-- Event-ready experience optimized for booth demonstrations
+- Optimized the project for smooth WebGL performance
+- Developed core gameplay systems (obstacles, collectibles, daily rewards)
+
+Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
 
 ---
 
