@@ -32,6 +32,7 @@
           <li>Architected XRProj, a multi-platform XR content creation system (VR, AR, mobile, PC, WebGL) adopted by Embraer, Nestl&eacute;, Ball Corporation, and Aegea</li>
           <li>Delivered VR surgical training simulations for Becton Dickinson, Ortos&iacute;ntese, and Hospital Benefic&ecirc;ncia Portuguesa, enabling scalable training with LMS integration and step-by-step evaluation systems</li>
           <li>Built and shipped XRTracker, a commercial Unity plugin for markerless 6DOF object tracking using custom computer vision</li>
+          <li>Built a full-stack educational platform (ASP.NET Core + Blazor WebAssembly) hosting 40+ interactive Unity WebGL science simulations with real-time student progress tracking</li>
           <li>Migrated a production multiplayer medical VR platform from Photon PUN to FishNet, improving scalability and reducing hosting costs</li>
           <li>Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery</li>
         </ul>

@@ -22,6 +22,7 @@ Specialized in cross-platform XR architecture (Quest, mobile, PC, WebGL), real-t
 - Architected XRProj, a multi-platform XR content creation system (VR, AR, mobile, PC, WebGL) adopted by Embraer, Nestlé, Ball Corporation, and Aegea
 - Delivered VR surgical training simulations for Becton Dickinson, Ortosíntese, and Hospital Beneficência Portuguesa, enabling scalable training with LMS integration and step-by-step evaluation systems
 - Built and shipped XRTracker, a commercial Unity plugin for markerless 6DOF object tracking using custom computer vision
+- Built a full-stack educational platform (ASP.NET Core + Blazor WebAssembly) hosting 40+ interactive Unity WebGL science simulations with real-time student progress tracking
 - Migrated a production multiplayer medical VR platform from Photon PUN to FishNet, improving scalability and reducing hosting costs
 - Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery
 
@@ -223,13 +224,13 @@ Key contributions:
 
 **Truco Animado** is a multiplayer mobile card game based on Truco, one of Brazil's most popular card games. With **over 1 million downloads** on Google Play and a **4.6/5 star rating** across 23,000+ reviews, it's one of the top Truco games on the platform.
 
-Brought in to implement multiplayer, I discovered the existing codebase couldn't support the feature reliably. I **rebuilt the entire game logic from scratch**, restructuring it for maintainability, extensibility, and real-time networking.
+Brought in to add multiplayer support, I architected the **real-time networking layer, matchmaking, and lobby system**, and refactored the core gameplay systems where needed to support reliable online play.
 
 Key contributions:
 
-- Rewrote core gameplay systems for clean architecture and extensibility
+- Architected and implemented the real-time multiplayer networking layer
 - Developed the matchmaking and lobby system
-- Implemented real-time multiplayer networking
+- Refactored core gameplay systems to support reliable online play
 
 Available on Google Play (https://play.google.com/store/apps/details?id=br.com.delotech.trucoindie)
 
@@ -249,26 +250,27 @@ Key contributions:
 
 ### VR Basketball
 
-**VR Basketball** is an immersive VR experience built in **Unreal Engine 5 with C++** for **Meta Quest 2**. Gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
+**VR Basketball** is an immersive VR experience built as a freelance project in **Unreal Engine 5 with C++** for **Meta Quest 2**. All gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
+
+The project required building a complete VR interaction framework from scratch in C++ — hand tracking, grab mechanics, and physics-driven ball throwing with realistic trajectory and spin. Every system was designed for the tight performance constraints of standalone Quest hardware.
 
 Key highlights:
 
-- Built with Unreal Engine 5 targeting Meta Quest 2
-- Gameplay and interaction systems implemented in C++
-- Physics-based ball handling and throwing mechanics
-- Optimized for standalone headset performance
+- Built a complete VR interaction framework in C++ (grab, throw, hand presence)
+- Physics-based ball handling with realistic trajectory and spin
+- Scoring and gameplay loop with multiple court positions
+- Optimized for standalone Meta Quest 2 performance budgets
 
 ---
 
 ### Fox Trot
 
-**Fox Trot** is a Web3 endless runner where players can purchase NFTs to customize their character. Built for WebGL with a focus on performance and extensibility.
+**Fox Trot** is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
 
 Key contributions:
 
 - Optimized the project for smooth WebGL performance
-- Developed the core endless runner system
-- Created extensible obstacle, collectible, and daily reward systems
+- Developed core gameplay systems (obstacles, collectibles, daily rewards)
 
 Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
 
@@ -302,7 +304,7 @@ Key contributions:
 
 ### Rick Dangerous — Remake
 
-A remake of the classic arcade game **Rick Dangerous**, developed as a mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
+A remake of the classic arcade game **Rick Dangerous**, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
 
 Key contributions:
 

@@ -7,14 +7,14 @@ export default [
         <strong>Truco Animado</strong> is a multiplayer mobile card game based on Truco, one of Brazil's most popular card games. With <strong>over 1 million downloads</strong> on Google Play and a <strong>4.6/5 star rating</strong> across 23,000+ reviews, it's one of the top Truco games on the platform.
     </div>
     <div class="paragraph">
-        Brought in to implement multiplayer, I discovered the existing codebase couldn't support the feature reliably. I <strong>rebuilt the entire game logic from scratch</strong>, restructuring it for maintainability, extensibility, and real-time networking.
+        Brought in to add multiplayer support, I architected the <strong>real-time networking layer, matchmaking, and lobby system</strong>, and refactored the core gameplay systems where needed to support reliable online play.
     </div>
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Rewrote core gameplay systems for clean architecture and extensibility</li>
+            <li>Architected and implemented the real-time multiplayer networking layer</li>
             <li>Developed the matchmaking and lobby system</li>
-            <li>Implemented real-time multiplayer networking</li>
+            <li>Refactored core gameplay systems to support reliable online play</li>
         </ul>
     </div>
     <div class="paragraph">
@@ -24,25 +24,37 @@ export default [
     </div>
     `, "#4CAF50", true),
 
-    new ProjectData("vr-racing", "VR Racing Game", "img/projects/vr-racing.png",
+    new ProjectData("rick-dangerous", "Rick Dangerous — Remake", "img/projects/rick-dangerous.png",
     `
     <div class="paragraph">
-        A <strong>VR racing experience</strong> developed for a Brazilian motorized wheelchair company. The game was showcased at <strong>Rock in Rio 2017</strong>, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
+        A remake of the classic arcade game <strong>Rick Dangerous</strong>, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/MZVmhxrgpsE" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Customized Unity's vehicle physics system for wheelchair-based controls</li>
-            <li>Implemented multiplayer racing for competitive on-site play</li>
-            <li>Designed levels and tuned the driving experience</li>
+            <li>Led and mentored a team of junior developers and artists</li>
+            <li>Established workflows and taught fundamental game development skills</li>
+            <li>Built the character system, trap mechanics, and NPC behaviors</li>
+            <li>Created reusable prefabs and tilemaps for level designers</li>
         </ul>
     </div>
-    `, "#FF9800"),
+    <div class="paragraph">
+        <div class="notice">
+            Playable in the browser on <a href="https://luizcarlosfx.itch.io/rick-dangerous" target="_blank">itch.io</a>
+        </div>
+    </div>
+    `, "#607D8B"),
 
     new ProjectData("vr-basketball", "VR Basketball", "img/projects/vr-basketball.png",
     `
     <div class="paragraph">
-        <strong>VR Basketball</strong> is an immersive VR experience built in <strong>Unreal Engine 5 with C++</strong> for <strong>Meta Quest 2</strong>. Gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
+        <strong>VR Basketball</strong> is an immersive VR experience built as a freelance project in <strong>Unreal Engine 5 with C++</strong> for <strong>Meta Quest 2</strong>. All gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
+    </div>
+    <div class="paragraph">
+        The project required building a complete VR interaction framework from scratch in C++ — hand tracking, grab mechanics, and physics-driven ball throwing with realistic trajectory and spin. Every system was designed for the tight performance constraints of standalone Quest hardware.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/rLnq_LxKHoE" frameborder="0" allowfullscreen></iframe>
@@ -50,36 +62,30 @@ export default [
     <div class="paragraph">
         Key highlights:
         <ul>
-            <li>Built with Unreal Engine 5 targeting Meta Quest 2</li>
-            <li>Gameplay and interaction systems implemented in C++</li>
-            <li>Physics-based ball handling and throwing mechanics</li>
-            <li>Optimized for standalone headset performance</li>
+            <li>Built a complete VR interaction framework in C++ (grab, throw, hand presence)</li>
+            <li>Physics-based ball handling with realistic trajectory and spin</li>
+            <li>Scoring and gameplay loop with multiple court positions</li>
+            <li>Optimized for standalone Meta Quest 2 performance budgets</li>
         </ul>
     </div>
-    `, "#FF5722"),
+    `, "#FF5722", true, false),
 
-    new ProjectData("fox-trot", "Fox Trot", "img/projects/fox-trot.png",
-    `
+    new ProjectData("hyundai-vr", "Hyundai — VR Archery", "img/projects/hyundai-vr.png", `
     <div class="paragraph">
-        <strong>Fox Trot</strong> is a Web3 endless runner where players can purchase NFTs to customize their character. Built for WebGL with a focus on performance and extensibility.
+        A <strong>VR archery game</strong> developed for <strong>Hyundai</strong> as a brand activation at the 2017 Auto Show (<em>Feira do Autom&oacute;vel</em>). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/s0U8bGTIkNo" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/KMV1TCsMhX8" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Optimized the project for smooth WebGL performance</li>
-            <li>Developed the core endless runner system</li>
-            <li>Created extensible obstacle, collectible, and daily reward systems</li>
+            <li>Full development of the VR game</li>
+            <li>Archery mechanics and physics for VR controllers</li>
+            <li>Event-ready experience optimized for booth demonstrations</li>
         </ul>
     </div>
-    <div class="paragraph">
-        <div class="notice">
-            Playable in the browser on <a href="https://luizcarlosfx.itch.io/foxtrot" target="_blank">itch.io</a>
-        </div>
-    </div>
-    `, "#FF5722"),
+    `, "#0C4DA2"),
 
     new ProjectData("mercenary-rush", "Mercenary Rush", "img/projects/mercenary-rush.png",
     `
@@ -122,29 +128,20 @@ export default [
     </div>
     `, "#FFC107"),
 
-    new ProjectData("rick-dangerous", "Rick Dangerous — Remake", "img/projects/rick-dangerous.png",
+    new ProjectData("vr-racing", "VR Racing Game", "img/projects/vr-racing.png",
     `
     <div class="paragraph">
-        A remake of the classic arcade game <strong>Rick Dangerous</strong>, developed as a mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
-    </div>
-    <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/MZVmhxrgpsE" frameborder="0" allowfullscreen></iframe>
+        A <strong>VR racing experience</strong> developed for a Brazilian motorized wheelchair company. The game was showcased at <strong>Rock in Rio 2017</strong>, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
     </div>
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Led and mentored a team of junior developers and artists</li>
-            <li>Established workflows and taught fundamental game development skills</li>
-            <li>Built the character system, trap mechanics, and NPC behaviors</li>
-            <li>Created reusable prefabs and tilemaps for level designers</li>
+            <li>Customized Unity's vehicle physics system for wheelchair-based controls</li>
+            <li>Implemented multiplayer racing for competitive on-site play</li>
+            <li>Designed levels and tuned the driving experience</li>
         </ul>
     </div>
-    <div class="paragraph">
-        <div class="notice">
-            Playable in the browser on <a href="https://luizcarlosfx.itch.io/rick-dangerous" target="_blank">itch.io</a>
-        </div>
-    </div>
-    `, "#607D8B"),
+    `, "#FF9800"),
 
     new ProjectData("pivot-editor", "Pivot Editor", "img/projects/pivot-editor.png",
     `
@@ -181,20 +178,25 @@ export default [
     </div>
     `, "#8BC34A"),
 
-    new ProjectData("hyundai-vr", "Hyundai — VR Archery", "img/projects/hyundai-vr.png", `
+    new ProjectData("fox-trot", "Fox Trot", "img/projects/fox-trot.png",
+    `
     <div class="paragraph">
-        A <strong>VR archery game</strong> developed for <strong>Hyundai</strong> as a brand activation at the 2017 Auto Show (<em>Feira do Autom&oacute;vel</em>). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
+        <strong>Fox Trot</strong> is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/KMV1TCsMhX8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/s0U8bGTIkNo" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Full development of the VR game</li>
-            <li>Archery mechanics and physics for VR controllers</li>
-            <li>Event-ready experience optimized for booth demonstrations</li>
+            <li>Optimized the project for smooth WebGL performance</li>
+            <li>Developed core gameplay systems (obstacles, collectibles, daily rewards)</li>
         </ul>
     </div>
-    `, "#0C4DA2"),
+    <div class="paragraph">
+        <div class="notice">
+            Playable in the browser on <a href="https://luizcarlosfx.itch.io/foxtrot" target="_blank">itch.io</a>
+        </div>
+    </div>
+    `, "#FF5722"),
 ];
