@@ -1,6 +1,6 @@
 import ProjectData from '@/data/ProjectData.ts'
 
-export default [
+export const mainProjects = [
     new ProjectData("truco-animado", "Truco Animado", "img/projects/truco-animado.png",
     `
     <div class="paragraph">
@@ -87,6 +87,31 @@ export default [
     </div>
     `, "#0C4DA2"),
 
+    new ProjectData("pivot-editor", "Pivot Editor", "img/projects/pivot-editor.png",
+    `
+    <div class="paragraph">
+        <strong>Pivot Editor</strong> is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/r5iluHpuyZE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Designed and built the custom Editor Window</li>
+            <li>Implemented pivot manipulation logic with visual handles</li>
+            <li>Published and maintained the asset on the Unity Asset Store</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        <div class="notice">
+            Available on the <a href="http://u3d.as/kT1" target="_blank">Unity Asset Store</a>
+        </div>
+    </div>
+    `, "#9E9E9E"),
+];
+
+export const hobbyProjects = [
     new ProjectData("mercenary-rush", "Mercenary Rush", "img/projects/mercenary-rush.png",
     `
     <div class="paragraph">
@@ -148,29 +173,6 @@ export default [
         </ul>
     </div>
     `, "#FF9800"),
-
-    new ProjectData("pivot-editor", "Pivot Editor", "img/projects/pivot-editor.png",
-    `
-    <div class="paragraph">
-        <strong>Pivot Editor</strong> is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
-    </div>
-    <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/r5iluHpuyZE" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="paragraph">
-        Key contributions:
-        <ul>
-            <li>Designed and built the custom Editor Window</li>
-            <li>Implemented pivot manipulation logic with visual handles</li>
-            <li>Published and maintained the asset on the Unity Asset Store</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        <div class="notice">
-            Available on the <a href="http://u3d.as/kT1" target="_blank">Unity Asset Store</a>
-        </div>
-    </div>
-    `, "#9E9E9E"),
 
     new ProjectData("sanja-runner", "Sanja Runner", "img/projects/sanja-runner.png", `
     <div class="paragraph">

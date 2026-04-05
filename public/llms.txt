@@ -6,7 +6,7 @@
 
 - [Full content for LLMs](https://luizcarlosfx.github.io/llms-full.txt): Complete portfolio content in plain text
 - [Website](https://luizcarlosfx.github.io): Portfolio website
-- [LinkedIn](https://www.linkedin.com/in/luizcarloxr/)
+- [LinkedIn](https://www.linkedin.com/in/luizcarlosxr/)
 - [GitHub](https://github.com/luizcarlosfx)
 - [XRProj](https://www.xrproj.com): Multi-platform XR content creation system
 - [XRTracker](https://xrtracker.net): Markerless 6DOF object tracking SDK for Unity

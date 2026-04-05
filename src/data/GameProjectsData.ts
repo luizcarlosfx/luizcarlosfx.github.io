@@ -96,6 +96,9 @@ export default [
     <div class="paragraph">
         I developed the <strong>entire backend and frontend</strong> using ASP.NET Core and Blazor WebAssembly, as well as the <strong>core Unity package</strong> used to produce all simulations. A custom communication layer bridges Unity WebGL builds and the portal, tracking student progress, evaluating actions, and reporting results in real time.
     </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/iDR3EGaFzZI" frameborder="0" allowfullscreen></iframe>
+    </div>
     <div class="paragraph">
         Key contributions:
         <ul>

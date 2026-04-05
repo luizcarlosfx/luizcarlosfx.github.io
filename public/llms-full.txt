@@ -5,7 +5,7 @@
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
-LinkedIn: https://www.linkedin.com/in/luizcarloxr/
+LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 GitHub: https://github.com/luizcarlosfx
 Discord: luizcarlosfx
 
@@ -278,6 +278,20 @@ Key contributions:
 
 ---
 
+### Pivot Editor
+
+**Pivot Editor** is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
+
+Key contributions:
+
+- Designed and built the custom Editor Window
+- Implemented pivot manipulation logic with visual handles
+- Published and maintained the asset on the Unity Asset Store
+
+Available on the Unity Asset Store (http://u3d.as/kT1)
+
+---
+
 ### Mercenary Rush
 
 **Mercenary Rush** is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project was a deep dive into real-time networking, Unity's Mecanim animation system, and custom editor tooling.
@@ -318,20 +332,6 @@ Key contributions:
 
 ---
 
-### Pivot Editor
-
-**Pivot Editor** is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
-
-Key contributions:
-
-- Designed and built the custom Editor Window
-- Implemented pivot manipulation logic with visual handles
-- Published and maintained the asset on the Unity Asset Store
-
-Available on the Unity Asset Store (http://u3d.as/kT1)
-
----
-
 ### Sanja Runner
 
 **Sanja Runner** is an educational 2D adventure game developed in 2016 for the city of São José dos Campos, Brazil. Players run through five levels based on real tourist landmarks — from Parque do Banhado to Parque Vicentina Aranha — collecting scrolls with educational content and answering quizzes along the way.
@@ -358,6 +358,6 @@ Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
 Available for remote XR engineering and game development roles. Whether it's industrial simulations, medical training, or shipping a game — I'm interested.
 
 - Email: luizcarlos.sfx@gmail.com
-- LinkedIn: https://www.linkedin.com/in/luizcarloxr/
+- LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 - GitHub: https://github.com/luizcarlosfx
 - Discord: luizcarlosfx

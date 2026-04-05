@@ -66,7 +66,7 @@ const output = `# Luiz Carlos da Silva Junior — Portfolio
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
-LinkedIn: https://www.linkedin.com/in/luizcarloxr/
+LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 GitHub: https://github.com/luizcarlosfx
 Discord: luizcarlosfx
 
@@ -135,7 +135,7 @@ ${otherProjects.map(p => `### ${p.name}\n\n${p.description}`).join('\n\n---\n\n'
 Available for remote XR engineering and game development roles. Whether it's industrial simulations, medical training, or shipping a game — I'm interested.
 
 - Email: luizcarlos.sfx@gmail.com
-- LinkedIn: https://www.linkedin.com/in/luizcarloxr/
+- LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 - GitHub: https://github.com/luizcarlosfx
 - Discord: luizcarlosfx
 `;

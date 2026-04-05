@@ -12,7 +12,7 @@
       </li>
       <li>
         <i class="fab fa-linkedin fa-lg fa-fw" style="vertical-align: -5%;"></i>
-        <a href="https://www.linkedin.com/in/luizcarloxr/" target="_blank">linkedin.com/in/luizcarloxr</a>
+        <a href="https://www.linkedin.com/in/luizcarlosxr/" target="_blank">linkedin.com/in/luizcarlosxr</a>
       </li>
       <li>
         <i class="fab fa-github fa-lg fa-fw"></i>
