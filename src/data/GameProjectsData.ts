@@ -10,7 +10,7 @@ export const mainProjects = [
         As <strong>Lead Developer and Architect</strong>, I drove this project from initial concept through nearly four years of continuous development, building every major system including real-time networking, serialization, and cross-platform deployment.
     </div>
     <div class="paragraph">
-        Adopted by <strong>Embraer, Nestl&eacute;, Ball Corporation, and Aegea</strong> for CAD visualization, assembly validation, and collaborative design review.
+        Adopted by <strong>Embraer, Nestl&eacute;, Ball Corporation, and Aegea</strong> for CAD visualization, assembly validation, and collaborative design review. In active development and production use since 2019.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/DJRpeYrGH80" frameborder="0" allowfullscreen></iframe>
@@ -70,7 +70,7 @@ export const mainProjects = [
     new ProjectData("virtua", "Virtua — Medical VR Training", "img/projects/virtua.png",
     `
     <div class="paragraph">
-        <strong>Virtua</strong> is a VR medical training platform developed for <strong>Becton Dickinson (BD)</strong>, a multinational healthcare company. The application trains healthcare professionals on catheter system procedures, and doubles as a sales demonstration tool for hospital procurement teams.
+        <strong>Virtua</strong> is a VR medical training platform developed for <strong>Becton Dickinson (BD)</strong>, a multinational healthcare company. The application trains healthcare professionals on catheter system procedures, and doubles as a sales demonstration tool for hospital procurement teams. In production since 2021, currently used by BD across <strong>Brazil, Mexico, Colombia, Argentina, and Chile</strong>.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/AmMjGSMS-zs" frameborder="0" allowfullscreen></iframe>
