@@ -1,6 +1,6 @@
 import ProjectData from '@/data/ProjectData.ts'
 
-export default [
+export const mainProjects = [
     new ProjectData("xrproj", "XRProj", "img/projects/xrproj.png",
     `
     <div class="paragraph">
@@ -241,6 +241,9 @@ export default [
     </div>
     `, "#EF6C00"),
 
+];
+
+export const minorProjects = [
     new ProjectData("climatempo-vr", "Climatempo — VR Experience", "img/projects/climatempo-vr.png", `
     <div class="paragraph">
         A <strong>VR experience</strong> developed for <strong><a href="https://www.climatempo.com.br/" target="_blank">Climatempo</a></strong> and <strong>Kersys</strong> for the <strong>RM Vale 2016</strong> event. The application takes users through interactive scenes showcasing weather and environmental data in an immersive format.
@@ -256,4 +259,64 @@ export default [
         </ul>
     </div>
     `, "#1976D2"),
+
+    new ProjectData("casa-fitness", "Casa do Fitness — VR Showroom", "img/projects/casa-fitness.jpg", `
+    <div class="paragraph">
+        A <strong>VR showroom</strong> built in <strong>Unreal Engine</strong> for <strong><a href="https://www.casadofitness.com.br/" target="_blank">Casa do Fitness</a></strong>, a Brazilian fitness equipment retailer with 13+ stores across Brazil. The experience lets users explore and interact with gym equipment (treadmills, bikes, rowing machines) in an immersive virtual environment before purchasing.
+    </div>
+    <div class="paragraph">
+        I developed the <strong>VR navigation and interaction system</strong> within the Unreal Engine environment built by the art team.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/cjIBSUD5deM" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>VR navigation system in Unreal Engine</li>
+            <li>Integration with the art team's environment</li>
+            <li>Product showcase interaction logic</li>
+        </ul>
+    </div>
+    `, "#FF5722"),
+
+    new ProjectData("ortosintese-fh", "Ortosíntese — Feira Hospitalar 2019", "img/projects/ortosintese-fh.jpg", `
+    <div class="paragraph">
+        A <strong>VR product showcase</strong> built in <strong>Unreal Engine</strong> for <strong><a href="https://ortosintese.com.br/" target="_blank">Ortos&iacute;ntese</a></strong>, a leading Brazilian manufacturer of orthopedic implants and surgical instruments exporting to 40+ countries. Presented at <strong>Feira Hospitalar 2019</strong>, the largest healthcare trade fair in Latin America.
+    </div>
+    <div class="paragraph">
+        The experience allowed attendees to explore orthopedic equipment and implants in VR with basic interactivity.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/P80BQk8bIBU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>VR navigation in Unreal Engine</li>
+            <li>Basic product interactivity</li>
+            <li>Event-ready deployment</li>
+        </ul>
+    </div>
+    `, "#E91E63"),
+
+    new ProjectData("wind-tunnel", "Wind Tunnel Simulation — Samsung Creative Startups", "img/projects/wind-tunnel.jpg", `
+    <div class="paragraph">
+        A small <strong>wind tunnel simulation</strong> developed during FormulaXR's participation in the <strong><a href="https://news.samsung.com/br/samsung-creative-startups-divulga-12-startups-selecionadas-para-a-4a-rodada-do-programa-de-aceleracao" target="_blank">Samsung Creative Startups</a></strong> investment program in 2018. The program, run by Samsung in partnership with Anprotec, provided selected startups with up to R$200,000 in equity-free funding plus mentoring from Samsung professionals.
+    </div>
+    <div class="paragraph">
+        The simulation was created using <strong>Maya</strong> (fluid dynamics toolset) and visualized as a <strong>multi-user experience in Unity</strong>.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/JdSvBvm7Fxc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Unity visualization of Maya-generated fluid simulation</li>
+            <li>Multi-user networking</li>
+            <li>Real-time airflow rendering</li>
+        </ul>
+    </div>
+    `, "#1565C0"),
 ];

@@ -218,6 +218,45 @@ Key contributions:
 
 ---
 
+### Casa do Fitness — VR Showroom
+
+A **VR showroom** built in **Unreal Engine** for **Casa do Fitness (https://www.casadofitness.com.br/)**, a Brazilian fitness equipment retailer with 13+ stores across Brazil. The experience lets users explore and interact with gym equipment (treadmills, bikes, rowing machines) in an immersive virtual environment before purchasing.
+
+I developed the **VR navigation and interaction system** within the Unreal Engine environment built by the art team.
+
+Key contributions:
+
+- VR navigation system in Unreal Engine
+- Integration with the art team's environment
+- Product showcase interaction logic
+
+---
+
+### Ortos&iacute;ntese — Feira Hospitalar 2019
+
+A **VR product showcase** built in **Unreal Engine** for **Ortosíntese (https://ortosintese.com.br/)**, a leading Brazilian manufacturer of orthopedic implants and surgical instruments exporting to 40+ countries. Presented at **Feira Hospitalar 2019**, the largest healthcare trade fair in Latin America.
+
+The experience allowed attendees to explore orthopedic equipment and implants in VR with basic interactivity.
+
+Key contributions:
+
+- VR navigation in Unreal Engine
+- Basic product interactivity
+- Event-ready deployment
+
+---
+
+### Wind Tunnel Simulation — Samsung Creative Startups
+
+A small **wind tunnel simulation** developed during FormulaXR's participation in the **Samsung Creative Startups (https://news.samsung.com/br/samsung-creative-startups-divulga-12-startups-selecionadas-para-a-4a-rodada-do-programa-de-aceleracao)** investment program in 2018. The program, run by Samsung in partnership with Anprotec, provided selected startups with up to R$200,000 in equity-free funding plus mentoring from Samsung professionals.
+
+Key contributions:
+
+- Wind tunnel physics simulation
+- Real-time airflow visualization
+
+---
+
 ## Games & Tools
 
 ### Truco Animado
