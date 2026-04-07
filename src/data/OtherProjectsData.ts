@@ -51,10 +51,10 @@ export const mainProjects = [
     new ProjectData("vr-basketball", "VR Basketball", "img/projects/vr-basketball.png",
     `
     <div class="paragraph">
-        <strong>VR Basketball</strong> is an immersive VR experience built as a freelance project in <strong>Unreal Engine 5 with C++</strong> for <strong>Meta Quest 2</strong>. All gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
+        <strong>VR Basketball</strong> is a VR game built as a freelance project in <strong>Unreal Engine 5 with C++</strong> for <strong>Meta Quest 2</strong>. You reach out, grab the basketball with your hands, and throw it. The ball curves and spins realistically. All gameplay systems and VR interactions are implemented entirely in C++.
     </div>
     <div class="paragraph">
-        The project required building a complete VR interaction framework from scratch in C++ — hand tracking, grab mechanics, and physics-driven ball throwing with realistic trajectory and spin. Every system was designed for the tight performance constraints of standalone Quest hardware.
+        The project required building a complete VR interaction framework from scratch in C++: hand tracking, grab mechanics, and physics-driven ball throwing. Everything runs natively on the Quest 2 with no PC required.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/rLnq_LxKHoE" frameborder="0" allowfullscreen></iframe>
@@ -72,7 +72,7 @@ export const mainProjects = [
 
     new ProjectData("hyundai-vr", "Hyundai — VR Archery", "img/projects/hyundai-vr.png", `
     <div class="paragraph">
-        A <strong>VR archery game</strong> developed for <strong>Hyundai</strong> as a brand activation at the 2017 Auto Show (<em>Feira do Autom&oacute;vel</em>). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
+        A <strong>VR archery game</strong> developed for <strong>Hyundai</strong> as a brand activation at the 2017 Auto Show (<em>Feira do Autom&oacute;vel</em>). Visitors at the Hyundai booth put on a headset, grabbed a controller like a bow, and competed in an archery challenge.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/KMV1TCsMhX8" frameborder="0" allowfullscreen></iframe>
@@ -156,10 +156,10 @@ export const hobbyProjects = [
     new ProjectData("vr-racing", "VR Racing Game", "img/projects/vr-racing.png",
     `
     <div class="paragraph">
-        A <strong>VR racing experience</strong> developed for a Brazilian motorized wheelchair company. The game was showcased at <strong>Rock in Rio 2017</strong>, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
+        A <strong>VR racing game</strong> developed for a Brazilian motorized wheelchair company and showcased at <strong>Rock in Rio 2017</strong>, one of the world's largest music festivals. Festival-goers sat in the wheelchair, grabbed the handlebars, and raced each other on a virtual track.
     </div>
     <div class="paragraph">
-        A key challenge was integrating an <strong>HTC Vive Tracker</strong> mounted on the wheelchair's handlebar, translating real-world steering input into in-game vehicle controls for a fully immersive driving experience.
+        A key challenge was integrating an <strong>HTC Vive Tracker</strong> mounted on the wheelchair's handlebar. The tracker captures the real steering input and maps it directly to the in-game vehicle controls.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/1reoW8gjKrw" frameborder="0" allowfullscreen></iframe>
