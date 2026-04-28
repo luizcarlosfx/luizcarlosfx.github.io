@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -16,14 +15,17 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
   },
   {
+    path: '/projects',
+    name: 'Projects',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Projects.vue')
+  },
+  {
     path: '/simulation',
-    name: 'Game Projects',
-    component: () => import(/* webpackChunkName: "about" */ '../views/GameProjects.vue')
+    redirect: '/projects'
   },
   {
     path: '/games',
-    name: 'Other Projects',
-    component: () => import(/* webpackChunkName: "about" */ '../views/OtherProjects.vue')
+    redirect: '/projects'
   },
   {
     path: '/contact',

@@ -4,13 +4,14 @@
 
     <div class="paragraph">
       <div>
-        <strong>XR Engineer</strong> with 10+ years of experience architecting real-time 3D systems in Unity for industrial, medical, and training applications.<br/>
-        Founder and CTO of <strong>FormulaXR</strong>, delivering production XR platforms to companies including Embraer, Nestl&eacute;, and Becton Dickinson.
+        <strong>Senior Unity Engineer</strong> with 10+ years on interactive 3D systems. Mostly Unity, with some Unreal and C++ on the side. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.<br/><br/>
+        I founded <strong>FormulaXR</strong> in 2015 and have been its CTO ever since. In a small company, that role spans well beyond the technical work: I'm lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy.<br/><br/>
+        Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. Several of those products are live on the <strong>Meta Quest Store, App Store, and Google Play</strong>, with several years of active production use.
       </div>
 
-      <div style="margin-top: 20px;">Explore my <router-link class="highlight-link" to="/simulation">INDUSTRY &amp; SIMULATION</router-link>, <router-link class="highlight-link" to="/games">GAMES &amp; TOOLS</router-link>, or check out my <router-link class="highlight-link" to="/resume">RESUME</router-link> for the full picture.</div>
+      <div style="margin-top: 20px;">Explore my <router-link class="highlight-link" to="/projects">PROJECTS</router-link>, or check out my <router-link class="highlight-link" to="/resume">RESUME</router-link> for the full picture.</div>
 
-      <div style="margin-top: 40px;">Specialized in cross-platform XR architecture (Quest, mobile, PC, WebGL), real-time networking, and performance optimization for constrained devices. <strong>Available for remote work.</strong> Reach me at <a class="highlight-link" href="mailto:luizcarlos.sfx@gmail.com">luizcarlos.sfx@gmail.com</a> or <router-link class="highlight-link" to="/contact">CONTACT</router-link>.</div>
+      <div style="margin-top: 40px;"><strong>Available for remote work.</strong> Reach me at <a class="highlight-link" href="mailto:luizcarlos.sfx@gmail.com">luizcarlos.sfx@gmail.com</a> or <router-link class="highlight-link" to="/contact">CONTACT</router-link>.</div>
     </div>
 
     <div class="photo">
