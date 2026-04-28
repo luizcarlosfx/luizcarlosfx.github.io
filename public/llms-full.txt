@@ -1,7 +1,7 @@
 # Luiz Carlos da Silva Junior — Portfolio
 
-> XR Engineer with 10+ years of experience architecting real-time 3D systems in Unity for industrial, medical, and training applications.
-> Founder and CTO of FormulaXR, delivering production XR platforms to companies including Embraer, Nestlé, and Becton Dickinson.
+> Senior Unity Engineer with 10+ years on interactive 3D systems. Mostly Unity, with some Unreal and C++ on the side. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.
+> Founder and CTO of FormulaXR. Production VR/AR titles published on the Meta Quest Store, App Store, and Google Play, with several years of active production use.
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
@@ -9,7 +9,7 @@ LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 GitHub: https://github.com/luizcarlosfx
 Discord: luizcarlosfx
 
-Specialized in cross-platform XR architecture (Quest, mobile, PC, WebGL), real-time networking, and performance optimization for constrained devices. Available for remote work.
+I founded FormulaXR in 2015 and have been its CTO ever since. In a small company, that role spans well beyond the technical work: I'm lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. Available for remote work.
 
 ---
 
@@ -19,31 +19,44 @@ Specialized in cross-platform XR architecture (Quest, mobile, PC, WebGL), real-t
 
 #### Founder & CTO — FormulaXR (2015 – Present)
 
-- Architected XRProj, a multi-platform XR content creation system (VR, AR, mobile, PC, WebGL) adopted by Embraer, Nestlé, Ball Corporation, and Aegea
-- Delivered VR surgical training simulations for Becton Dickinson, Ortosíntese, and Hospital Beneficência Portuguesa, enabling scalable training with LMS integration and step-by-step evaluation systems
-- Built and shipped XRTracker, a commercial Unity plugin for markerless 6DOF object tracking using custom computer vision
-- Built a full-stack educational platform (ASP.NET Core + Blazor WebAssembly) hosting 40+ interactive Unity WebGL science simulations with real-time student progress tracking
-- Migrated a production multiplayer medical VR platform from Photon PUN to FishNet, improving scalability and reducing hosting costs
+- Architected XRProj, a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, and the web. On the Meta Quest Store, App Store, and Google Play; in production since 2019 by Embraer, Nestlé, Ball Corporation, and Aegea
+- The web target is a hand-built PlayCanvas/TypeScript port of the Unity client. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed, and the mirroring was the slow part
+- Networking compatibility layer over Fish-Net, using Roslyn source generators and Mono.Cecil IL post-processing to weave RPCs at compile time. Migrated a production multiplayer codebase off Photon while keeping SyncVar/RPC/ownership semantics intact
+- Gameplay systems and scoring evaluators across VR training titles (medical, surgical, industrial), including Virtua for Becton Dickinson on the Meta Quest Store, in use since 2021 across Brazil, Mexico, Colombia, Argentina, and Chile
+- Built and shipped XRTracker, a commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, GPU-accelerated rendering, in-editor tracking-model pipeline (FBX, OBJ, glTF)
+- Shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a WebGL communication bridge that reports trainee progress and scoring back in real time
+- Performance optimization for Quest and high-end mobile (stereo rendering, 72–90 Hz, draw-call discipline, GPU instancing, custom shaders)
+- Asset Bundles for runtime content loading
 - Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery
 
-Tech stack: Unity, C#, Photon PUN, FishNet, ASP.NET Core, WebGL, Quest, HoloLens, Android, iOS
+Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Photon PUN, Roslyn, Mono.Cecil, ASP.NET Core, Quest, iOS, Android, PC, WebGL
 
 ### Technical Skills
 
-- **XR Development**: VR / AR / MR (Unity — primary, Unreal Engine)
-- **Programming**: C#, C++, JavaScript, TypeScript, Java
-- **Networking**: Photon PUN, FishNet, Netcode for GameObjects, real-time multiplayer architectures
-- **Real-Time Systems**: Interaction systems, simulation, object tracking, computer vision
-- **Performance**: Optimization for mobile VR (Quest, Android, iOS)
-- **Backend**: ASP.NET Core
-- **Platforms**: Quest, PC, Mobile, WebGL
+- **Gameplay Programming**: First-person interaction systems, character & vehicle controllers, physics-driven mechanics, scoring & objective systems, NPC/AI behaviors
+- **Real-Time Multiplayer**: FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)
+- **Engine & Tools**: Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders
+- **Performance**: Stereo VR (Quest, 72–90 Hz), high-end mobile profiling (Frame Debugger, RenderDoc, OVR Metrics), draw-call & GPU optimization
+- **Engines**: Unity (primary), Unreal Engine (C++/Blueprint), PlayCanvas
+- **Programming**: C#, C++, TypeScript, JavaScript, Java
+- **Computer Vision**: Markerless 6DOF tracking (silhouette, edge, depth), GPU-accelerated CV pipelines, native C++ runtime
+- **Platforms**: Meta Quest, iOS, Android, PC, WebGL, HoloLens
+- **Backend**: ASP.NET Core, real-time client-server communication, LMS integration
 
 ### Game Development
 
-- Implemented real-time multiplayer networking for a mobile game with 1M+ downloads and a 4.6 rating
-- Developed a VR basketball experience using Unreal Engine for Meta Quest
-- Developed gameplay systems using Unreal Engine's Gameplay Ability System (GAS)
-- Currently developing an independent title for release in 2026
+- C++ gameplay in Unreal Engine 5: built the full VR interaction layer (grab, throw, hand presence, physics-driven ball handling) for VR Basketball on standalone Meta Quest 2, no Blueprints
+- Real-time multiplayer rewrite for Truco Animado, an established mobile card game on Google Play (networking layer, matchmaking, lobby)
+- Multiple Unity titles across genres: 2D multiplayer platformer (Mercenary Rush), Donkey Kong 2 remake, Rick Dangerous remake with a junior team I mentored, endless runner (Fox Trot), educational adventure (Sanja Runner)
+- Custom Unity tools on the Asset Store (Pivot Editor)
+- Currently working on an independent title for 2026
+
+### Key Projects
+
+- **XRProj** (xrproj.com): Multi-platform real-time 3D system shipping to Quest (Meta Quest Store), mobile (App Store, Google Play), PC, and web (custom PlayCanvas/TypeScript port). In production use since 2019.
+- **Virtua**: Interactive VR medical simulation shipped to Becton Dickinson on the Meta Quest Store. In use across 5 countries since 2021. Custom Roslyn + Mono.Cecil networking compatibility layer.
+- **XRTracker** (xrtracker.net): Commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, 4–8 ms/frame on mobile.
+- **VR Basketball**: Unreal Engine 5 / C++ first-person VR title targeting standalone Meta Quest 2.
 
 ### Education
 
@@ -53,44 +66,49 @@ Instituto Brasileiro de Tecnologia Avançada
 ### Languages
 
 - Portuguese: Native
-- English: Conversational
+- English: Professional
 
 ---
 
-## Industry & Simulation Projects
+## Projects
+
+Projects are tagged so they can appear under multiple categories on the live site. Tabs available: All, Games, Serious Games, Event Activations, Tools & SDKs.
+
+### FormulaXR
 
 ### XRProj
+*Tags: tools-sdks*
 
-**XRProj** is a production multi-platform XR content creation system that enables teams to bring CAD projects into VR (PC and Quest), AR (Android and iOS), HoloLens, and WebGL — all from a single unified pipeline.
+**XRProj** is a multi-platform real-time 3D platform that ships from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the **Meta Quest Store, Apple App Store, and Google Play**, in production since 2019.
 
-As **Lead Developer and Architect**, I drove this project from initial concept through nearly four years of continuous development, building every major system including real-time networking, serialization, and cross-platform deployment.
-
-Adopted by **Embraer, Nestlé, Ball Corporation, and Aegea** for CAD visualization, assembly validation, and collaborative design review.
+I've been the Lead Developer and Architect from day one (close to four years of continuous development at this point). Used in production by **Embraer** (aircraft assembly review on Quest), and by **Nestlé, Ball Corporation, and Aegea** for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
 
 Key contributions:
 
-- Architected the full project from concept to production
-- Performance optimization for constrained platforms (Quest, Android, iOS)
-- Built native CAD-to-XR model conversion pipeline (CAD and polygon formats)
-- Implemented real-time multi-user system using Photon Unity Networking
-- Developed and integrated backend services (ASP.NET Core)
-- Led cross-functional teams across full project lifecycle
+- Led the architecture from concept to production
+- The web target is a hand-built **PlayCanvas/TypeScript** port of the Unity client. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed; the mirroring was the slow part
+- Real-time multiplayer, originally on Photon PUN, later migrated to a custom Fish-Net layer with **Roslyn source generators and Mono.Cecil IL post-processing** that preserves SyncVar/RPC/ownership semantics (shared with Virtua)
+- Performance optimization for Quest (stereo, 72–90 Hz) and high-end mobile (iOS, Android)
+- Native CAD-to-runtime model conversion pipeline (CAD and polygon formats)
+- Backend services in ASP.NET Core
+- Led cross-functional teams across the full lifecycle
 
 Learn more at xrproj.com (https://www.xrproj.com)
 
 ---
 
 ### XRTracker
+*Tags: tools-sdks*
 
-**XRTracker** is a markerless 3D object tracking SDK for Unity that delivers **6DOF pose estimation with sub-centimeter precision** — no scanning, markers, or cloud training required.
+**XRTracker** is a commercial Unity SDK for markerless 3D object tracking. 6DOF pose estimation with sub-centimeter precision. No scanning, markers, or cloud training required. Other developers drop it into their own Unity projects.
 
-Built from the ground up with a **native C++ computer vision core and GPU-accelerated rendering**, it achieves 4–8ms per frame on mobile devices. Three tracking algorithms — silhouette, edge, and depth — can be used individually or combined for maximum robustness, even in low-light and low-contrast industrial environments.
+Built ground-up with a **native C++ computer vision core and GPU-accelerated rendering**. Runs at **4–8 ms per frame on mobile**. Three tracking algorithms (silhouette, edge, depth) can be composed for robustness in low-light and low-contrast environments.
 
 Key features:
 
-- Markerless model-based tracking with three composable algorithms (silhouette, edge, depth)
-- No-code setup — fully configurable through the Unity Inspector
-- Tracking model generation from any 3D mesh (FBX, OBJ, glTF) directly in the editor
+- Native C++ runtime + GPU pipelines, integrated as a Unity SDK
+- Three composable tracking algorithms (silhouette, edge, depth)
+- In-editor authoring tooling: tracking model generation from any 3D mesh (FBX, OBJ, glTF) directly in the editor, with no-code setup through the Inspector
 - Cross-platform: Windows, iOS (ARKit), Android (ARCore)
 - Designed for Industry 4.0: Poka-Yoke workflows, assembly guidance, and task validation
 
@@ -98,184 +116,233 @@ Visit xrtracker.net (https://xrtracker.net) or read the documentation (https://d
 
 ---
 
-### Virtua — Medical VR Training
+### Virtua — Interactive Medical Simulation
+*Tags: serious-games*
 
-**Virtua** is a VR medical training platform developed for **Becton Dickinson (BD)**, a multinational healthcare company. The application trains healthcare professionals on catheter system procedures, and doubles as a sales demonstration tool for hospital procurement teams.
+**Virtua** is an interactive VR medical simulation developed for **Becton Dickinson (BD)**. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. **Published on the Meta Quest Store**, in production since 2021 across **Brazil, Mexico, Colombia, Argentina, and Chile**. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years.
 
-A key innovation was the **artist-friendly task authoring system** — a step-by-step procedure builder that allows medical content creators to define training sequences without any programming knowledge.
+It started as a PC + Oculus Rift project (Quest 2 didn't exist yet, and earlier Quest hardware wasn't good enough). Later I ported the whole thing to standalone Quest 2+. Both targets now ship from the same codebase: PC (with Rift or Quest 2+ via Link) and Quest 2+ standalone.
+
+The bulk of the engineering was the interaction layer. Hand-tracking gestures map to grabbing equipment, with the gesture input blended into procedural animations so the grip looks and feels natural rather than mechanical. Catheter tubing has its own physics-driven cable system. Nurses operate an ultrasound device to locate the vein, do the needle puncture (*puncionamento com agulha*), and assemble the catheter kit piece by piece. Wherever I could, components are interactable rather than scripted.
+
+On top of the interactions sits the **objective system**, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
+
+In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I **migrated the entire networking layer from Photon to Fish-Net**. To minimize risk in a large production codebase, I built a **compatibility layer on top of Fish-Net** that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required **Roslyn source generators** for RPC method scaffolding and **IL post-processing** (Mono.Cecil) to rewrite RPC call sites at compile time.
 
 Key contributions:
 
-- Designed and built an extensible task system for step-by-step medical procedures
-- Developed a grading and evaluation system with configurable action assessments
-- Integrated with BD's Learning Management System (LMS) for tracking and certification
-- Built runtime procedure loading via Asset Bundles for content scalability
+- Interaction layer: gesture grabs with animation blending, catheter cable physics, ultrasound, needle puncture, component-level catheter assembly
+- PC + Rift to Quest 2+ standalone port, single codebase for both targets
+- Step-by-step objective/procedure system for non-engineer authoring
+- Configurable scoring evaluator
+- Runtime content loading via **Asset Bundles**
+- Photon to Fish-Net networking migration with a custom RPC-weaving compat layer (Roslyn codegen + Mono.Cecil IL post-processing)
+- LMS integration for trainee progress and certification
 
 ---
 
 ### FormulaXR — Educational Portal
+*Tags: games, serious-games*
 
-A **full-stack educational platform** built for **FormulaXR** that hosts 40+ interactive science simulations powered by Unity. Students explore subjects like Biology, Chemistry, and Physics through hands-on 3D experiences — from food chain ecosystems to interactive periodic tables.
+A web platform hosting **40+ interactive science mini-games** built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
 
-I developed the **entire backend and frontend** using ASP.NET Core and Blazor WebAssembly, as well as the **core Unity package** used to produce all simulations. A custom communication layer bridges Unity WebGL builds and the portal, tracking student progress, evaluating actions, and reporting results in real time.
+I architected the **shared Unity SDK** that all 40+ titles are built on: interaction primitives, scoring, objective tracking, and a WebGL communication bridge that talks back to the portal in real time.
+
+I also built the web portal itself, full-stack, in ASP.NET Core and Blazor WebAssembly (student accounts, progress tracking, scoring, reporting).
 
 Key contributions:
 
-- Full-stack development of the web portal (ASP.NET Core + Blazor WebAssembly)
-- Architected the core Unity simulation package used across all 40+ simulations
-- Built the communication bridge between Unity WebGL and the portal for real-time progress tracking and evaluation
-- Student action tracking, grading, and reporting system
+- Shared Unity SDK powering all 40+ mini-games (interaction primitives, scoring, objectives)
+- WebGL-to-portal communication bridge for student progress and scoring
+- Full-stack web portal (ASP.NET Core + Blazor WebAssembly)
+- Student tracking, scoring, and reporting
 
 Visit formulaxr.com (https://formulaxr.com)
 
 ---
 
 ### OrtoVR — Surgical Training
+*Tags: serious-games*
 
-**OrtoVR** is a VR training application developed for **Ortosíntese**, a Brazilian orthopedic company. The software instructs surgeons on the proper use of prosthetic tools and was featured as a key demonstration at a major healthcare fair in 2018.
+**OrtoVR** is a surgical VR training title built for **Ortosíntese**, a Brazilian orthopedic company. Surgeons put on a headset and practice placing implants and handling surgical instruments in VR before entering the operating room. Featured as a key demonstration at a major healthcare fair in 2018.
 
 Key contributions:
 
-- Architected the full project structure
-- Designed and implemented a VR task system for guided surgical procedures
-- Refined a custom VR interaction system for precise instrument handling
-- Integrated network code for collaborative training sessions
+- Set up the full project structure
+- Step-by-step **objective system** for guided procedure progression
+- Refined a custom VR interaction layer for precise instrument handling
+- Real-time multiplayer for collaborative training sessions
 
 ---
 
 ### VR Surgery — Hospital BP
+*Tags: serious-games*
 
-A **proof-of-concept** developed for **Hospital Beneficência Portuguesa de São Paulo (BP)** — one of Brazil's most prestigious healthcare institutions, recognized among the world's best hospitals for seven consecutive years. The project simulates surgical procedures using a robotic arm controlled through a VR headset, exploring the intersection of hardware integration and immersive simulation.
+A **proof-of-concept** for **Hospital Beneficência Portuguesa de São Paulo (BP)**, among the world's best hospitals for seven consecutive years. The surgeon wears a VR headset and drives a real robotic arm through simulated procedures. Hand movements in VR, real arm in the room, in sync.
+
+Most of my time went into the **surgical interaction system**: scalpel incisions through skin, scissors cutting vessels, suturing, fat removal with forceps and a spatula together. Each tool has its own physical behavior, with the goal that procedures feel like the real thing instead of triggered animations.
 
 Key contributions:
 
-- Integrated hardware drivers for robotic arm control
-- Developed the VR interface and UI for surgical interaction
+- Surgical interaction system: scalpel incisions, scissor cutting on vessels, suturing, forceps + spatula fat removal
+- Hardware drivers for the robotic arm (custom peripheral I/O)
+- VR interaction layer and UI
 - Refactored and stabilized the existing codebase
 
 ---
 
-### Virtual Classroom
-
-A **multi-user virtual classroom** developed in collaboration with the City Hall of São José dos Campos, Brazil. This project laid the foundation for several core systems I continue to use across all my VR projects today.
-
-Key contributions:
-
-- Built an extensible VR interaction system (teleportation, object manipulation) reused across subsequent projects
-- Developed a modular VR networking layer designed for easy extension
-- Performance optimization for smooth multi-user experiences
-
----
-
 ### Forklift Safety Training
+*Tags: serious-games*
 
-A **VR forklift training simulator** developed for **Nestlé**. The application walks operators through critical safety checkpoints — pre-operation inspection, environment awareness, load handling — and evaluates whether each step is performed correctly in real time.
+A **VR forklift simulator** for **Nestlé**. Before driving a real forklift in the warehouse, operators put on a Quest headset and go through the safety steps: pre-operation inspection, environment awareness, load handling. Each step is scored in real time and the result is reported back.
 
-Custom-built in **Unity for Meta Quest**.
+Built in Unity for standalone Meta Quest.
 
 Key contributions:
 
-- Full development of the VR training simulator
-- Real-time evaluation system for safety checkpoints
-- Forklift physics and controls tuned for VR
-- Performance optimization for Meta Quest
+- Full development of the simulator
+- Real-time scoring with step-based progression
+- **Vehicle physics and controls** tuned for VR
+- Performance optimization for standalone Quest (stereo, 72 Hz)
 
 ---
 
 ### Industrial Painter Simulator
+*Tags: serious-games*
 
-A **multi-user VR simulation** of an industrial painting machine, developed for a major multinational corporation. The application supports both **VR and desktop modes** within the same shared environment, allowing teams to collaborate regardless of hardware.
+Multi-user simulation of an industrial painting machine, built for a major multinational corporation. One person wears a VR headset and walks around the virtual machine while teammates on their laptops observe and annotate from a desktop client. **Both share the same world in real time**, with different inputs and views per role.
 
 Key contributions:
 
-- Full development of the simulation codebase
-- Multi-user networking with simultaneous VR and desktop participants
+- Full development of the codebase
+- Real-time multiplayer with simultaneous VR and desktop participants
 - Layer system and animation logic for the painting machine
-- Cross-platform experience (VR headset + non-VR desktop)
+- Cross-platform client (VR headset + non-VR desktop) from a single codebase
+
+---
+
+### Virtual Classroom
+*Tags: serious-games*
+
+A **multiplayer VR classroom**, built in collaboration with the City Hall of São José dos Campos, Brazil. Students wearing VR headsets join the same virtual classroom from different locations and attend interactive lessons together. This is also where my reusable **VR interaction layer and networking code** first came together. Most of my later VR projects still build on what I wrote here.
+
+Key contributions:
+
+- Extensible VR interaction layer (teleportation, object manipulation) reused across later projects
+- Modular multiplayer layer designed for easy extension
+- Performance work for smooth multiplayer sessions
+
+---
+
+### Hyundai — VR Archery
+*Tags: games, event-activations*
+
+A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Visitors at the Hyundai booth put on a headset, grabbed a controller like a bow, and competed in an archery challenge.
+
+Key contributions:
+
+- Full development of the VR game
+- Archery mechanics and physics for VR controllers
+- Event-ready experience optimized for booth demonstrations
+
+---
+
+### VR Racing Game
+*Tags: games, event-activations*
+
+A **VR racing game** developed for a Brazilian motorized wheelchair company and showcased at **Rock in Rio 2017**, one of the world's largest music festivals. Festival-goers sat in the wheelchair, grabbed the handlebars, and raced each other on a virtual track.
+
+A key challenge was integrating an **HTC Vive Tracker** mounted on the wheelchair's handlebar. The tracker captures the real steering input and maps it directly to the in-game vehicle controls.
+
+Key contributions:
+
+- Integrated HTC Vive Tracker for real-world handlebar-to-game steering input
+- Customized Unity's vehicle physics system for wheelchair-based controls
+- Implemented multiplayer racing for competitive on-site play
+
+---
+
+### Sanja Runner
+*Tags: games*
+
+**Sanja Runner** is an educational 2D adventure game developed in 2016 for the city of São José dos Campos, Brazil. Players run through five levels based on real tourist landmarks (Parque do Banhado, Parque Vicentina Aranha, and others), collecting scrolls with educational content and answering quizzes along the way.
+
+Built for PC and Android, the game features a content management system that lets educators customize scrolls and quiz questions through a web interface, making it adaptable for different subjects and learning goals.
+
+---
+
+### Wind Tunnel — Samsung Creative Startups
+*Tags: serious-games*
+
+Multi-user wind tunnel simulation developed during FormulaXR's participation in the **Samsung Creative Startups (https://news.samsung.com/br/samsung-creative-startups-divulga-12-startups-selecionadas-para-a-4a-rodada-do-programa-de-aceleracao)** investment program (2018). Fluid dynamics created in **Maya**, visualized as a **multi-user experience in Unity**. I developed the **Unity visualization and networking**.
 
 ---
 
 ### DuPont — VR Product Tour
+*Tags: event-activations*
 
-A **VR city tour experience** developed for **DuPont**'s internal event **"Next Generation DuPont"**, which ran over 3 consecutive days and was experienced by **800+ attendees**. Built using the Oculus DK2, the application guides users through an interactive virtual city, highlighting DuPont products integrated into everyday environments — showcasing the company's presence in daily life.
+VR city tour shown at **DuPont**'s internal event **"Next Generation DuPont"** (3 days, **800+ attendees**). Users explored a virtual city highlighting DuPont products in everyday environments. Built on the **Oculus DK2**; I did **full development** of the VR experience.
 
-Key contributions:
+---
 
-- Full development of the VR experience
-- Interactive city environment with product discovery points
-- Built for Oculus DK2 — one of the earliest commercial VR development kits
+### Ortosíntese — Feira Hospitalar 2019
+*Tags: event-activations*
+
+**Unreal Engine** VR product showcase for **Ortosíntese (https://ortosintese.com.br/)**, presented at **Feira Hospitalar 2019** (largest healthcare trade fair in Latin America). I developed the **VR navigation and basic interactivity** for exploring their orthopedic equipment catalog.
 
 ---
 
 ### Climatempo — VR Experience
+*Tags: event-activations*
 
-A **VR experience** developed for **Climatempo (https://www.climatempo.com.br/)** and **Kersys** for the **RM Vale 2016** event. The application takes users through interactive scenes showcasing weather and environmental data in an immersive format.
-
-Key contributions:
-
-- Full development of the VR application
-- Scene navigation and transition system
+VR experience presented at the **RM Vale 2016** event for **Climatempo (https://www.climatempo.com.br/)** and **Kersys**. I did **full development** of the application. Interactive scenes let users explore weather and environmental data in VR.
 
 ---
 
 ### Casa do Fitness — VR Showroom
+*Tags: event-activations*
 
-A **VR showroom** built in **Unreal Engine** for **Casa do Fitness (https://www.casadofitness.com.br/)**, a Brazilian fitness equipment retailer with 13+ stores across Brazil. The experience lets users explore and interact with gym equipment (treadmills, bikes, rowing machines) in an immersive virtual environment before purchasing.
-
-I developed the **VR navigation and interaction system** within the Unreal Engine environment built by the art team.
-
-Key contributions:
-
-- VR navigation system in Unreal Engine
-- Integration with the art team's environment
-- Product showcase interaction logic
+**Unreal Engine** VR showroom for **Casa do Fitness (https://www.casadofitness.com.br/)**, a Brazilian fitness equipment retailer. I developed the **VR navigation and interaction system** within the environment built by the art team.
 
 ---
 
-### Ortos&iacute;ntese — Feira Hospitalar 2019
+### Freelance
 
-A **VR product showcase** built in **Unreal Engine** for **Ortosíntese (https://ortosintese.com.br/)**, a leading Brazilian manufacturer of orthopedic implants and surgical instruments exporting to 40+ countries. Presented at **Feira Hospitalar 2019**, the largest healthcare trade fair in Latin America.
+### VR Basketball
+*Tags: games*
 
-The experience allowed attendees to explore orthopedic equipment and implants in VR with basic interactivity.
+**VR Basketball** is a freelance VR title built in **Unreal Engine 5 with C++** for standalone **Meta Quest 2**. You reach out, grab the ball, throw it, and the ball curves and spins realistically. **Everything is in C++, no Blueprints.**
 
-Key contributions:
+I wrote the VR interaction layer myself in C++: hand presence, grab mechanics, physics-driven ball throwing, scoring loop. Everything runs natively on the Quest 2 with no PC required, on a standalone-mobile frame budget.
 
-- VR navigation in Unreal Engine
-- Basic product interactivity
-- Event-ready deployment
+Key highlights:
 
----
-
-### Wind Tunnel Simulation — Samsung Creative Startups
-
-A small **wind tunnel simulation** developed during FormulaXR's participation in the **Samsung Creative Startups (https://news.samsung.com/br/samsung-creative-startups-divulga-12-startups-selecionadas-para-a-4a-rodada-do-programa-de-aceleracao)** investment program in 2018. The program, run by Samsung in partnership with Anprotec, provided selected startups with up to R$200,000 in equity-free funding plus mentoring from Samsung professionals.
-
-Key contributions:
-
-- Wind tunnel physics simulation
-- Real-time airflow visualization
+- C++ VR interaction layer (grab, throw, hand presence)
+- Physics-driven ball handling with realistic trajectory and spin
+- Scoring loop with multiple court positions
+- Optimized for standalone Meta Quest 2 (stereo, 72–90 Hz)
 
 ---
 
-## Games & Tools
+### Truco Animado — Multiplayer Rewrite
+*Tags: games*
 
-### Truco Animado
+**Truco Animado** is an established mobile card game on Google Play (Truco is one of Brazil's most popular card games). I was brought in as a freelancer to **architect and ship the real-time multiplayer rewrite** on top of an existing single-player codebase that already had a large player base.
 
-**Truco Animado** is a multiplayer mobile card game based on Truco, one of Brazil's most popular card games. With **over 1 million downloads** on Google Play and a **4.6/5 star rating** across 23,000+ reviews, it's one of the top Truco games on the platform.
+My scope was specifically the networking layer, not the game design or content. After the multiplayer milestone shipped I handed the code back. The game's existing popularity on Google Play predates my work and stands on its own.
 
-Brought in to add multiplayer support, I architected the **real-time networking layer, matchmaking, and lobby system**, and refactored the core gameplay systems where needed to support reliable online play.
-
-Key contributions:
+Key contributions (multiplayer rewrite only):
 
 - Architected and implemented the real-time multiplayer networking layer
 - Developed the matchmaking and lobby system
-- Refactored core gameplay systems to support reliable online play
+- Refactored core gameplay systems where required to support reliable online play
 
 Available on Google Play (https://play.google.com/store/apps/details?id=br.com.delotech.trucoindie)
 
 ---
 
 ### Rick Dangerous — Remake
+*Tags: games*
 
 A remake of the classic arcade game **Rick Dangerous**, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
 
@@ -290,34 +357,24 @@ Playable in the browser on itch.io (https://luizcarlosfx.itch.io/rick-dangerous)
 
 ---
 
-### VR Basketball
+### Fox Trot
+*Tags: games*
 
-**VR Basketball** is an immersive VR experience built as a freelance project in **Unreal Engine 5 with C++** for **Meta Quest 2**. All gameplay systems and VR interactions are implemented entirely in C++ for maximum performance on standalone hardware.
-
-The project required building a complete VR interaction framework from scratch in C++ — hand tracking, grab mechanics, and physics-driven ball throwing with realistic trajectory and spin. Every system was designed for the tight performance constraints of standalone Quest hardware.
-
-Key highlights:
-
-- Built a complete VR interaction framework in C++ (grab, throw, hand presence)
-- Physics-based ball handling with realistic trajectory and spin
-- Scoring and gameplay loop with multiple court positions
-- Optimized for standalone Meta Quest 2 performance budgets
-
----
-
-### Hyundai — VR Archery
-
-A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Attendees could step into VR and experience an immersive archery challenge at the Hyundai booth.
+**Fox Trot** is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
 
 Key contributions:
 
-- Full development of the VR game
-- Archery mechanics and physics for VR controllers
-- Event-ready experience optimized for booth demonstrations
+- Optimized the project for smooth WebGL performance
+- Developed core gameplay systems (obstacles, collectibles, daily rewards)
+
+Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
 
 ---
 
+### Personal
+
 ### Pivot Editor
+*Tags: tools-sdks*
 
 **Pivot Editor** is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
 
@@ -332,6 +389,7 @@ Available on the Unity Asset Store (http://u3d.as/kT1)
 ---
 
 ### Mercenary Rush
+*Tags: games*
 
 **Mercenary Rush** is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project was a deep dive into real-time networking, Unity's Mecanim animation system, and custom editor tooling.
 
@@ -344,8 +402,9 @@ Key contributions:
 ---
 
 ### Donkey Kong 2 — Clone
+*Tags: games*
 
-A love letter to my childhood favorite — a faithful recreation of **Donkey Kong** built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.
+A love letter to my childhood favorite, a faithful recreation of **Donkey Kong** built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.
 
 Watch the development playlist on YouTube (https://www.youtube.com/playlist?list=PLedBjvIQnDOFqD_1fc-kaYi6rJwkAHIXX)
 
@@ -357,44 +416,9 @@ Key contributions:
 
 ---
 
-### VR Racing Game
-
-A **VR racing experience** developed for a Brazilian motorized wheelchair company. The game was showcased at **Rock in Rio 2017**, one of the world's largest music festivals, providing an accessible and immersive racing experience to attendees.
-
-A key challenge was integrating an **HTC Vive Tracker** mounted on the wheelchair's handlebar, translating real-world steering input into in-game vehicle controls for a fully immersive driving experience.
-
-Key contributions:
-
-- Integrated HTC Vive Tracker for real-world handlebar-to-game steering input
-- Customized Unity's vehicle physics system for wheelchair-based controls
-- Implemented multiplayer racing for competitive on-site play
-
----
-
-### Sanja Runner
-
-**Sanja Runner** is an educational 2D adventure game developed in 2016 for the city of São José dos Campos, Brazil. Players run through five levels based on real tourist landmarks — from Parque do Banhado to Parque Vicentina Aranha — collecting scrolls with educational content and answering quizzes along the way.
-
-Built for PC and Android, the game features a content management system that allows educators to customize scrolls and quiz questions through a web interface — making it adaptable for different subjects and learning goals.
-
----
-
-### Fox Trot
-
-**Fox Trot** is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
-
-Key contributions:
-
-- Optimized the project for smooth WebGL performance
-- Developed core gameplay systems (obstacles, collectibles, daily rewards)
-
-Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
-
----
-
 ## Contact
 
-Available for remote XR engineering and game development roles. Whether it's industrial simulations, medical training, or shipping a game — I'm interested.
+Available for remote engineering roles in games, XR, simulation, and interactive 3D in general.
 
 - Email: luizcarlos.sfx@gmail.com
 - LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
