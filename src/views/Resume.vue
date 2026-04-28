@@ -35,7 +35,7 @@
           <li>Networking compatibility layer over Fish-Net, using <strong>Roslyn source generators and Mono.Cecil IL post-processing</strong> to weave RPCs at compile time. Migrated a production multiplayer codebase off Photon while keeping SyncVar/RPC/ownership semantics intact</li>
           <li>Gameplay systems and scoring evaluators across VR training titles (medical, surgical, industrial), including <strong>Virtua</strong> for Becton Dickinson on the Meta Quest Store, in use since 2021 across Brazil, Mexico, Colombia, Argentina, and Chile</li>
           <li>Built and shipped XRTracker, a commercial Unity SDK for markerless 6DOF tracking. <strong>Native C++ CV core</strong>, GPU-accelerated rendering, in-editor tracking-model pipeline (FBX, OBJ, glTF)</li>
-          <li>Shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a WebGL communication bridge that reports trainee progress and scoring back in real time</li>
+          <li>Shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a Blazor WebAssembly + .NET Core frontend and a WebGL communication bridge that reports trainee progress and scoring back in real time</li>
           <li>Performance optimization for Quest and high-end mobile (stereo rendering, 72&ndash;90 Hz, draw-call discipline, GPU instancing, custom shaders)</li>
           <li>Asset Bundles for runtime content loading</li>
           <li>Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery</li>
