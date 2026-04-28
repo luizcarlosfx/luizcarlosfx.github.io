@@ -98,7 +98,7 @@ export const allProjects = [
             <li>LMS integration for trainee progress and certification</li>
         </ul>
     </div>
-    `, "#FFA726", "formulaxr", ["serious-games"]),
+    `, "#FB8C00", "formulaxr", ["serious-games"]),
 
     new ProjectData("edu-portal", "FormulaXR — Educational Portal", "img/projects/edu-portal.png", `
     <div class="paragraph">
@@ -285,7 +285,7 @@ export const allProjects = [
     <div class="paragraph">
         Built for PC and Android, the game features a content management system that lets educators customize scrolls and quiz questions through a web interface, making it adaptable for different subjects and learning goals.
     </div>
-    `, "#9CCC65", "formulaxr", ["games"]),
+    `, "#7CB342", "formulaxr", ["games"]),
 
     new ProjectData("wind-tunnel", "Wind Tunnel — Samsung Creative Startups", "img/projects/wind-tunnel.jpg", `
     <div class="paragraph">
@@ -326,7 +326,7 @@ export const allProjects = [
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/-JgiY85GKkc" frameborder="0" allowfullscreen></iframe>
     </div>
-    `, "#FFCA28", "formulaxr", ["event-activations"]),
+    `, "#FF8F00", "formulaxr", ["event-activations"]),
 
     new ProjectData("casa-fitness", "Casa do Fitness — VR Showroom", "img/projects/casa-fitness.jpg", `
     <div class="paragraph">
@@ -427,7 +427,7 @@ export const allProjects = [
             Playable in the browser on <a href="https://luizcarlosfx.itch.io/foxtrot" target="_blank">itch.io</a>
         </div>
     </div>
-    `, "#FFD54F", "freelance", ["games"]),
+    `, "#FFA000", "freelance", ["games"]),
 
     // ===== Personal =====
     new ProjectData("pivot-editor", "Pivot Editor", "img/projects/pivot-editor.png",
