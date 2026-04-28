@@ -8,7 +8,7 @@ export const allProjects = [
         <strong>XRProj</strong> is a multi-platform real-time 3D platform that ships from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the <strong>Meta Quest Store, Apple App Store, and Google Play</strong>, in production since 2019.
     </div>
     <div class="paragraph">
-        I've been the Lead Developer and Architect from day one (close to four years of continuous development at this point). Used in production by <strong>Embraer</strong> (aircraft assembly review on Quest), and by <strong>Nestl&eacute;, Ball Corporation, and Aegea</strong> for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
+        I've been the Lead Developer and Architect from day one, with the project under long-running continuous development. Used in production by <strong>Embraer</strong> (aircraft assembly review on Quest), and by <strong>Nestl&eacute;, Ball Corporation, and Aegea</strong> for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/DJRpeYrGH80" frameborder="0" allowfullscreen></iframe>
@@ -81,7 +81,7 @@ export const allProjects = [
         The bulk of the engineering was the interaction layer. Hand-tracking gestures map to grabbing equipment, with the gesture input blended into procedural animations so the grip looks and feels natural rather than mechanical. Catheter tubing has its own physics-driven cable system. Nurses operate an ultrasound device to locate the vein, do the needle puncture (<em>puncionamento com agulha</em>), and assemble the catheter kit piece by piece. Wherever I could, components are interactable rather than scripted.
     </div>
     <div class="paragraph">
-        On top of the interactions sits the <strong>objective system</strong>, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
+        Above the interactions, there's the <strong>objective system</strong>, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
     </div>
     <div class="paragraph">
         In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I <strong>migrated the entire networking layer from Photon to Fish-Net</strong>. To minimize risk in a large production codebase, I built a <strong>compatibility layer on top of Fish-Net</strong> that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required <strong>Roslyn source generators</strong> for RPC method scaffolding and <strong>IL post-processing</strong> (Mono.Cecil) to rewrite RPC call sites at compile time.
@@ -433,7 +433,7 @@ export const allProjects = [
     new ProjectData("pivot-editor", "Pivot Editor", "img/projects/pivot-editor.png",
     `
     <div class="paragraph">
-        <strong>Pivot Editor</strong> is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
+        <strong>Pivot Editor</strong> is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using handle-based controls.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/r5iluHpuyZE" frameborder="0" allowfullscreen></iframe>
@@ -456,7 +456,7 @@ export const allProjects = [
     new ProjectData("mercenary-rush", "Mercenary Rush", "img/projects/mercenary-rush.png",
     `
     <div class="paragraph">
-        <strong>Mercenary Rush</strong> is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project was a deep dive into real-time networking, Unity's Mecanim animation system, and custom editor tooling.
+        <strong>Mercenary Rush</strong> is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project pushed me hard on real-time networking, Unity's Mecanim animation system, and custom editor tooling.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/6Mq_5XopKMI" frameborder="0" allowfullscreen></iframe>

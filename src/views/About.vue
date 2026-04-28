@@ -4,7 +4,7 @@
 
     <div class="paragraph">
       <div>
-        <strong>Senior Unity Engineer</strong> with 10+ years on interactive 3D systems. Mostly Unity, with some Unreal and C++ on the side. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.<br/><br/>
+        <strong>Senior Unity Engineer</strong> with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.<br/><br/>
         I founded <strong>FormulaXR</strong> in 2015 and have been its CTO ever since. In a small company, that role spans well beyond the technical work: I'm lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy.<br/><br/>
         Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. Several of those products are live on the <strong>Meta Quest Store, App Store, and Google Play</strong>, with several years of active production use.
       </div>

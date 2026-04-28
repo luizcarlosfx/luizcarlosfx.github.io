@@ -3,13 +3,11 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      Senior Unity Engineer with 10+ years on interactive 3D systems. Mostly Unity, with some Unreal and C++ on the side. Strongest in gameplay, real-time multiplayer, and editor tooling; most of the larger projects are simulation-heavy.
+      Senior Unity Engineer with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in gameplay, real-time multiplayer, and editor tooling.
       <br />
-      <br />Founder and CTO of FormulaXR. Production VR/AR titles on the <strong>Meta Quest Store, App Store, and Google Play</strong>, with several years of active use.
+      <br />Founder and CTO of FormulaXR. Production VR/AR titles live on the <strong>Meta Quest Store, App Store, and Google Play</strong>, in active use for years. One Unity codebase serving Quest, iOS, Android, PC, and the web.
       <br />
-      <br />Cross-platform shipping from a single codebase across Quest, iOS, Android, PC, and the web.
-      <br />
-      <br />Creator of <a href="https://xrtracker.net" target="_blank">XRTracker</a>, a markerless 6DOF object tracking SDK with a native C++ computer vision core that runs in 4&ndash;8 ms per frame on mobile.
+      <br />Most of the projects are simulation-heavy. The actual work is in the interaction layer: hand-tracked grabs that blend into procedural animation, physics-driven cables and tools, mission and scoring systems, plus the netcode that ties multiplayer sessions together. <a href="https://xrtracker.net" target="_blank">XRTracker</a>, a Unity SDK for markerless object tracking, came out of that.
 
       <div style="margin-top:20px; margin-bottom:20px;">
         <a class="download-link" href="mailto:luizcarlos.sfx@gmail.com"><i class="fas fa-envelope fa-lg fa-fw"></i> Request Full Resume</a>
@@ -49,7 +47,7 @@
       <div class="skills-list">
         <div class="skill-category">
           <h3>Gameplay Programming</h3>
-          <div>First-person interaction systems, character &amp; vehicle controllers, physics-driven mechanics, scoring &amp; objective systems, NPC/AI behaviors</div>
+          <div>Player interaction systems (VR + desktop), character &amp; vehicle controllers, physics-driven mechanics, scoring &amp; objective systems</div>
         </div>
         <div class="skill-category">
           <h3>Real-Time Multiplayer</h3>
@@ -104,7 +102,7 @@
           <li><strong>XRProj</strong> (<a href="https://xrproj.com" target="_blank">xrproj.com</a>): Multi-platform real-time 3D system shipping to Quest (Meta Quest Store), mobile (App Store, Google Play), PC, and web (custom PlayCanvas/TypeScript port). In production use since 2019.</li>
           <li><strong>Virtua</strong>: Interactive VR medical simulation shipped to Becton Dickinson on the Meta Quest Store. In use across 5 countries since 2021. Custom Roslyn + Mono.Cecil networking compatibility layer.</li>
           <li><strong>XRTracker</strong> (<a href="https://xrtracker.net" target="_blank">xrtracker.net</a>): Commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, 4&ndash;8 ms/frame on mobile.</li>
-          <li><strong>VR Basketball</strong>: Unreal Engine 5 / C++ first-person VR title targeting standalone Meta Quest 2.</li>
+          <li><strong>VR Basketball</strong>: Unreal Engine 5 / C++ VR title targeting standalone Meta Quest 2.</li>
         </ul>
       </div>
 

@@ -1,7 +1,7 @@
 # Luiz Carlos da Silva Junior — Portfolio
 
-> Senior Unity Engineer with 10+ years on interactive 3D systems. Mostly Unity, with some Unreal and C++ on the side. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.
-> Founder and CTO of FormulaXR. Production VR/AR titles published on the Meta Quest Store, App Store, and Google Play, with several years of active production use.
+> Senior Unity Engineer with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.
+> Founder and CTO of FormulaXR. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
@@ -24,7 +24,7 @@ I founded FormulaXR in 2015 and have been its CTO ever since. In a small company
 - Networking compatibility layer over Fish-Net, using Roslyn source generators and Mono.Cecil IL post-processing to weave RPCs at compile time. Migrated a production multiplayer codebase off Photon while keeping SyncVar/RPC/ownership semantics intact
 - Gameplay systems and scoring evaluators across VR training titles (medical, surgical, industrial), including Virtua for Becton Dickinson on the Meta Quest Store, in use since 2021 across Brazil, Mexico, Colombia, Argentina, and Chile
 - Built and shipped XRTracker, a commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, GPU-accelerated rendering, in-editor tracking-model pipeline (FBX, OBJ, glTF)
-- Shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a WebGL communication bridge that reports trainee progress and scoring back in real time
+- Shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a Blazor WebAssembly + .NET Core frontend and a WebGL communication bridge that reports trainee progress and scoring back in real time
 - Performance optimization for Quest and high-end mobile (stereo rendering, 72–90 Hz, draw-call discipline, GPU instancing, custom shaders)
 - Asset Bundles for runtime content loading
 - Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery
@@ -33,7 +33,7 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 
 ### Technical Skills
 
-- **Gameplay Programming**: First-person interaction systems, character & vehicle controllers, physics-driven mechanics, scoring & objective systems, NPC/AI behaviors
+- **Gameplay Programming**: Player interaction systems (VR + desktop), character & vehicle controllers, physics-driven mechanics, scoring & objective systems
 - **Real-Time Multiplayer**: FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)
 - **Engine & Tools**: Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders
 - **Performance**: Stereo VR (Quest, 72–90 Hz), high-end mobile profiling (Frame Debugger, RenderDoc, OVR Metrics), draw-call & GPU optimization
@@ -56,7 +56,7 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 - **XRProj** (xrproj.com): Multi-platform real-time 3D system shipping to Quest (Meta Quest Store), mobile (App Store, Google Play), PC, and web (custom PlayCanvas/TypeScript port). In production use since 2019.
 - **Virtua**: Interactive VR medical simulation shipped to Becton Dickinson on the Meta Quest Store. In use across 5 countries since 2021. Custom Roslyn + Mono.Cecil networking compatibility layer.
 - **XRTracker** (xrtracker.net): Commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, 4–8 ms/frame on mobile.
-- **VR Basketball**: Unreal Engine 5 / C++ first-person VR title targeting standalone Meta Quest 2.
+- **VR Basketball**: Unreal Engine 5 / C++ VR title targeting standalone Meta Quest 2.
 
 ### Education
 
@@ -81,7 +81,7 @@ Projects are tagged so they can appear under multiple categories on the live sit
 
 **XRProj** is a multi-platform real-time 3D platform that ships from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the **Meta Quest Store, Apple App Store, and Google Play**, in production since 2019.
 
-I've been the Lead Developer and Architect from day one (close to four years of continuous development at this point). Used in production by **Embraer** (aircraft assembly review on Quest), and by **Nestlé, Ball Corporation, and Aegea** for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
+I've been the Lead Developer and Architect from day one, with the project under long-running continuous development. Used in production by **Embraer** (aircraft assembly review on Quest), and by **Nestlé, Ball Corporation, and Aegea** for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
 
 Key contributions:
 
@@ -125,7 +125,7 @@ It started as a PC + Oculus Rift project (Quest 2 didn't exist yet, and earlier 
 
 The bulk of the engineering was the interaction layer. Hand-tracking gestures map to grabbing equipment, with the gesture input blended into procedural animations so the grip looks and feels natural rather than mechanical. Catheter tubing has its own physics-driven cable system. Nurses operate an ultrasound device to locate the vein, do the needle puncture (*puncionamento com agulha*), and assemble the catheter kit piece by piece. Wherever I could, components are interactable rather than scripted.
 
-On top of the interactions sits the **objective system**, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
+Above the interactions, there's the **objective system**, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
 
 In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I **migrated the entire networking layer from Photon to Fish-Net**. To minimize risk in a large production codebase, I built a **compatibility layer on top of Fish-Net** that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required **Roslyn source generators** for RPC method scaffolding and **IL post-processing** (Mono.Cecil) to rewrite RPC call sites at compile time.
 
@@ -376,7 +376,7 @@ Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
 ### Pivot Editor
 *Tags: tools-sdks*
 
-**Pivot Editor** is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using intuitive handle-based controls.
+**Pivot Editor** is a Unity Editor extension published on the Unity Asset Store that allows developers to visually edit mesh pivot points directly in the editor using handle-based controls.
 
 Key contributions:
 
@@ -391,7 +391,7 @@ Available on the Unity Asset Store (http://u3d.as/kT1)
 ### Mercenary Rush
 *Tags: games*
 
-**Mercenary Rush** is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project was a deep dive into real-time networking, Unity's Mecanim animation system, and custom editor tooling.
+**Mercenary Rush** is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project pushed me hard on real-time networking, Unity's Mecanim animation system, and custom editor tooling.
 
 Key contributions:
 
