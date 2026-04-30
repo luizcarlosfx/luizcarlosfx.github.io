@@ -453,6 +453,40 @@ export const allProjects = [
     </div>
     `, "#757575", "personal", ["tools-sdks"]),
 
+    new ProjectData("purge-all-heroes", "Purge All Heroes", "img/projects/purge-all-heroes.png",
+    `
+    <div class="paragraph">
+        <strong>Purge All Heroes</strong> is a tactical turn-based RPG with grid-based combat, built in <strong>Unreal Engine</strong> on the Angelscript branch. I joined an online community-collaborative team mid-development and rebuilt the combat system from scratch.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/TG9raAACyjU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        The team had a Blueprint-only combat prototype that wasn't holding up. I moved the project to <strong>Hazelight's Unreal-Angelscript branch</strong> and rebuilt the combat system from scratch on top of Unreal's <strong>Gameplay Ability System (GAS)</strong>.
+    </div>
+    <div class="paragraph">
+        The technically interesting piece: GAS is built around time-based gameplay effects (durations in seconds, periodic ticks at fixed intervals). For a turn-based game, that whole model needs to translate to discrete turn ticks, with every effect duration, periodic application, and stacking rule re-expressed in turn counts instead of timers.
+    </div>
+    <div class="paragraph">
+        A second core decision was the architecture for designer extensibility. Most game logic fires <strong>events</strong> at the meaningful trigger points (ability cast, effect applied, turn started, hit landed, and so on), and the designer hooks into those events from Blueprint. The Angelscript core stays clean; the design side gets full extensibility without going through engineering for every tweak.
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Rebuilt the combat system from scratch in Angelscript on top of Unreal's Gameplay Ability System (GAS)</li>
+            <li><strong>Adapted GAS for turn-based gameplay</strong>: effect durations, periodic ticks, and stacks driven by turn counts instead of seconds</li>
+            <li>Grid-based movement for player and enemies</li>
+            <li>Enemy AI built on Unreal's <strong>Behavior Tree</strong>, deciding movement, targeting, and triggering of complex abilities each turn</li>
+            <li><strong>Event-driven architecture</strong>: trigger points exposed throughout the combat flow so the designer can hook custom logic in Blueprint without touching the Angelscript core</li>
+            <li>Designer-friendly Blueprint Interfaces over the Angelscript core</li>
+            <li>Mentored the game designer on GAS during development</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        The project is currently on hold; revisiting it in the future is on the roadmap.
+    </div>
+    `, "#6A1B9A", "personal", ["games"]),
+
     new ProjectData("mercenary-rush", "Mercenary Rush", "img/projects/mercenary-rush.png",
     `
     <div class="paragraph">
@@ -503,6 +537,7 @@ export const tabOrders: Record<string, string[]> = {
         "vr-basketball",
         "truco-animado",
         "rick-dangerous",
+        "purge-all-heroes",
         "fox-trot",
         "hyundai-vr",
         "vr-racing",
@@ -573,6 +608,7 @@ export const allViewGroups: { title: string; projectIds: string[] }[] = [
         title: "Personal",
         projectIds: [
             "pivot-editor",
+            "purge-all-heroes",
             "mercenary-rush",
             "dk-clone",
         ],
