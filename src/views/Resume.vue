@@ -90,7 +90,7 @@
         </div>
       </div>
 
-      <h2>Key Projects</h2>
+      <h2>Selected Projects</h2>
 
       <div>
         <ul>
@@ -101,7 +101,7 @@
         </ul>
       </div>
 
-      <h2>Key Games</h2>
+      <h2>Selected Games</h2>
 
       <div>
         <ul>
