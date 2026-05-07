@@ -118,12 +118,15 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 - **Gameplay Programming**: Player interaction systems (VR + desktop), character & vehicle controllers, physics-driven mechanics, scoring & objective systems
 - **Real-Time Multiplayer**: FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)
 - **Engine & Tools**: Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders
+- **Architecture & DI**: Dependency Injection (VContainer, Zenject), modular component patterns
 - **Performance**: Stereo VR (Quest, 72–90 Hz), high-end mobile profiling (Frame Debugger, RenderDoc, OVR Metrics), draw-call & GPU optimization
 - **Engines**: Unity (primary), Unreal Engine (C++/Blueprint), PlayCanvas
 - **Programming**: C#, C++, TypeScript, JavaScript, Java
 - **Computer Vision**: Markerless 6DOF tracking (silhouette, edge, depth), GPU-accelerated CV pipelines, native C++ runtime
 - **Platforms**: Meta Quest, iOS, Android, PC, WebGL, HoloLens
-- **Backend**: ASP.NET Core, real-time client-server communication, LMS integration
+- **Reality**: VR, AR, MR, XR, Spatial Computing
+- **Backend**: ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration
+- **Physics & Animation**: Obi Physics (rope, cable, soft-body simulation), state machines, IK, procedural animation blending, hand-tracked rigs
 
 ### Game Development
 

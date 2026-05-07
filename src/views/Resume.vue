@@ -57,6 +57,10 @@
           <div>Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders</div>
         </div>
         <div class="skill-category">
+          <h3>Architecture &amp; DI</h3>
+          <div>Dependency Injection (VContainer, Zenject), modular component patterns</div>
+        </div>
+        <div class="skill-category">
           <h3>Performance</h3>
           <div>Stereo VR (Quest, 72&ndash;90 Hz), high-end mobile profiling (Frame Debugger, RenderDoc, OVR Metrics), draw-call &amp; GPU optimization</div>
         </div>
@@ -77,12 +81,16 @@
           <div>Meta Quest, iOS, Android, PC, WebGL, HoloLens</div>
         </div>
         <div class="skill-category">
-          <h3>Backend</h3>
-          <div>ASP.NET Core, real-time client-server communication, LMS integration</div>
+          <h3>Reality</h3>
+          <div>VR, AR, MR, XR, Spatial Computing</div>
         </div>
         <div class="skill-category">
-          <h3>Animation Systems</h3>
-          <div>State machines, IK, procedural animation blending, hand-tracked rigs</div>
+          <h3>Backend</h3>
+          <div>ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration</div>
+        </div>
+        <div class="skill-category">
+          <h3>Physics &amp; Animation</h3>
+          <div>Obi Physics (rope, cable, soft-body simulation), state machines, IK, procedural animation blending, hand-tracked rigs</div>
         </div>
         <div class="skill-category">
           <h3>Unreal Frameworks</h3>
