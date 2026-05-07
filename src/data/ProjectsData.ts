@@ -21,7 +21,7 @@ export const allProjects = [
         <ul>
             <li>Led the architecture from concept to production</li>
             <li>The web target is a hand-built <strong>PlayCanvas/TypeScript</strong> port of the Unity client. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed; the mirroring was the slow part</li>
-            <li>Real-time multiplayer, originally on Photon PUN, later migrated to a custom Fish-Net layer with <strong>Roslyn source generators and Mono.Cecil IL post-processing</strong> that preserves SyncVar/RPC/ownership semantics (shared with Virtua)</li>
+            <li>Real-time multiplayer, originally on Photon PUN, later migrated to a custom FishNet layer with <strong>Roslyn source generators and Mono.Cecil IL post-processing</strong> that preserves SyncVar/RPC/ownership semantics (shared with Virtua)</li>
             <li>Performance optimization for Quest (stereo, 72&ndash;90 Hz) and high-end mobile (iOS, Android)</li>
             <li>Native CAD-to-runtime model conversion pipeline (CAD and polygon formats)</li>
             <li>Backend services in ASP.NET Core</li>
@@ -84,7 +84,7 @@ export const allProjects = [
         Above the interactions, there's the <strong>objective system</strong>, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
     </div>
     <div class="paragraph">
-        In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I <strong>migrated the entire networking layer from Photon to Fish-Net</strong>. To minimize risk in a large production codebase, I built a <strong>compatibility layer on top of Fish-Net</strong> that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required <strong>Roslyn source generators</strong> for RPC method scaffolding and <strong>IL post-processing</strong> (Mono.Cecil) to rewrite RPC call sites at compile time.
+        In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I <strong>migrated the entire networking layer from Photon to FishNet</strong>. To minimize risk in a large production codebase, I built a <strong>compatibility layer on top of FishNet</strong> that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required <strong>Roslyn source generators</strong> for RPC method scaffolding and <strong>IL post-processing</strong> (Mono.Cecil) to rewrite RPC call sites at compile time.
     </div>
     <div class="paragraph">
         Key contributions:
@@ -94,7 +94,7 @@ export const allProjects = [
             <li>Step-by-step objective/procedure system for non-engineer authoring</li>
             <li>Configurable scoring evaluator</li>
             <li>Runtime content loading via <strong>Asset Bundles</strong></li>
-            <li>Photon to Fish-Net networking migration with a custom RPC-weaving compat layer (Roslyn codegen + Mono.Cecil IL post-processing)</li>
+            <li>Photon to FishNet networking migration with a custom RPC-weaving compat layer (Roslyn codegen + Mono.Cecil IL post-processing)</li>
             <li>LMS integration for trainee progress and certification</li>
         </ul>
     </div>

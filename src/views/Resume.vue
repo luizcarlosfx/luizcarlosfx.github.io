@@ -5,7 +5,7 @@
     <div class="paragraph">
       Senior Unity engineer, 10+ years shipping games and simulations. Unity day-to-day, with Unreal and C++ where they fit. Strongest in gameplay, real-time multiplayer, and editor tooling.
       <br />
-      <br />Founder and CTO of FormulaXR since 2015. Built the studio from zero, leading engineering teams of up to 11 across multiple concurrent products. Production titles live on the <strong>Meta Quest Store, App Store, and Google Play</strong>, used across five countries by Embraer, Nestl&eacute;, Becton Dickinson, Ball Corporation, and Aegea. One Unity codebase serving Quest, iOS, Android, PC, and the web.
+      <br />Founded FormulaXR in 2015. Built the studio from zero, leading engineering teams of up to 11 across multiple concurrent products. Production titles live on the <strong>Meta Quest Store, App Store, and Google Play</strong>, used across five countries by Embraer, Nestl&eacute;, Becton Dickinson, Ball Corporation, and Aegea. One Unity codebase serving Quest, iOS, Android, PC, and the web.
       <br />
       <br />Most of the work is in the interaction layer: hand-tracked grabs that blend into procedural animation, physics-driven cables and tools, mission and scoring systems, plus the netcode that ties multiplayer sessions together. <a href="https://xrtracker.net" target="_blank">XRTracker</a>, a Unity SDK for markerless object tracking, came out of that.
 
@@ -23,19 +23,19 @@
     <div class="full-content">
       <h2>Experience</h2>
 
-      <h3>Founder &amp; CTO — FormulaXR</h3>
+      <h3>Senior Unity Engineer / Tech Lead — FormulaXR</h3>
       <h4>2015 – Present</h4>
 
       <div>
         <ul>
-          <li>Founded and led the company as CTO. Studio scaled to up to 11 people at peak across engineering, design, and operations, running multiple concurrent products and client programs. Own technical direction, engineering hiring, and client-facing scoping and delivery</li>
-          <li>Architected XRProj, a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, and the web. On the Meta Quest Store, App Store, and Google Play; in production since 2019 across enterprise clients including Embraer, Nestl&eacute;, Ball Corporation, Aegea, and Becton Dickinson</li>
+          <li>Founded and led the company. Studio scaled to 11 people across engineering, design, and operations, running multiple concurrent products and client programs. Drove technical direction, hiring, client-facing scoping and delivery</li>
+          <li>Architected XRProj, a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, and the web. Cut client training time 40% and inspection time 50%. Used in production since 2019 across enterprise clients including Embraer, Nestl&eacute;, Ball Corporation, and Aegea. Distributed on the Meta Quest Store, App Store, and Google Play</li>
           <li>The web target is a hand-built <strong>PlayCanvas/TypeScript</strong> port of the Unity client. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed, and the mirroring was the slow part</li>
-          <li>Networking compatibility layer over Fish-Net using <strong>Roslyn source generators and Mono.Cecil IL post-processing</strong> to weave RPC call sites at compile time. Migrated a production multiplayer codebase off Photon in under 2 months, with local LAN mode supporting 20+ concurrent players for offline industry events alongside cloud-relayed remote sessions</li>
-          <li>Gameplay systems and scoring evaluators across VR training titles (medical, surgical, industrial), including <strong>Virtua</strong> for Becton Dickinson on the Meta Quest Store, in use since 2021 across Brazil, Mexico, Colombia, Argentina, and Chile</li>
+          <li>Built a networking compatibility layer from Photon to FishNet using <strong>Roslyn source generators and Mono.Cecil IL post-processing</strong> to weave RPC call sites at compile time. Migrated a production multiplayer codebase off Photon in under 2 months, with local LAN mode supporting 20+ concurrent players for offline industry events alongside cloud-relayed remote sessions</li>
+          <li>Built gameplay systems and scoring evaluators across VR training titles (medical, surgical, industrial), including <strong>Virtua</strong> for Becton Dickinson on the Meta Quest Store, in use since 2021 across Brazil, Mexico, Colombia, Argentina, and Chile</li>
           <li>Built and shipped XRTracker, a commercial Unity SDK for markerless 6DOF tracking. <strong>Native C++ CV core</strong>, GPU-accelerated rendering, in-editor tracking-model pipeline (FBX, OBJ, glTF)</li>
-          <li>Shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a Blazor WebAssembly + .NET Core frontend and a WebGL communication bridge that reports trainee progress and scoring back in real time</li>
-          <li>Performance optimization for Quest and high-end mobile. Held target frame rates (72&ndash;90 Hz) across production titles via stereo rendering, GPU instancing, draw-call discipline, and custom shaders</li>
+          <li>Built a shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a Blazor WebAssembly + .NET Core frontend and a WebGL communication bridge that reports trainee progress and scoring back in real time</li>
+          <li>Optimized performance for Quest and high-end mobile. Held target frame rates (72&ndash;90 Hz) across production titles via stereo rendering, GPU instancing, draw-call discipline, and custom shaders</li>
         </ul>
       </div>
 
@@ -112,9 +112,9 @@
 
       <h2>Education</h2>
 
-      <h3>B.Sc. Computer Science — IBTA</h3>
+      <h3>Bachelor's degree, Computer Science</h3>
       <h4>2011 – 2015</h4>
-      <div>Instituto Brasileiro de Tecnologia Avan&ccedil;ada</div>
+      <div>Instituto Brasileiro de Tecnologia Avan&ccedil;ada (IBTA)</div>
 
       <h2>Languages</h2>
 

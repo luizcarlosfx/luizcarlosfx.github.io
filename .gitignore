@@ -3,6 +3,10 @@ node_modules
 /dist
 .claude
 
+# Personal notes (not for public repo)
+discord-jobs.txt
+job-leads.md
+
 
 # local env files
 .env.local
