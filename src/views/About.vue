@@ -11,11 +11,12 @@
 
       <div style="margin-top: 20px;">Explore my <router-link class="highlight-link" to="/projects">PROJECTS</router-link>, or check out my <router-link class="highlight-link" to="/resume">RESUME</router-link> for the full picture.</div>
 
-      <div style="margin-top: 40px;"><strong>Available for remote work.</strong> Reach me at <a class="highlight-link" href="mailto:luizcarlos.sfx@gmail.com">luizcarlos.sfx@gmail.com</a> or <router-link class="highlight-link" to="/contact">CONTACT</router-link>.</div>
+      <div style="margin-top: 40px;">Available for <strong>remote work</strong>. Reach me at <a class="highlight-link" href="mailto:luizcarlos.sfx@gmail.com">luizcarlos.sfx@gmail.com</a> or <router-link class="highlight-link" to="/contact">CONTACT</router-link>.</div>
     </div>
 
     <div class="photo">
       <img src="img/avatar.png" alt="Photo of Luiz Carlos" />
+      <div class="location">S&atilde;o Paulo, <strong>Brazil</strong></div>
     </div>
 
     <div style="clear:both"></div>
@@ -44,10 +45,16 @@
 }
 
 .photo img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.location {
+  margin-top: 12px;
+  font-size: 1.1em;
+  opacity: 0.75;
 }
 
 @media only screen and (min-width: 620px){
