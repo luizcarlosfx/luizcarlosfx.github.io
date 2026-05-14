@@ -6,6 +6,8 @@ node_modules
 # Personal notes (not for public repo)
 discord-jobs.txt
 job-leads.md
+/leads/
+/job-search/
 
 
 # local env files
