@@ -130,7 +130,7 @@
       <div>Native</div>
 
       <h3>English</h3>
-      <div>Professional</div>
+      <div>Fluent (C1)</div>
 
     </div>
   </div>

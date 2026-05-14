@@ -151,7 +151,7 @@ Instituto Brasileiro de Tecnologia Avançada
 ### Languages
 
 - Portuguese: Native
-- English: Professional
+- English: Fluent (C1)
 
 ---
 
