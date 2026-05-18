@@ -81,8 +81,8 @@ function renderGroup(projects) {
 
 const output = `# Luiz Carlos da Silva Junior — Portfolio
 
-> Senior Unity Engineer with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Gameplay, real-time multiplayer, and editor tooling, with cross-platform delivery across Quest, iOS, Android, PC, and the web.
-> Founder of FormulaXR. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
+> Senior Unity Engineer with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
+> Founded FormulaXR in 2015. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
@@ -98,18 +98,37 @@ I founded FormulaXR in 2015 and have led it ever since. In a small company that 
 
 ### Experience
 
-#### Senior Unity Engineer / Tech Lead — FormulaXR (2015 – Present)
+#### FormulaXR (2015 – Present)
 
-- Founded and led the company. Studio scaled to 11 people across engineering, design, and operations, running multiple concurrent products and client programs. Drove technical direction, hiring, client-facing scoping and delivery
-- Architected XRProj, a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, and the web. Cut client training time 40% and inspection time 50%. Used in production since 2019 across enterprise clients including Embraer, Nestlé, Ball Corporation, and Aegea. Distributed on the Meta Quest Store, App Store, and Google Play
-- Coded a hand-built PlayCanvas/TypeScript port of the Unity client for the web target. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed, and the mirroring was the slow part
-- Built a networking compatibility layer from Photon to FishNet, using Roslyn source generators and Mono.Cecil IL post-processing to weave RPCs at compile time. Migrated a production multiplayer codebase off Photon while keeping SyncVar/RPC/ownership semantics intact
-- Built gameplay systems and scoring evaluators across VR training titles (medical, surgical, industrial), including Virtua for Becton Dickinson on the Meta Quest Store, in use since 2021 across Brazil, Mexico, Colombia, Argentina, and Chile
-- Built and shipped XRTracker, a commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, GPU-accelerated rendering, in-editor tracking-model pipeline (FBX, OBJ, glTF)
-- Built a shared Unity SDK powering 40+ interactive science mini-games on the FormulaXR education portal, with a Blazor WebAssembly + .NET Core frontend and a WebGL communication bridge that reports trainee progress and scoring back in real time
-- Optimized performance for Quest and high-end mobile (stereo rendering, 72–90 Hz, draw-call discipline, GPU instancing, custom shaders)
-- Asset Bundles for runtime content loading
-- Led cross-functional teams across full project lifecycles, from client discovery and technical scoping through architecture, development, and delivery
+##### Senior Unity Engineer & Tech Lead (2020 – Present)
+
+- Evolved XRProj from a desktop design-review tool into a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, WebGL, and HoloLens. Distributed on the Meta Quest Store, App Store, and Google Play.
+- Coded a PlayCanvas / TypeScript port of the Unity client for the web target with a custom serialization layer mirroring the Unity runtime. Component-by-component, written before LLMs existed; the mirroring was the slow part.
+- Built a networking compatibility layer from Photon to FishNet using Roslyn source generators and Mono.Cecil IL post-processing to weave RPC call sites at compile time. Production migration in under 2 months, local LAN supporting 20+ concurrent players.
+- Engineered the Virtua interaction layer (gesture grabs, physics-driven cables and tools) plus a graph-based authoring tool letting designers build training scenarios without code, with LMS integration. Held target 72–90 Hz on Quest via stereo rendering, GPU instancing, draw-call discipline, and custom shaders.
+- Shipped a cross-platform C++ computer vision core with GPU-accelerated pipelines for real-time 6DOF tracking.
+- Built the FormulaXR Education stack: Unity-based authoring SDK + Blazor WebAssembly / ASP.NET Core, powering browser-based science mini-games.
+- Led engineering teams of up to 11 across the full lifecycle.
+
+##### Unity Developer & Lead (2016 – 2020)
+
+- Engineered the multiplayer Virtual Classroom (2016) for São José dos Campos City Hall: HTC Vive trackers wired to physical movable chairs, custom VR interaction toolkit + VoIP.
+- Led OrtoVR (2017–2018), Unity-based orthopedic VR surgical training, presented at Feira Hospitalar 2018.
+- Built the surgical interaction system for Hospital BP (2019): scalpel cuts, scissors, suturing, forceps + spatula, plus robotic arm I/O.
+- Delivered the .STEP-to-Unity CAD importer through the 2018 Samsung Creative Startups program, later became XRProj's CAD pipeline.
+
+##### Unity Developer (2015 – 2016)
+
+- Co-founded FormulaXR and built the early production pipeline. R&D-heavy stage, small team.
+- Built the Dupont VR experience for the Next Generation Dupont event.
+- Built the early driving-simulator R&D prototype for GE (Logitech G27 wheel-and-pedals hardware integration).
+
+#### Freelance Game Developer (2019 – 2024)
+
+- **Truco Animado** (Unity, 2019): Brought in to add real-time multiplayer to an existing single-player title (1M+ Google Play downloads). Built the full networking, matchmaking, and lobby stack, plus the gameplay refactors needed to support online sessions.
+- **Fox Trot** (Unity, WebGL, 2023): Endless runner. Performance optimization plus core gameplay (obstacles, collectibles, daily rewards). Playable on itch.io.
+- **Rick Dangerous** (Unity, Corgi Engine, 2023): Platformer gameplay programming. Playable on itch.io.
+- **VR Basketball** (Unreal 5, Meta Quest 2, 2024): Built the full VR interaction layer (grab, throw, hand presence, physics-driven ball handling) using C++ for core code + Blueprints for authoring 3 game modes.
 
 Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Photon PUN, Roslyn, Mono.Cecil, ASP.NET Core, Quest, iOS, Android, PC, WebGL
 
@@ -138,10 +157,11 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 
 ### Key Projects
 
-- **XRProj** (xrproj.com): Multi-platform real-time 3D system shipping to Quest (Meta Quest Store), mobile (App Store, Google Play), PC, and web (custom PlayCanvas/TypeScript port). In production use since 2019.
-- **Virtua**: Interactive VR medical simulation shipped to Becton Dickinson on the Meta Quest Store. In use across 5 countries since 2021. Custom Roslyn + Mono.Cecil networking compatibility layer.
-- **XRTracker** (xrtracker.net): Commercial Unity SDK for markerless 6DOF tracking. Native C++ CV core, 4–8 ms/frame on mobile.
-- **VR Basketball**: Unreal Engine 5 / C++ VR title targeting standalone Meta Quest 2.
+- **XRProj** (xrproj.com): Multi-platform XR platform for industrial CAD visualization, collaboration, and content creation. Ships to Quest, iOS, Android, PC, and the web from one Unity codebase. Used for aircraft assembly review, packaging inspection, and infrastructure walkthroughs. Cut client training time from 5h to 3h and inspection time from 2h to 1h.
+- **Virtua**: Interactive VR medical simulation for Becton Dickinson, on the Meta Quest Store and in active use across Brazil, Mexico, Colombia, Argentina, and Chile since 2021. Trains nurses on central venous catheter insertion. Originally a training product, later extended by the client into sales enablement and event activations.
+- **XRTracker** (xrtracker.net): Commercial Unity SDK for markerless 6DOF object tracking. Locks onto real-world objects directly from a 3D mesh using classical computer vision – no markers, image targets, or training required. 4–8 ms/frame on mobile, sub-centimeter precision.
+- **FormulaXR Education Platform** (formulaxr.com): Browser-based learning platform powering 40+ interactive science mini-games. Students drag atoms to build molecules, walk virtual ecosystems for food-chain lessons, explore an interactive periodic table, and balance forces in physics puzzles. Each mini-game is a full title with its own mechanics and scoring.
+- **Virtual Classroom**: Multiplayer VR education for São José dos Campos City Hall (2016). Sessions of up to 11 users (teacher + 10 students) with HTC Vive trackers wired to physical movable chairs. Built before Unity's XR Interaction Toolkit shipped – foundation of my multiplayer stack.
 
 ### Education
 
