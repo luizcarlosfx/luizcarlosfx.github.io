@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "prebuild": "node scripts/generate-llms.js",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "resume": "node resume/build-pdf.js"
   },
   "dependencies": {
     "vue": "^2.6.11",
@@ -20,10 +21,12 @@
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "docx": "^9.7.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.12.2",
     "less-loader": "^7.0.1",
+    "playwright-core": "^1.62.0",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   }

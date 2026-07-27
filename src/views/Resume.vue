@@ -3,9 +3,11 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      Senior Unity engineer, 10+ years shipping interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery.
+      Senior Unity Engineer and systems architect, 10+ years shipping interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery.
       <br />
       <br />Specialty stack: hand-tracked interaction (gesture grabs blended with procedural animation, physics-driven cables and tools), multiplayer netcode (FishNet, Photon, custom <strong>Roslyn source generators + Mono.Cecil IL post-processing</strong>), and one Unity codebase serving Quest, iOS, Android, PC, WebGL, and HoloLens.
+      <br />
+      <br />I build architecture-first and work spec-driven with AI coding agents and custom harnesses. I design the system and review every change myself; the tooling accelerates the build. It's the same discipline I used to port a Unity client to a custom web engine.
       <br />
       <br />Production titles live on the <strong>Meta Quest Store, App Store, and Google Play</strong>, used across five countries by Embraer, Nestl&eacute;, Becton Dickinson, Ball Corporation, and Aegea. Also shipped <a href="https://xrtracker.net" target="_blank">XRTracker</a>, a commercial Unity SDK for markerless 6DOF object tracking &ndash; native C++ computer vision core with GPU-accelerated pipelines.
 
@@ -81,16 +83,24 @@
           <div>Player interaction systems (VR + desktop), character &amp; vehicle controllers, physics-driven mechanics, scoring &amp; objective systems</div>
         </div>
         <div class="skill-category">
+          <h3>Architecture &amp; Systems Design</h3>
+          <div>System design across engine, netcode, backend, and web. Dependency Injection (VContainer, Zenject), event-driven messaging, modular component patterns. Stack-agnostic: the same architecture carried the Unity client to a custom web engine.</div>
+        </div>
+        <div class="skill-category">
+          <h3>AI-Augmented Engineering</h3>
+          <div>Spec-driven development with coding agents (Claude Code) and custom agent harnesses, on automated verification loops (journaled specs, e2e regression gates). Architecture and code review stay human.</div>
+        </div>
+        <div class="skill-category">
+          <h3>.NET Backend</h3>
+          <div>ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration. C# from engine to server.</div>
+        </div>
+        <div class="skill-category">
           <h3>Real-Time Multiplayer</h3>
           <div>FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)</div>
         </div>
         <div class="skill-category">
           <h3>Engine &amp; Tools</h3>
           <div>Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders</div>
-        </div>
-        <div class="skill-category">
-          <h3>Architecture &amp; DI</h3>
-          <div>Dependency Injection (VContainer, Zenject), modular component patterns</div>
         </div>
         <div class="skill-category">
           <h3>Performance</h3>
@@ -115,10 +125,6 @@
         <div class="skill-category">
           <h3>Reality</h3>
           <div>VR, AR, MR, XR, Spatial Computing</div>
-        </div>
-        <div class="skill-category">
-          <h3>Backend</h3>
-          <div>ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration</div>
         </div>
         <div class="skill-category">
           <h3>Physics &amp; Animation</h3>

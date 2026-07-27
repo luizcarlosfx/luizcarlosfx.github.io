@@ -5,7 +5,7 @@ export const allProjects = [
     new ProjectData("xrproj", "XRProj", "img/projects/xrproj.png",
     `
     <div class="paragraph">
-        <strong>XRProj</strong> is a multi-platform real-time 3D platform that ships from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the <strong>Meta Quest Store, Apple App Store, and Google Play</strong>, in production since 2019.
+        <strong>XRProj</strong> is a <strong>codeless authoring platform</strong> for real-time 3D. Engineers import their own models, CAD or not, build animations and step-by-step sequences for quality checklists, training, and design review, then publish from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the <strong>Meta Quest Store, Apple App Store, and Google Play</strong>, in production since 2019.
     </div>
     <div class="paragraph">
         I've been the Lead Developer and Architect from day one, with the project under long-running continuous development. Used in production by <strong>Embraer</strong> (aircraft assembly review on Quest), and by <strong>Nestl&eacute;, Ball Corporation, and Aegea</strong> for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
@@ -23,6 +23,8 @@ export const allProjects = [
             <li>The web target is a hand-built <strong>PlayCanvas/TypeScript</strong> port of the Unity client. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed; the mirroring was the slow part</li>
             <li>Real-time multiplayer, originally on Photon PUN, later migrated to a custom FishNet layer with <strong>Roslyn source generators and Mono.Cecil IL post-processing</strong> that preserves SyncVar/RPC/ownership semantics (shared with Virtua)</li>
             <li>Performance optimization for Quest (stereo, 72&ndash;90 Hz) and high-end mobile (iOS, Android)</li>
+            <li><strong>Codeless authoring</strong>: engineers import their own models (CAD or polygon), then build animations and step-by-step sequences for quality checklists, training, and design review without writing code</li>
+            <li>One authored project publishes to Android, iOS, WebGL, and desktop, with AR (XRTracker integrated) and VR optional per target</li>
             <li>Native CAD-to-runtime model conversion pipeline (CAD and polygon formats)</li>
             <li>Backend services in ASP.NET Core</li>
             <li>Led cross-functional teams across the full lifecycle</li>
@@ -66,7 +68,36 @@ export const allProjects = [
     </div>
     `, "#26A69A", "formulaxr", ["tools-sdks"]),
 
-    new ProjectData("virtua", "Virtua — Interactive Medical Simulation", "img/projects/virtua.png",
+    new ProjectData("threejs-editor", "Three.js Editor - Web 3D Engine", "img/projects/threejs-editor.jpg",
+    `
+    <div class="paragraph">
+        <strong>Three.js Editor</strong> is an internal engine and visual editor I'm building on top of <strong>three.js and React Three Fiber</strong>. It gives FormulaXR a web-native authoring tool with the systems you'd expect from a game engine: a scene graph with full undo/redo, prefabs with variants and overrides, a particle system, a shader graph, an animation timeline, and cameras, UI, and physics. It powers FormulaXR's web products and is not sold or open-sourced.
+    </div>
+    <div class="paragraph">
+        Everything is defined by a versioned <strong>JSON schema</strong>. A scene can be authored visually in the editor or written directly by an AI against that same schema, because the format is identical either way. If something can't be serialized, it doesn't get built.
+    </div>
+    <div class="paragraph">
+        I work <strong>spec-driven</strong>: every feature starts as a versioned schema, a written contract that comes before any implementation. A <strong>harness</strong> of rules, reusable skills, and a feature loop with automated gates sits on top of that. Type checks, regression tests, and a headless browser that drives the editor and screenshots it all run before any change reaches me. The model does the heavy coding within those guidelines, while I write the guidelines and review the architecture. The editor is in production, powering FormulaXR's education simulations.
+    </div>
+    <div class="paragraph center">
+        <iframe class="youtube" src="https://www.youtube.com/embed/1iSKBVyhH2s" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph">
+        Key features:
+        <ul>
+            <li>Scene graph with full undo/redo</li>
+            <li>Prefabs with variants and overrides</li>
+            <li>Particle system powered by <strong>three.quarks</strong></li>
+            <li>Node-based shader graph</li>
+            <li>Animation timeline and sequencing</li>
+            <li>Cameras, UI, and a physics layer</li>
+            <li>Single <strong>JSON schema</strong>: the same format for visual editing and AI authoring</li>
+            <li>Built spec-driven, with an automated harness (type checks, regression tests, headless-browser screenshots) that verifies the work before I review it</li>
+        </ul>
+    </div>
+    `, "#3949AB", "formulaxr", ["tools-sdks"]),
+
+    new ProjectData("virtua", "Virtua - Interactive Medical Simulation", "img/projects/virtua.png",
     `
     <div class="paragraph">
         <strong>Virtua</strong> is an interactive VR medical simulation developed for <strong>Becton Dickinson (BD)</strong>. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. <strong>Published on the Meta Quest Store</strong>, in production since 2021 across <strong>Brazil, Mexico, Colombia, Argentina, and Chile</strong>. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years.
@@ -100,7 +131,7 @@ export const allProjects = [
     </div>
     `, "#FB8C00", "formulaxr", ["serious-games"]),
 
-    new ProjectData("edu-portal", "FormulaXR — Educational Portal", "img/projects/edu-portal.png", `
+    new ProjectData("edu-portal", "FormulaXR - Educational Portal", "img/projects/edu-portal.png", `
     <div class="paragraph">
         A web platform hosting <strong>40+ interactive science mini-games</strong> built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
     </div>
@@ -133,7 +164,7 @@ export const allProjects = [
     </div>
     `, "#29B6F6", "formulaxr", ["games", "serious-games"]),
 
-    new ProjectData("ortovr", "OrtoVR — Surgical Training", "img/projects/ortovr.png",
+    new ProjectData("ortovr", "OrtoVR - Surgical Training", "img/projects/ortovr.png",
     `
     <div class="paragraph">
         <strong>OrtoVR</strong> is a surgical VR training title built for <strong>Ortos&iacute;ntese</strong>, a Brazilian orthopedic company. Surgeons put on a headset and practice placing implants and handling surgical instruments in VR before entering the operating room. Featured as a key demonstration at a major healthcare fair in 2018.
@@ -152,7 +183,7 @@ export const allProjects = [
     </div>
     `, "#EC407A", "formulaxr", ["serious-games"]),
 
-    new ProjectData("vr-surgery", "VR Surgery — Hospital BP", "img/projects/vr-surgery.png",
+    new ProjectData("vr-surgery", "VR Surgery - Hospital BP", "img/projects/vr-surgery.png",
     `
     <div class="paragraph">
         A <strong>proof-of-concept</strong> for <strong>Hospital Benefic&ecirc;ncia Portuguesa de S&atilde;o Paulo (BP)</strong>, among the world's best hospitals for seven consecutive years. The surgeon wears a VR headset and drives a real robotic arm through simulated procedures. Hand movements in VR, real arm in the room, in sync.
@@ -237,7 +268,7 @@ export const allProjects = [
     </div>
     `, "#42A5F5", "formulaxr", ["serious-games"]),
 
-    new ProjectData("hyundai-vr", "Hyundai — VR Archery", "img/projects/hyundai-vr.png", `
+    new ProjectData("hyundai-vr", "Hyundai - VR Archery", "img/projects/hyundai-vr.png", `
     <div class="paragraph">
         A <strong>VR archery game</strong> developed for <strong>Hyundai</strong> as a brand activation at the 2017 Auto Show (<em>Feira do Autom&oacute;vel</em>). Visitors at the Hyundai booth put on a headset, grabbed a controller like a bow, and competed in an archery challenge.
     </div>
@@ -287,7 +318,7 @@ export const allProjects = [
     </div>
     `, "#7CB342", "formulaxr", ["games"]),
 
-    new ProjectData("wind-tunnel", "Wind Tunnel — Samsung Creative Startups", "img/projects/wind-tunnel.jpg", `
+    new ProjectData("wind-tunnel", "Wind Tunnel - Samsung Creative Startups", "img/projects/wind-tunnel.jpg", `
     <div class="paragraph">
         Multi-user wind tunnel simulation developed during FormulaXR's participation in the <strong><a href="https://news.samsung.com/br/samsung-creative-startups-divulga-12-startups-selecionadas-para-a-4a-rodada-do-programa-de-aceleracao" target="_blank">Samsung Creative Startups</a></strong> investment program (2018). Fluid dynamics created in <strong>Maya</strong>, visualized as a <strong>multi-user experience in Unity</strong>. I developed the <strong>Unity visualization and networking</strong>.
     </div>
@@ -296,7 +327,7 @@ export const allProjects = [
     </div>
     `, "#7986CB", "formulaxr", ["serious-games"]),
 
-    new ProjectData("dupont-vr", "DuPont — VR Product Tour", "img/projects/dupont-vr.png", `
+    new ProjectData("dupont-vr", "DuPont - VR Product Tour", "img/projects/dupont-vr.png", `
     <div class="paragraph">
         VR city tour shown at <strong>DuPont</strong>'s internal event <strong>"Next Generation DuPont"</strong> (3 days, <strong>800+ attendees</strong>). Users explored a virtual city highlighting DuPont products in everyday environments. Built on the <strong>Oculus DK2</strong>; I did <strong>full development</strong> of the VR experience.
     </div>
@@ -310,7 +341,7 @@ export const allProjects = [
     </div>
     `, "#E57373", "formulaxr", ["event-activations"]),
 
-    new ProjectData("ortosintese-fh", "Ortosíntese — Feira Hospitalar 2019", "img/projects/ortosintese-fh.jpg", `
+    new ProjectData("ortosintese-fh", "Ortosíntese - Feira Hospitalar 2019", "img/projects/ortosintese-fh.jpg", `
     <div class="paragraph">
         <strong>Unreal Engine</strong> VR product showcase for <strong><a href="https://ortosintese.com.br/" target="_blank">Ortos&iacute;ntese</a></strong>, presented at <strong>Feira Hospitalar 2019</strong> (largest healthcare trade fair in Latin America). I developed the <strong>VR navigation and basic interactivity</strong> for exploring their orthopedic equipment catalog.
     </div>
@@ -319,7 +350,7 @@ export const allProjects = [
     </div>
     `, "#EC407A", "formulaxr", ["event-activations"]),
 
-    new ProjectData("climatempo-vr", "Climatempo — VR Experience", "img/projects/climatempo-vr.png", `
+    new ProjectData("climatempo-vr", "Climatempo - VR Experience", "img/projects/climatempo-vr.png", `
     <div class="paragraph">
         VR experience presented at the <strong>RM Vale 2016</strong> event for <strong><a href="https://www.climatempo.com.br/" target="_blank">Climatempo</a></strong> and <strong>Kersys</strong>. I did <strong>full development</strong> of the application. Interactive scenes let users explore weather and environmental data in VR.
     </div>
@@ -328,7 +359,7 @@ export const allProjects = [
     </div>
     `, "#FF8F00", "formulaxr", ["event-activations"]),
 
-    new ProjectData("casa-fitness", "Casa do Fitness — VR Showroom", "img/projects/casa-fitness.jpg", `
+    new ProjectData("casa-fitness", "Casa do Fitness - VR Showroom", "img/projects/casa-fitness.jpg", `
     <div class="paragraph">
         <strong>Unreal Engine</strong> VR showroom for <strong><a href="https://www.casadofitness.com.br/" target="_blank">Casa do Fitness</a></strong>, a Brazilian fitness equipment retailer. I developed the <strong>VR navigation and interaction system</strong> within the environment built by the art team.
     </div>
@@ -360,7 +391,7 @@ export const allProjects = [
     </div>
     `, "#FF7043", "freelance", ["games"]),
 
-    new ProjectData("truco-animado", "Truco Animado — Multiplayer Rewrite", "img/projects/truco-animado.png",
+    new ProjectData("truco-animado", "Truco Animado - Multiplayer Rewrite", "img/projects/truco-animado.png",
     `
     <div class="paragraph">
         <strong>Truco Animado</strong> is an established mobile card game on Google Play (Truco is one of Brazil's most popular card games). I was brought in as a freelancer to <strong>architect and ship the real-time multiplayer rewrite</strong> on top of an existing single-player codebase that already had a large player base.
@@ -383,7 +414,7 @@ export const allProjects = [
     </div>
     `, "#66BB6A", "freelance", ["games"]),
 
-    new ProjectData("rick-dangerous", "Rick Dangerous — Remake", "img/projects/rick-dangerous.png",
+    new ProjectData("rick-dangerous", "Rick Dangerous - Remake", "img/projects/rick-dangerous.png",
     `
     <div class="paragraph">
         A remake of the classic arcade game <strong>Rick Dangerous</strong>, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
@@ -508,7 +539,7 @@ export const allProjects = [
     </div>
     `, "#AB47BC", "personal", ["games"]),
 
-    new ProjectData("dk-clone", "Donkey Kong 2 — Clone", "img/projects/dk-clone.png",
+    new ProjectData("dk-clone", "Donkey Kong 2 - Clone", "img/projects/dk-clone.png",
     `
     <div class="paragraph">
         A love letter to my childhood favorite, a faithful recreation of <strong>Donkey Kong</strong> built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.
@@ -567,6 +598,7 @@ export const tabOrders: Record<string, string[]> = {
     "tools-sdks": [
         "xrproj",
         "xrtracker",
+        "threejs-editor",
         "pivot-editor",
     ],
 };
@@ -578,6 +610,7 @@ export const allViewGroups: { title: string; projectIds: string[] }[] = [
         projectIds: [
             "xrproj",
             "xrtracker",
+            "threejs-editor",
             "virtua",
             "edu-portal",
             "ortovr",

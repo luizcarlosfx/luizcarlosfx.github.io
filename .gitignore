@@ -8,6 +8,14 @@ discord-jobs.txt
 job-leads.md
 /leads/
 /job-search/
+/notes/
+/memory/
+/content-plan/
+/resume/
+MEMORY.md
+
+# Scratch / throwaway artifacts (browser snapshots, dumps, temp files)
+/Temp/
 
 
 # local env files

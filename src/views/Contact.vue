@@ -3,7 +3,7 @@
 
     <h1>Get in Touch</h1>
 
-    <div style="margin-bottom:40px;">Available for remote XR engineering and game development roles. Whether it's industrial simulations, medical training, or shipping a game — I'm interested. Feel free to reach out.</div>
+    <div style="margin-bottom:40px;">Available for remote XR engineering and game development roles. Whether it's industrial simulations, medical training, or shipping a game, I'm interested. Feel free to reach out.</div>
 
     <ul>
       <li>

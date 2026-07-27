@@ -1,7 +1,8 @@
-# Luiz Carlos da Silva Junior — Portfolio
+# Luiz Carlos da Silva Junior - Portfolio
 
-> Senior Unity Engineer with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
+> Senior Unity Engineer and systems architect with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
 > Founded FormulaXR in 2015. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
+> He builds architecture-first and works spec-driven with AI coding agents and custom harnesses. He designs the system and reviews every change himself; the tooling accelerates the build.
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
@@ -9,7 +10,7 @@ LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 GitHub: https://github.com/luizcarlosfx
 Discord: luizcarlosfx
 
-I founded FormulaXR in 2015 and have led it ever since. In a small company that means going well beyond the technical work: lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. Available for remote work.
+I founded FormulaXR in 2015 and have led it ever since. In a small company that means going well beyond the technical work: lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. What ties it together is architecture: I design how the pieces fit before they get built. It's also what makes me fast with AI. I work spec-driven with coding agents and custom harnesses, but the system design is mine and I review every change against it. The tooling accelerates the build; the engineering judgment stays with me. Available for remote work.
 
 ---
 
@@ -54,16 +55,17 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 ### Technical Skills
 
 - **Gameplay Programming**: Player interaction systems (VR + desktop), character & vehicle controllers, physics-driven mechanics, scoring & objective systems
+- **Architecture & Systems Design**: System design across engine, netcode, backend, and web. Dependency Injection (VContainer, Zenject), event-driven messaging, modular component patterns. Stack-agnostic: the same architecture carried the Unity client to a custom web engine.
+- **AI-Augmented Engineering**: Spec-driven development with coding agents (Claude Code) and custom agent harnesses, on automated verification loops (journaled specs, e2e regression gates). Architecture and code review stay human.
+- **.NET Backend**: ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration. C# from engine to server.
 - **Real-Time Multiplayer**: FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)
 - **Engine & Tools**: Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders
-- **Architecture & DI**: Dependency Injection (VContainer, Zenject), modular component patterns
 - **Performance**: Stereo VR (Quest, 72–90 Hz), high-end mobile profiling (Frame Debugger, RenderDoc, OVR Metrics), draw-call & GPU optimization
 - **Engines**: Unity (primary), Unreal Engine (C++/Blueprint), PlayCanvas
 - **Programming**: C#, C++, TypeScript, JavaScript, Java
 - **Computer Vision**: Markerless 6DOF tracking (silhouette, edge, depth), GPU-accelerated CV pipelines, native C++ runtime
 - **Platforms**: Meta Quest, iOS, Android, PC, WebGL, HoloLens
 - **Reality**: VR, AR, MR, XR, Spatial Computing
-- **Backend**: ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration
 - **Physics & Animation**: Obi Physics (rope, cable, soft-body simulation), state machines, IK, procedural animation blending, hand-tracked rigs
 
 ### Game Development
@@ -84,7 +86,7 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 
 ### Education
 
-**B.Sc. Computer Science — IBTA** (2011 – 2015)
+**B.Sc. Computer Science - IBTA** (2011 – 2015)
 Instituto Brasileiro de Tecnologia Avançada
 
 ### Languages
@@ -103,7 +105,7 @@ Projects are tagged so they can appear under multiple categories on the live sit
 ### XRProj
 *Tags: tools-sdks*
 
-**XRProj** is a multi-platform real-time 3D platform that ships from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the **Meta Quest Store, Apple App Store, and Google Play**, in production since 2019.
+**XRProj** is a **codeless authoring platform** for real-time 3D. Engineers import their own models, CAD or not, build animations and step-by-step sequences for quality checklists, training, and design review, then publish from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the **Meta Quest Store, Apple App Store, and Google Play**, in production since 2019.
 
 I've been the Lead Developer and Architect from day one, with the project under long-running continuous development. Used in production by **Embraer** (aircraft assembly review on Quest), and by **Nestlé, Ball Corporation, and Aegea** for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
 
@@ -113,6 +115,8 @@ Key contributions:
 - The web target is a hand-built **PlayCanvas/TypeScript** port of the Unity client. Component-by-component, with a custom serialization layer that mirrors the Unity runtime. Written before LLMs existed; the mirroring was the slow part
 - Real-time multiplayer, originally on Photon PUN, later migrated to a custom FishNet layer with **Roslyn source generators and Mono.Cecil IL post-processing** that preserves SyncVar/RPC/ownership semantics (shared with Virtua)
 - Performance optimization for Quest (stereo, 72–90 Hz) and high-end mobile (iOS, Android)
+- **Codeless authoring**: engineers import their own models (CAD or polygon), then build animations and step-by-step sequences for quality checklists, training, and design review without writing code
+- One authored project publishes to Android, iOS, WebGL, and desktop, with AR (XRTracker integrated) and VR optional per target
 - Native CAD-to-runtime model conversion pipeline (CAD and polygon formats)
 - Backend services in ASP.NET Core
 - Led cross-functional teams across the full lifecycle
@@ -140,7 +144,29 @@ Visit xrtracker.net (https://xrtracker.net) or read the documentation (https://d
 
 ---
 
-### Virtua — Interactive Medical Simulation
+### Three.js Editor - Web 3D Engine
+*Tags: tools-sdks*
+
+**Three.js Editor** is an internal engine and visual editor I'm building on top of **three.js and React Three Fiber**. It gives FormulaXR a web-native authoring tool with the systems you'd expect from a game engine: a scene graph with full undo/redo, prefabs with variants and overrides, a particle system, a shader graph, an animation timeline, and cameras, UI, and physics. It powers FormulaXR's web products and is not sold or open-sourced.
+
+Everything is defined by a versioned **JSON schema**. A scene can be authored visually in the editor or written directly by an AI against that same schema, because the format is identical either way. If something can't be serialized, it doesn't get built.
+
+I work **spec-driven**: every feature starts as a versioned schema, a written contract that comes before any implementation. A **harness** of rules, reusable skills, and a feature loop with automated gates sits on top of that. Type checks, regression tests, and a headless browser that drives the editor and screenshots it all run before any change reaches me. The model does the heavy coding within those guidelines, while I write the guidelines and review the architecture. The editor is in production, powering FormulaXR's education simulations.
+
+Key features:
+
+- Scene graph with full undo/redo
+- Prefabs with variants and overrides
+- Particle system powered by **three.quarks**
+- Node-based shader graph
+- Animation timeline and sequencing
+- Cameras, UI, and a physics layer
+- Single **JSON schema**: the same format for visual editing and AI authoring
+- Built spec-driven, with an automated harness (type checks, regression tests, headless-browser screenshots) that verifies the work before I review it
+
+---
+
+### Virtua - Interactive Medical Simulation
 *Tags: serious-games*
 
 **Virtua** is an interactive VR medical simulation developed for **Becton Dickinson (BD)**. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. **Published on the Meta Quest Store**, in production since 2021 across **Brazil, Mexico, Colombia, Argentina, and Chile**. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years.
@@ -165,7 +191,7 @@ Key contributions:
 
 ---
 
-### FormulaXR — Educational Portal
+### FormulaXR - Educational Portal
 *Tags: games, serious-games*
 
 A web platform hosting **40+ interactive science mini-games** built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
@@ -185,7 +211,7 @@ Visit formulaxr.com (https://formulaxr.com)
 
 ---
 
-### OrtoVR — Surgical Training
+### OrtoVR - Surgical Training
 *Tags: serious-games*
 
 **OrtoVR** is a surgical VR training title built for **Ortosíntese**, a Brazilian orthopedic company. Surgeons put on a headset and practice placing implants and handling surgical instruments in VR before entering the operating room. Featured as a key demonstration at a major healthcare fair in 2018.
@@ -199,7 +225,7 @@ Key contributions:
 
 ---
 
-### VR Surgery — Hospital BP
+### VR Surgery - Hospital BP
 *Tags: serious-games*
 
 A **proof-of-concept** for **Hospital Beneficência Portuguesa de São Paulo (BP)**, among the world's best hospitals for seven consecutive years. The surgeon wears a VR headset and drives a real robotic arm through simulated procedures. Hand movements in VR, real arm in the room, in sync.
@@ -258,7 +284,7 @@ Key contributions:
 
 ---
 
-### Hyundai — VR Archery
+### Hyundai - VR Archery
 *Tags: games, event-activations*
 
 A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Visitors at the Hyundai booth put on a headset, grabbed a controller like a bow, and competed in an archery challenge.
@@ -295,35 +321,35 @@ Built for PC and Android, the game features a content management system that let
 
 ---
 
-### Wind Tunnel — Samsung Creative Startups
+### Wind Tunnel - Samsung Creative Startups
 *Tags: serious-games*
 
 Multi-user wind tunnel simulation developed during FormulaXR's participation in the **Samsung Creative Startups (https://news.samsung.com/br/samsung-creative-startups-divulga-12-startups-selecionadas-para-a-4a-rodada-do-programa-de-aceleracao)** investment program (2018). Fluid dynamics created in **Maya**, visualized as a **multi-user experience in Unity**. I developed the **Unity visualization and networking**.
 
 ---
 
-### DuPont — VR Product Tour
+### DuPont - VR Product Tour
 *Tags: event-activations*
 
 VR city tour shown at **DuPont**'s internal event **"Next Generation DuPont"** (3 days, **800+ attendees**). Users explored a virtual city highlighting DuPont products in everyday environments. Built on the **Oculus DK2**; I did **full development** of the VR experience.
 
 ---
 
-### Ortosíntese — Feira Hospitalar 2019
+### Ortosíntese - Feira Hospitalar 2019
 *Tags: event-activations*
 
 **Unreal Engine** VR product showcase for **Ortosíntese (https://ortosintese.com.br/)**, presented at **Feira Hospitalar 2019** (largest healthcare trade fair in Latin America). I developed the **VR navigation and basic interactivity** for exploring their orthopedic equipment catalog.
 
 ---
 
-### Climatempo — VR Experience
+### Climatempo - VR Experience
 *Tags: event-activations*
 
 VR experience presented at the **RM Vale 2016** event for **Climatempo (https://www.climatempo.com.br/)** and **Kersys**. I did **full development** of the application. Interactive scenes let users explore weather and environmental data in VR.
 
 ---
 
-### Casa do Fitness — VR Showroom
+### Casa do Fitness - VR Showroom
 *Tags: event-activations*
 
 **Unreal Engine** VR showroom for **Casa do Fitness (https://www.casadofitness.com.br/)**, a Brazilian fitness equipment retailer. I developed the **VR navigation and interaction system** within the environment built by the art team.
@@ -348,7 +374,7 @@ Key highlights:
 
 ---
 
-### Truco Animado — Multiplayer Rewrite
+### Truco Animado - Multiplayer Rewrite
 *Tags: games*
 
 **Truco Animado** is an established mobile card game on Google Play (Truco is one of Brazil's most popular card games). I was brought in as a freelancer to **architect and ship the real-time multiplayer rewrite** on top of an existing single-player codebase that already had a large player base.
@@ -365,7 +391,7 @@ Available on Google Play (https://play.google.com/store/apps/details?id=br.com.d
 
 ---
 
-### Rick Dangerous — Remake
+### Rick Dangerous - Remake
 *Tags: games*
 
 A remake of the classic arcade game **Rick Dangerous**, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
@@ -450,7 +476,7 @@ Key contributions:
 
 ---
 
-### Donkey Kong 2 — Clone
+### Donkey Kong 2 - Clone
 *Tags: games*
 
 A love letter to my childhood favorite, a faithful recreation of **Donkey Kong** built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.

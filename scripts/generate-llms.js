@@ -32,7 +32,7 @@ function stripHtml(html) {
     .replace(/&ccedil;/g, 'ç')
     .replace(/&ecirc;/g, 'ê')
     .replace(/&ndash;/g, '–')
-    .replace(/&mdash;/g, '—')
+    .replace(/&mdash;/g, '-')
     .replace(/&amp;/g, '&')
     .replace(/&nbsp;/g, ' ')
     .split('\n')
@@ -79,10 +79,11 @@ function renderGroup(projects) {
     .join('\n\n---\n\n');
 }
 
-const output = `# Luiz Carlos da Silva Junior — Portfolio
+const output = `# Luiz Carlos da Silva Junior - Portfolio
 
-> Senior Unity Engineer with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
+> Senior Unity Engineer and systems architect with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
 > Founded FormulaXR in 2015. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
+> He builds architecture-first and works spec-driven with AI coding agents and custom harnesses. He designs the system and reviews every change himself; the tooling accelerates the build.
 
 Website: https://luizcarlosfx.github.io
 Email: luizcarlos.sfx@gmail.com
@@ -90,7 +91,7 @@ LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 GitHub: https://github.com/luizcarlosfx
 Discord: luizcarlosfx
 
-I founded FormulaXR in 2015 and have led it ever since. In a small company that means going well beyond the technical work: lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. Available for remote work.
+I founded FormulaXR in 2015 and have led it ever since. In a small company that means going well beyond the technical work: lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. What ties it together is architecture: I design how the pieces fit before they get built. It's also what makes me fast with AI. I work spec-driven with coding agents and custom harnesses, but the system design is mine and I review every change against it. The tooling accelerates the build; the engineering judgment stays with me. Available for remote work.
 
 ---
 
@@ -135,16 +136,17 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 ### Technical Skills
 
 - **Gameplay Programming**: Player interaction systems (VR + desktop), character & vehicle controllers, physics-driven mechanics, scoring & objective systems
+- **Architecture & Systems Design**: System design across engine, netcode, backend, and web. Dependency Injection (VContainer, Zenject), event-driven messaging, modular component patterns. Stack-agnostic: the same architecture carried the Unity client to a custom web engine.
+- **AI-Augmented Engineering**: Spec-driven development with coding agents (Claude Code) and custom agent harnesses, on automated verification loops (journaled specs, e2e regression gates). Architecture and code review stay human.
+- **.NET Backend**: ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration. C# from engine to server.
 - **Real-Time Multiplayer**: FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)
 - **Engine & Tools**: Editor windows, custom inspectors, source generators, IL post-processing, Asset Bundles for live content, custom shaders
-- **Architecture & DI**: Dependency Injection (VContainer, Zenject), modular component patterns
 - **Performance**: Stereo VR (Quest, 72–90 Hz), high-end mobile profiling (Frame Debugger, RenderDoc, OVR Metrics), draw-call & GPU optimization
 - **Engines**: Unity (primary), Unreal Engine (C++/Blueprint), PlayCanvas
 - **Programming**: C#, C++, TypeScript, JavaScript, Java
 - **Computer Vision**: Markerless 6DOF tracking (silhouette, edge, depth), GPU-accelerated CV pipelines, native C++ runtime
 - **Platforms**: Meta Quest, iOS, Android, PC, WebGL, HoloLens
 - **Reality**: VR, AR, MR, XR, Spatial Computing
-- **Backend**: ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration
 - **Physics & Animation**: Obi Physics (rope, cable, soft-body simulation), state machines, IK, procedural animation blending, hand-tracked rigs
 
 ### Game Development
@@ -165,7 +167,7 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 
 ### Education
 
-**B.Sc. Computer Science — IBTA** (2011 – 2015)
+**B.Sc. Computer Science - IBTA** (2011 – 2015)
 Instituto Brasileiro de Tecnologia Avançada
 
 ### Languages
