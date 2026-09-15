@@ -372,7 +372,7 @@ export const allProjects = [
     new ProjectData("vr-basketball", "VR Basketball", "img/projects/vr-basketball.png",
     `
     <div class="paragraph">
-        <strong>VR Basketball</strong> is a freelance VR title built in <strong>Unreal Engine 5 with C++</strong> for standalone <strong>Meta Quest 2</strong>. You reach out, grab the ball, throw it, and the ball curves and spins realistically. <strong>Everything is in C++, no Blueprints.</strong>
+        <strong>VR Basketball</strong> is a freelance VR title built in <strong>Unreal Engine 5 with C++</strong> for standalone <strong>Meta Quest 2</strong>. You reach out, grab the ball, throw it, and the ball curves and spins realistically. <strong>All the gameplay logic is in C++</strong>, with Blueprint over it for the visual and designer-tunable layers, which is where Blueprint earns its keep.
     </div>
     <div class="paragraph">
         I wrote the VR interaction layer myself in C++: hand presence, grab mechanics, physics-driven ball throwing, scoring loop. Everything runs natively on the Quest 2 with no PC required, on a standalone-mobile frame budget.
@@ -383,7 +383,7 @@ export const allProjects = [
     <div class="paragraph">
         Key highlights:
         <ul>
-            <li>C++ VR interaction layer (grab, throw, hand presence)</li>
+            <li>C++ VR interaction layer (grab, throw, hand presence), with Blueprint over it for the visual and tunable layers</li>
             <li>Physics-driven ball handling with realistic trajectory and spin</li>
             <li>Scoring loop with multiple court positions</li>
             <li>Optimized for standalone Meta Quest 2 (stereo, 72&ndash;90 Hz)</li>
@@ -470,11 +470,17 @@ export const allProjects = [
         <iframe class="youtube" src="https://www.youtube.com/embed/r5iluHpuyZE" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="paragraph">
+        It sold on the Asset Store from <strong>December 2015 to 2026</strong>, reaching <strong>600+ developers</strong> at a <strong>4.8 star rating across 27 reviews</strong>. Sales held steady for eight straight years with no marketing and no feature work, which is the part worth pointing at: a small, tightly scoped tool that kept solving the same real problem while Unity's editor API changed underneath it.
+    </div>
+    <div class="paragraph">
+        Maintaining a public API across a decade of Unity releases is a different discipline from shipping a project. Every breaking change in the editor API landed on people who had already paid, so backwards compatibility and a small surface area mattered far more than features did.
+    </div>
+    <div class="paragraph">
         Key contributions:
         <ul>
             <li>Designed and built the custom Editor Window</li>
             <li>Implemented pivot manipulation logic with visual handles</li>
-            <li>Published and maintained the asset on the Unity Asset Store</li>
+            <li>Published, supported and maintained the asset across <strong>10+ years of Unity versions</strong></li>
         </ul>
     </div>
     <div class="paragraph">

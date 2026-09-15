@@ -81,7 +81,7 @@ function renderGroup(projects) {
 
 const output = `# Luiz Carlos da Silva Junior - Portfolio
 
-> Senior Unity Engineer and systems architect with 10+ years on interactive 3D systems. Unity day-to-day, with Unreal and C++ where they fit. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
+> Senior Unity Engineer and systems architect with 10+ years on interactive 3D systems. Unity and Unreal, C# and C++, with TypeScript on the web. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
 > Founded FormulaXR in 2015. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
 > He builds architecture-first and works spec-driven with AI coding agents and custom harnesses. He designs the system and reviews every change himself; the tooling accelerates the build.
 
@@ -103,10 +103,10 @@ I founded FormulaXR in 2015 and have led it ever since. In a small company that 
 
 ##### Senior Unity Engineer & Tech Lead (2020 – Present)
 
-- Evolved XRProj from a desktop design-review tool into a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, WebGL, and HoloLens. Distributed on the Meta Quest Store, App Store, and Google Play.
+- Evolved XRProj from a desktop design-review tool into a real-time 3D platform shipping from one codebase to Quest, iOS, Android, PC, WebGL, and HoloLens. Distributed on the Meta Quest Store (https://www.meta.com/experiences/xrproj/5572974999477126), the App Store (https://apps.apple.com/us/app/xrproj/id1496967028), and Google Play (https://play.google.com/store/apps/details?id=com.formulaxr.xrproj).
 - Coded a PlayCanvas / TypeScript port of the Unity client for the web target with a custom serialization layer mirroring the Unity runtime. Component-by-component, written before LLMs existed; the mirroring was the slow part.
 - Built a networking compatibility layer from Photon to FishNet using Roslyn source generators and Mono.Cecil IL post-processing to weave RPC call sites at compile time. Production migration in under 2 months, local LAN supporting 20+ concurrent players.
-- Engineered the Virtua interaction layer (gesture grabs, physics-driven cables and tools) plus a graph-based authoring tool letting designers build training scenarios without code, with LMS integration. Held target 72–90 Hz on Quest via stereo rendering, GPU instancing, draw-call discipline, and custom shaders.
+- Engineered the Virtua (https://www.meta.com/experiences/virtua-virtual-reality-experience/5622267097875815) interaction layer (gesture grabs, physics-driven cables and tools) plus a graph-based authoring tool letting designers build training scenarios without code, with LMS integration. Held target 72–90 Hz on Quest via stereo rendering, GPU instancing, draw-call discipline, and custom shaders.
 - Shipped a cross-platform C++ computer vision core with GPU-accelerated pipelines for real-time 6DOF tracking.
 - Built the FormulaXR Education stack: Unity-based authoring SDK + Blazor WebAssembly / ASP.NET Core, powering browser-based science mini-games.
 - Led engineering teams of up to 11 across the full lifecycle.
@@ -126,10 +126,10 @@ I founded FormulaXR in 2015 and have led it ever since. In a small company that 
 
 #### Freelance Game Developer (2019 – 2024)
 
-- **Truco Animado** (Unity, 2019): Brought in to add real-time multiplayer to an existing single-player title (1M+ Google Play downloads). Built the full networking, matchmaking, and lobby stack, plus the gameplay refactors needed to support online sessions.
-- **Fox Trot** (Unity, WebGL, 2023): Endless runner. Performance optimization plus core gameplay (obstacles, collectibles, daily rewards). Playable on itch.io.
-- **Rick Dangerous** (Unity, Corgi Engine, 2023): Platformer gameplay programming. Playable on itch.io.
-- **VR Basketball** (Unreal 5, Meta Quest 2, 2024): Built the full VR interaction layer (grab, throw, hand presence, physics-driven ball handling) using C++ for core code + Blueprints for authoring 3 game modes.
+- **Truco Animado** (Unity, Android, 2019): Architected and shipped the real-time multiplayer rewrite on an established single-player card game. Built the networking layer, matchmaking, and lobby, plus the gameplay refactors reliable online play required. The title has 1M+ downloads and 24.2K ratings on Google Play (https://play.google.com/store/apps/details?id=br.com.delotech.trucoindie) and is still being updated in 2026.
+- **Fox Trot** (Unity, WebGL, 2023): Endless runner shipped to the browser. Optimized the build for WebGL performance and built the core gameplay: obstacles, collectibles, and daily rewards.
+- **Rick Dangerous** (Unity, 2023): Led and mentored a team of junior developers and artists through a full arcade platformer. Built the character system, trap mechanics, and NPC behaviours, and set up reusable prefabs and tilemaps so the level designers could work independently. Gameplay video: https://www.youtube.com/watch?v=MZVmhxrgpsE
+- **VR Basketball** (Unreal 5, standalone Meta Quest 2, 2024): Built the VR interaction layer with hand presence, grab mechanics, and physics-driven throwing with realistic trajectory and spin. All gameplay logic in C++, with Blueprint and UMG over it for the visual and designer-tunable layers. Held 72-90 Hz on standalone. Gameplay video: https://www.youtube.com/watch?v=rLnq_LxKHoE
 
 Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Photon PUN, Roslyn, Mono.Cecil, ASP.NET Core, Quest, iOS, Android, PC, WebGL
 
@@ -137,6 +137,7 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 
 - **Gameplay Programming**: Player interaction systems (VR + desktop), character & vehicle controllers, physics-driven mechanics, scoring & objective systems
 - **Architecture & Systems Design**: System design across engine, netcode, backend, and web. Dependency Injection (VContainer, Zenject), event-driven messaging, modular component patterns. Stack-agnostic: the same architecture carried the Unity client to a custom web engine.
+- **Testing & Release**: 190 NUnit tests across 5 Unity Editor test assemblies with deterministic replay. Unity Cloud Build pipelines publishing to Google Play, the App Store, the Meta Quest Store, and Windows.
 - **AI-Augmented Engineering**: Spec-driven development with coding agents (Claude Code) and custom agent harnesses, on automated verification loops (journaled specs, e2e regression gates). Architecture and code review stay human.
 - **.NET Backend**: ASP.NET Core, Blazor WebAssembly, real-time client-server communication, LMS integration. C# from engine to server.
 - **Real-Time Multiplayer**: FishNet, Photon PUN, custom RPC weaving (Roslyn + Mono.Cecil), state replication, ownership semantics, asymmetric multiplayer (VR + desktop)
