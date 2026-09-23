@@ -35,7 +35,7 @@ export const allProjects = [
             Learn more at <a href="https://www.xrproj.com" target="_blank">xrproj.com</a>
         </div>
     </div>
-    `, "#4DB6AC", "formulaxr", ["tools-sdks"]),
+    `, "#4DB6AC", "formulaxr", ["tools-sdks", "vr"]),
 
     new ProjectData("xrtracker", "XRTracker", "img/projects/xrtracker.png",
     `
@@ -129,7 +129,7 @@ export const allProjects = [
             <li>LMS integration for trainee progress and certification</li>
         </ul>
     </div>
-    `, "#FB8C00", "formulaxr", ["serious-games"]),
+    `, "#FB8C00", "formulaxr", ["serious-games", "vr"]),
 
     new ProjectData("edu-portal", "FormulaXR - Educational Portal", "img/projects/edu-portal.png", `
     <div class="paragraph">
@@ -162,7 +162,7 @@ export const allProjects = [
         <img class="pc-screenshot" src="img/projects/edu-portal-home.png" alt="Portal homepage" />
         <img class="pc-screenshot" src="img/projects/edu-portal-simulation.png" alt="Interactive periodic table simulation" />
     </div>
-    `, "#29B6F6", "formulaxr", ["games", "serious-games"]),
+    `, "#29B6F6", "formulaxr", ["serious-games"]),
 
     new ProjectData("ortovr", "OrtoVR - Surgical Training", "img/projects/ortovr.png",
     `
@@ -181,7 +181,7 @@ export const allProjects = [
             <li>Real-time multiplayer for collaborative training sessions</li>
         </ul>
     </div>
-    `, "#EC407A", "formulaxr", ["serious-games"]),
+    `, "#EC407A", "formulaxr", ["serious-games", "vr"]),
 
     new ProjectData("vr-surgery", "VR Surgery - Hospital BP", "img/projects/vr-surgery.png",
     `
@@ -203,7 +203,7 @@ export const allProjects = [
             <li>Refactored and stabilized the existing codebase</li>
         </ul>
     </div>
-    `, "#5C6BC0", "formulaxr", ["serious-games"]),
+    `, "#5C6BC0", "formulaxr", ["serious-games", "vr"]),
 
     new ProjectData("forklift-vr", "Forklift Safety Training", "img/projects/forklift-vr.png", `
     <div class="paragraph">
@@ -227,7 +227,7 @@ export const allProjects = [
             <li>Performance optimization for standalone Quest (stereo, 72 Hz)</li>
         </ul>
     </div>
-    `, "#EF5350", "formulaxr", ["serious-games"]),
+    `, "#EF5350", "formulaxr", ["serious-games", "vr"]),
 
     new ProjectData("painter-sim", "Industrial Painter Simulator", "img/projects/painter-sim.png", `
     <div class="paragraph">
@@ -245,7 +245,7 @@ export const allProjects = [
             <li>Cross-platform client (VR headset + non-VR desktop) from a single codebase</li>
         </ul>
     </div>
-    `, "#78909C", "formulaxr", ["serious-games"]),
+    `, "#78909C", "formulaxr", ["serious-games", "vr"]),
 
     new ProjectData("vr-classroom", "Virtual Classroom", "img/projects/vr-classroom.png",
     `
@@ -266,7 +266,7 @@ export const allProjects = [
             <li>Performance work for smooth multiplayer sessions</li>
         </ul>
     </div>
-    `, "#42A5F5", "formulaxr", ["serious-games"]),
+    `, "#42A5F5", "formulaxr", ["serious-games", "vr"]),
 
     new ProjectData("hyundai-vr", "Hyundai - VR Archery", "img/projects/hyundai-vr.png", `
     <div class="paragraph">
@@ -283,7 +283,7 @@ export const allProjects = [
             <li>Event-ready experience optimized for booth demonstrations</li>
         </ul>
     </div>
-    `, "#3F51B5", "formulaxr", ["games", "event-activations"]),
+    `, "#3F51B5", "formulaxr", ["games", "event-activations", "vr"]),
 
     new ProjectData("vr-racing", "VR Racing Game", "img/projects/vr-racing.png",
     `
@@ -304,7 +304,7 @@ export const allProjects = [
             <li>Implemented multiplayer racing for competitive on-site play</li>
         </ul>
     </div>
-    `, "#424242", "formulaxr", ["games", "event-activations"]),
+    `, "#424242", "formulaxr", ["games", "event-activations", "vr"]),
 
     new ProjectData("sanja-runner", "Sanja Runner", "img/projects/sanja-runner.png", `
     <div class="paragraph">
@@ -339,7 +339,7 @@ export const allProjects = [
         <img class="pc-screenshot" src="img/projects/dupont-event-2.jpg" alt="Attendees experiencing the VR tour" />
         <img class="pc-screenshot" src="img/projects/dupont-event-3.jpg" alt="Event booth" />
     </div>
-    `, "#E57373", "formulaxr", ["event-activations"]),
+    `, "#E57373", "formulaxr", ["event-activations", "vr"]),
 
     new ProjectData("ortosintese-fh", "Ortosíntese - Feira Hospitalar 2019", "img/projects/ortosintese-fh.jpg", `
     <div class="paragraph">
@@ -348,7 +348,7 @@ export const allProjects = [
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/P80BQk8bIBU" frameborder="0" allowfullscreen></iframe>
     </div>
-    `, "#EC407A", "formulaxr", ["event-activations"]),
+    `, "#EC407A", "formulaxr", ["event-activations", "vr"]),
 
     new ProjectData("climatempo-vr", "Climatempo - VR Experience", "img/projects/climatempo-vr.png", `
     <div class="paragraph">
@@ -357,7 +357,7 @@ export const allProjects = [
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/-JgiY85GKkc" frameborder="0" allowfullscreen></iframe>
     </div>
-    `, "#FF8F00", "formulaxr", ["event-activations"]),
+    `, "#FF8F00", "formulaxr", ["event-activations", "vr"]),
 
     new ProjectData("casa-fitness", "Casa do Fitness - VR Showroom", "img/projects/casa-fitness.jpg", `
     <div class="paragraph">
@@ -366,7 +366,7 @@ export const allProjects = [
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/cjIBSUD5deM" frameborder="0" allowfullscreen></iframe>
     </div>
-    `, "#FF8A65", "formulaxr", ["event-activations"]),
+    `, "#FF8A65", "formulaxr", ["event-activations", "vr"]),
 
     // ===== Freelance =====
     new ProjectData("vr-basketball", "VR Basketball", "img/projects/vr-basketball.png",
@@ -389,7 +389,7 @@ export const allProjects = [
             <li>Optimized for standalone Meta Quest 2 (stereo, 72&ndash;90 Hz)</li>
         </ul>
     </div>
-    `, "#FF7043", "freelance", ["games"]),
+    `, "#FF7043", "freelance", ["games", "vr"]),
 
     new ProjectData("truco-animado", "Truco Animado - Multiplayer Rewrite", "img/projects/truco-animado.png",
     `
@@ -567,89 +567,52 @@ export const allProjects = [
 ];
 
 // Order definitions for each tab. Each tab knows which projects appear and in what order.
-// "all" is special: it groups projects by origin with section headers.
+// "all" is a single flat list. The first ten are the lead-in; after that it alternates
+// a production piece with a game or smaller project so the page keeps its rhythm.
 
-export const tabOrders: Record<string, string[]> = {
+export const allOrder: string[] = [
+    "virtua",
+    "vr-classroom",
+    "ortovr",
+    "threejs-editor",
+    "edu-portal",
+    "truco-animado",
+    "vr-basketball",
+    "xrproj",
+    "xrtracker",
+    "pivot-editor",
+    "purge-all-heroes",
+    "vr-surgery",
+    "vr-racing",
+    "hyundai-vr",
+    "rick-dangerous",
+    "painter-sim",
+    "forklift-vr",
+    "dupont-vr",
+    "mercenary-rush",
+    "ortosintese-fh",
+    "dk-clone",
+    "fox-trot",
+    "wind-tunnel",
+    "casa-fitness",
+    "climatempo-vr",
+    "sanja-runner",
+];
+
+
+// Tabs follow `allOrder` by default. A tab listed here uses its own ranking instead,
+// for when a tab reads differently from the overall list.
+export const tabOverrides: Record<string, string[]> = {
     games: [
-        "vr-basketball",
         "truco-animado",
         "rick-dangerous",
-        "purge-all-heroes",
-        "fox-trot",
-        "hyundai-vr",
         "vr-racing",
-        "sanja-runner",
-        "edu-portal",
+        "vr-basketball",
+        "purge-all-heroes",
+        "hyundai-vr",
         "mercenary-rush",
         "dk-clone",
-    ],
-    "serious-games": [
-        "virtua",
-        "ortovr",
-        "vr-surgery",
-        "edu-portal",
-        "forklift-vr",
-        "painter-sim",
-        "vr-classroom",
-        "wind-tunnel",
-    ],
-    "event-activations": [
-        "hyundai-vr",
-        "vr-racing",
-        "dupont-vr",
-        "ortosintese-fh",
-        "climatempo-vr",
-        "casa-fitness",
-    ],
-    "tools-sdks": [
-        "xrproj",
-        "xrtracker",
-        "threejs-editor",
-        "pivot-editor",
+        "fox-trot",
+        "sanja-runner",
     ],
 };
-
-// "all" view groups by origin in this order. Each group has projects in a specific order.
-export const allViewGroups: { title: string; projectIds: string[] }[] = [
-    {
-        title: "FormulaXR",
-        projectIds: [
-            "xrproj",
-            "xrtracker",
-            "threejs-editor",
-            "virtua",
-            "edu-portal",
-            "ortovr",
-            "vr-surgery",
-            "vr-classroom",
-            "forklift-vr",
-            "painter-sim",
-            "hyundai-vr",
-            "vr-racing",
-            "dupont-vr",
-            "casa-fitness",
-            "wind-tunnel",
-            "ortosintese-fh",
-            "climatempo-vr",
-            "sanja-runner",
-        ],
-    },
-    {
-        title: "Freelance",
-        projectIds: [
-            "vr-basketball",
-            "truco-animado",
-            "rick-dangerous",
-            "fox-trot",
-        ],
-    },
-    {
-        title: "Personal",
-        projectIds: [
-            "pivot-editor",
-            "purge-all-heroes",
-            "mercenary-rush",
-            "dk-clone",
-        ],
-    },
-];

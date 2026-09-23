@@ -104,7 +104,7 @@ Projects are tagged so they can appear under multiple categories on the live sit
 ### FormulaXR
 
 ### XRProj
-*Tags: tools-sdks*
+*Tags: tools-sdks, vr*
 
 **XRProj** is a **codeless authoring platform** for real-time 3D. Engineers import their own models, CAD or not, build animations and step-by-step sequences for quality checklists, training, and design review, then publish from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the **Meta Quest Store, Apple App Store, and Google Play**, in production since 2019.
 
@@ -168,7 +168,7 @@ Key features:
 ---
 
 ### Virtua - Interactive Medical Simulation
-*Tags: serious-games*
+*Tags: serious-games, vr*
 
 **Virtua** is an interactive VR medical simulation developed for **Becton Dickinson (BD)**. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. **Published on the Meta Quest Store**, in production since 2021 across **Brazil, Mexico, Colombia, Argentina, and Chile**. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years.
 
@@ -193,7 +193,7 @@ Key contributions:
 ---
 
 ### FormulaXR - Educational Portal
-*Tags: games, serious-games*
+*Tags: serious-games*
 
 A web platform hosting **40+ interactive science mini-games** built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
 
@@ -213,7 +213,7 @@ Visit formulaxr.com (https://formulaxr.com)
 ---
 
 ### OrtoVR - Surgical Training
-*Tags: serious-games*
+*Tags: serious-games, vr*
 
 **OrtoVR** is a surgical VR training title built for **Ortosíntese**, a Brazilian orthopedic company. Surgeons put on a headset and practice placing implants and handling surgical instruments in VR before entering the operating room. Featured as a key demonstration at a major healthcare fair in 2018.
 
@@ -227,7 +227,7 @@ Key contributions:
 ---
 
 ### VR Surgery - Hospital BP
-*Tags: serious-games*
+*Tags: serious-games, vr*
 
 A **proof-of-concept** for **Hospital Beneficência Portuguesa de São Paulo (BP)**, among the world's best hospitals for seven consecutive years. The surgeon wears a VR headset and drives a real robotic arm through simulated procedures. Hand movements in VR, real arm in the room, in sync.
 
@@ -243,7 +243,7 @@ Key contributions:
 ---
 
 ### Forklift Safety Training
-*Tags: serious-games*
+*Tags: serious-games, vr*
 
 A **VR forklift simulator** for **Nestlé**. Before driving a real forklift in the warehouse, operators put on a Quest headset and go through the safety steps: pre-operation inspection, environment awareness, load handling. Each step is scored in real time and the result is reported back.
 
@@ -259,7 +259,7 @@ Key contributions:
 ---
 
 ### Industrial Painter Simulator
-*Tags: serious-games*
+*Tags: serious-games, vr*
 
 Multi-user simulation of an industrial painting machine, built for a major multinational corporation. One person wears a VR headset and walks around the virtual machine while teammates on their laptops observe and annotate from a desktop client. **Both share the same world in real time**, with different inputs and views per role.
 
@@ -273,7 +273,7 @@ Key contributions:
 ---
 
 ### Virtual Classroom
-*Tags: serious-games*
+*Tags: serious-games, vr*
 
 A **multiplayer VR classroom**, built in collaboration with the City Hall of São José dos Campos, Brazil. Students wearing VR headsets join the same virtual classroom from different locations and attend interactive lessons together. This is also where my reusable **VR interaction layer and networking code** first came together. Most of my later VR projects still build on what I wrote here.
 
@@ -286,7 +286,7 @@ Key contributions:
 ---
 
 ### Hyundai - VR Archery
-*Tags: games, event-activations*
+*Tags: games, event-activations, vr*
 
 A **VR archery game** developed for **Hyundai** as a brand activation at the 2017 Auto Show (*Feira do Automóvel*). Visitors at the Hyundai booth put on a headset, grabbed a controller like a bow, and competed in an archery challenge.
 
@@ -299,7 +299,7 @@ Key contributions:
 ---
 
 ### VR Racing Game
-*Tags: games, event-activations*
+*Tags: games, event-activations, vr*
 
 A **VR racing game** developed for a Brazilian motorized wheelchair company and showcased at **Rock in Rio 2017**, one of the world's largest music festivals. Festival-goers sat in the wheelchair, grabbed the handlebars, and raced each other on a virtual track.
 
@@ -330,28 +330,28 @@ Multi-user wind tunnel simulation developed during FormulaXR's participation in 
 ---
 
 ### DuPont - VR Product Tour
-*Tags: event-activations*
+*Tags: event-activations, vr*
 
 VR city tour shown at **DuPont**'s internal event **"Next Generation DuPont"** (3 days, **800+ attendees**). Users explored a virtual city highlighting DuPont products in everyday environments. Built on the **Oculus DK2**; I did **full development** of the VR experience.
 
 ---
 
 ### Ortosíntese - Feira Hospitalar 2019
-*Tags: event-activations*
+*Tags: event-activations, vr*
 
 **Unreal Engine** VR product showcase for **Ortosíntese (https://ortosintese.com.br/)**, presented at **Feira Hospitalar 2019** (largest healthcare trade fair in Latin America). I developed the **VR navigation and basic interactivity** for exploring their orthopedic equipment catalog.
 
 ---
 
 ### Climatempo - VR Experience
-*Tags: event-activations*
+*Tags: event-activations, vr*
 
 VR experience presented at the **RM Vale 2016** event for **Climatempo (https://www.climatempo.com.br/)** and **Kersys**. I did **full development** of the application. Interactive scenes let users explore weather and environmental data in VR.
 
 ---
 
 ### Casa do Fitness - VR Showroom
-*Tags: event-activations*
+*Tags: event-activations, vr*
 
 **Unreal Engine** VR showroom for **Casa do Fitness (https://www.casadofitness.com.br/)**, a Brazilian fitness equipment retailer. I developed the **VR navigation and interaction system** within the environment built by the art team.
 
@@ -360,7 +360,7 @@ VR experience presented at the **RM Vale 2016** event for **Climatempo (https://
 ### Freelance
 
 ### VR Basketball
-*Tags: games*
+*Tags: games, vr*
 
 **VR Basketball** is a freelance VR title built in **Unreal Engine 5 with C++** for standalone **Meta Quest 2**. You reach out, grab the ball, throw it, and the ball curves and spins realistically. **All the gameplay logic is in C++**, with Blueprint over it for the visual and designer-tunable layers, which is where Blueprint earns its keep.
 

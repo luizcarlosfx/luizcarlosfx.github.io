@@ -1,5 +1,5 @@
 export type ProjectOrigin = 'formulaxr' | 'freelance' | 'personal';
-export type ProjectTag = 'games' | 'serious-games' | 'event-activations' | 'tools-sdks';
+export type ProjectTag = 'games' | 'vr' | 'serious-games' | 'event-activations' | 'tools-sdks';
 
 export default class ProjectData {
     id: string;

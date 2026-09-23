@@ -3,7 +3,7 @@
     <h1>Projects</h1>
 
     <div class="intro">
-      Selected work from FormulaXR, freelance gigs, and personal projects. Use the tabs to filter.
+      Shipped real-time 3D work across VR, games, and simulation. Use the tabs to filter.
     </div>
 
     <div class="tabs">
@@ -17,28 +17,20 @@
       </button>
     </div>
 
-    <template v-if="activeTab === 'all'">
-      <div v-for="(group, index) in allViewGroups" :key="group.title">
-        <h2 :class="['group-header', { 'group-header-first': index === 0 }]">{{ group.title }}</h2>
-        <ProjectsList :projects="resolveProjects(group.projectIds)" />
-      </div>
-    </template>
-
-    <template v-else>
-      <ProjectsList :projects="filteredProjects" />
-    </template>
+    <ProjectsList :projects="filteredProjects" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import ProjectsList from "@/components/ProjectsList.vue";
-import ProjectData from "@/data/ProjectData.ts";
-import { allProjects, tabOrders, allViewGroups } from "@/data/ProjectsData.ts";
+import ProjectData, { ProjectTag } from "@/data/ProjectData.ts";
+import { allProjects, allOrder, tabOverrides } from "@/data/ProjectsData.ts";
 
 const tabs = [
   { id: "all", label: "All" },
   { id: "games", label: "Games" },
+  { id: "vr", label: "VR" },
   { id: "serious-games", label: "Serious Games" },
   { id: "event-activations", label: "Event Activations" },
   { id: "tools-sdks", label: "Tools & SDKs" },
@@ -51,7 +43,6 @@ export default Vue.extend({
     return {
       activeTab: "all" as string,
       tabs,
-      allViewGroups,
     };
   },
   computed: {
@@ -61,8 +52,12 @@ export default Vue.extend({
       return map;
     },
     filteredProjects(): ProjectData[] {
-      const order = tabOrders[this.activeTab] || [];
-      return this.resolveProjects(order);
+      // A tab follows the "all" ranking filtered by tag, unless it declares its own.
+      const all = this.resolveProjects(allOrder);
+      if (this.activeTab === "all") return all;
+      const override = tabOverrides[this.activeTab];
+      if (override) return this.resolveProjects(override);
+      return all.filter((p) => p.tags.indexOf(this.activeTab as ProjectTag) !== -1);
     },
   },
   methods: {
@@ -112,23 +107,5 @@ h1 {
   border-color: #64B5F6;
   color: #fff;
   background: rgba(100, 181, 246, 0.12);
-}
-
-.group-header {
-  font-weight: 100;
-  font-size: 1.5em;
-  margin: 0;
-  padding: 0;
-  margin-top: 35px;
-  padding-bottom: 12px;
-  color: #b0b0b0;
-  border-top: 1px solid #4a4a4a;
-  padding-top: 12px;
-}
-
-.group-header.group-header-first {
-  margin-top: 0;
-  border-top: none;
-  padding-top: 0;
 }
 </style>

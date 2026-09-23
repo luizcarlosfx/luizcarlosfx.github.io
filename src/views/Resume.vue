@@ -1,6 +1,7 @@
 <template>
   <div style="max-width: 1200px; margin-left: auto; margin-right: auto;">
-    <h1>Resume</h1>
+    <h1>Luiz Carlos da Silva Junior</h1>
+    <div class="tagline">Senior Unity &amp; Unreal Engineer &middot; <strong>Brazil</strong></div>
 
     <div class="paragraph">
       Senior Unity Engineer and systems architect, 10+ years shipping interactive 3D systems. Unity and Unreal, C# and C++, with TypeScript on the web. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery.
@@ -181,6 +182,13 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.tagline {
+  margin-top: -18px;
+  margin-bottom: 28px;
+  font-size: 1.15em;
+  opacity: 0.75;
+}
+
 h2 {
   font-weight: 100;
   font-size: 2em;

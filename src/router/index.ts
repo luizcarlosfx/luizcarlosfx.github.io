@@ -7,12 +7,16 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Root',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
   },
   {
     path: '/resume',
-    name: 'Resume',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
+    redirect: '/'
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
     path: '/projects',
