@@ -1,6 +1,6 @@
 # Luiz Carlos da Silva Junior
 
-> Senior Unity Engineer and systems architect with 10+ years architecting real-time 3D systems in Unity for industrial, medical, and training applications. Architecture-first, spec-driven with AI coding agents. Founder of FormulaXR.
+> Senior Unity Engineer and systems architect with 10+ years architecting real-time 3D systems in Unity for industrial, medical, and training applications. Architecture-first, spec-driven with AI coding agents.
 
 ## Links
 
