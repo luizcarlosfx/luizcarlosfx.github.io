@@ -82,7 +82,7 @@ function renderGroup(projects) {
 const output = `# Luiz Carlos da Silva Junior - Portfolio
 
 > Senior Unity Engineer and systems architect with 10+ years on interactive 3D systems. Unity and Unreal, C# and C++, with TypeScript on the web. Strongest in system architecture, VR interaction layers, real-time multiplayer, editor tooling, and cross-platform delivery (Quest, iOS, Android, PC, WebGL, HoloLens).
-> Founded FormulaXR in 2015. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
+> Co-founded FormulaXR in 2015. Production VR/AR titles live on the Meta Quest Store, App Store, and Google Play, in active use for years.
 > He builds architecture-first and works spec-driven with AI coding agents and custom harnesses. He designs the system and reviews every change himself; the tooling accelerates the build.
 
 Website: https://luizcarlosfx.github.io
@@ -91,7 +91,7 @@ LinkedIn: https://www.linkedin.com/in/luizcarlosxr/
 GitHub: https://github.com/luizcarlosfx
 Discord: luizcarlosfx
 
-I founded FormulaXR in 2015 and have led it ever since. In a small company that means going well beyond the technical work: lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. What ties it together is architecture: I design how the pieces fit before they get built. It's also what makes me fast with AI. I work spec-driven with coding agents and custom harnesses, but the system design is mine and I review every change against it. The tooling accelerates the build; the engineering judgment stays with me. Available for remote work.
+I co-founded FormulaXR in 2015 and have led it ever since. In a small company that means going well beyond the technical work: lead developer and architect, but also team lead, regularly on calls and visits with clients, and one of the people shaping company strategy. Over those years the work has spanned a pretty broad range: games, medical VR training, industrial simulation, educational mini-games, and a markerless object tracking SDK. I tend to be involved end to end, from initial concept through the publishing process. What ties it together is architecture: I design how the pieces fit before they get built. It's also what makes me fast with AI. I work spec-driven with coding agents and custom harnesses, but the system design is mine and I review every change against it. The tooling accelerates the build; the engineering judgment stays with me. Available for remote work.
 
 ---
 
