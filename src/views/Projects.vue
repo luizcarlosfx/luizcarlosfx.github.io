@@ -3,7 +3,7 @@
     <h1>Projects</h1>
 
     <div class="intro">
-      Shipped real-time 3D work across VR, games, and simulation. Use the tabs to filter.
+      Shipped real-time 3D work across VR, games, and simulation. XRProj is live on the Meta Quest Store, App Store, and Google Play, Virtua has been in use across five countries since 2021, and my Unity Asset Store tool reached 600+ developers. Use the tabs to filter.
     </div>
 
     <div class="tabs">
@@ -11,13 +11,20 @@
         v-for="tab in tabs"
         :key="tab.id"
         :class="['tab', { active: activeTab === tab.id }]"
-        @click="activeTab = tab.id"
+        @click="selectTab(tab.id)"
       >
         {{ tab.label }}
       </button>
     </div>
 
-    <ProjectsList :projects="filteredProjects" />
+    <ProjectsList :projects="mainProjects" />
+
+    <div v-if="moreProjects.length" class="more-work">
+      <button class="tab more-button" @click="showMore = !showMore">
+        {{ showMore ? "Hide more work" : "More work (" + moreProjects.length + ")" }}
+      </button>
+      <ProjectsList v-if="showMore" :projects="moreProjects" />
+    </div>
   </div>
 </template>
 
@@ -25,7 +32,7 @@
 import Vue from "vue";
 import ProjectsList from "@/components/ProjectsList.vue";
 import ProjectData, { ProjectTag } from "@/data/ProjectData.ts";
-import { allProjects, allOrder, tabOverrides } from "@/data/ProjectsData.ts";
+import { allProjects, allOrder, tabOverrides, moreWorkIds, moreWorkTabs } from "@/data/ProjectsData.ts";
 
 const tabs = [
   { id: "all", label: "All" },
@@ -42,6 +49,7 @@ export default Vue.extend({
   data() {
     return {
       activeTab: "all" as string,
+      showMore: false,
       tabs,
     };
   },
@@ -59,8 +67,23 @@ export default Vue.extend({
       if (override) return this.resolveProjects(override);
       return all.filter((p) => p.tags.indexOf(this.activeTab as ProjectTag) !== -1);
     },
+    foldsMoreWork(): boolean {
+      return moreWorkTabs.indexOf(this.activeTab) !== -1;
+    },
+    mainProjects(): ProjectData[] {
+      if (!this.foldsMoreWork) return this.filteredProjects;
+      return this.filteredProjects.filter((p) => moreWorkIds.indexOf(p.id) === -1);
+    },
+    moreProjects(): ProjectData[] {
+      if (!this.foldsMoreWork) return [];
+      return this.filteredProjects.filter((p) => moreWorkIds.indexOf(p.id) !== -1);
+    },
   },
   methods: {
+    selectTab(id: string) {
+      this.activeTab = id;
+      this.showMore = false;
+    },
     resolveProjects(ids: string[]): ProjectData[] {
       return ids
         .map((id) => this.projectsById[id])
@@ -107,5 +130,13 @@ h1 {
   border-color: #64B5F6;
   color: #fff;
   background: rgba(100, 181, 246, 0.12);
+}
+
+.more-work {
+  margin-top: 28px;
+}
+
+.more-button {
+  margin-bottom: 20px;
 }
 </style>

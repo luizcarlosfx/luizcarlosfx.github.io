@@ -10,6 +10,9 @@ export const allProjects = [
     <div class="paragraph">
         I've been the Lead Developer and Architect from day one, with the project under long-running continuous development. Used in production by <strong>Embraer</strong> (aircraft assembly review on Quest), and by <strong>Nestl&eacute;, Ball Corporation, and Aegea</strong> for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
     </div>
+    <div class="paragraph">
+        Engineers with no programming background author the procedures themselves. At one client, they documented over 24 assemblies and cut an inspection checklist from 2 hours to 1 hour. Client training time went from 5 hours to 3 hours. A client has also authored over 50 procedures and published them all through the web export. The CAD pipeline handles assemblies over 1 GB.
+    </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/DJRpeYrGH80" frameborder="0" allowfullscreen></iframe>
     </div>
@@ -63,7 +66,7 @@ export const allProjects = [
     </div>
     <div class="paragraph">
         <div class="notice">
-            Visit <a href="https://xrtracker.net" target="_blank">xrtracker.net</a> or read the <a href="https://docs.xrtracker.net" target="_blank">documentation</a>
+            Visit <a href="https://xrtracker.net" target="_blank">xrtracker.net</a>, read the <a href="https://docs.xrtracker.net" target="_blank">documentation</a>, or browse the <a href="https://github.com/FormulaXR/xrtracker-package" target="_blank">public, versioned Unity package on GitHub</a>
         </div>
     </div>
     `, "#26A69A", "formulaxr", ["tools-sdks"]),
@@ -91,6 +94,7 @@ export const allProjects = [
             <li>Node-based shader graph</li>
             <li>Animation timeline and sequencing</li>
             <li>Cameras, UI, and a physics layer</li>
+            <li>Light by design: a working project is about 60 MB, a shipped simulation is under 11 MB, testing on a device means opening a URL, and a release is a 30 to 60 second packaging step</li>
             <li>Single <strong>JSON schema</strong>: the same format for visual editing and AI authoring</li>
             <li>Built spec-driven, with an automated harness (type checks, regression tests, headless-browser screenshots) that verifies the work before I review it</li>
         </ul>
@@ -112,7 +116,10 @@ export const allProjects = [
         The bulk of the engineering was the interaction layer. Hand-tracking gestures map to grabbing equipment, with the gesture input blended into procedural animations so the grip looks and feels natural rather than mechanical. Catheter tubing has its own physics-driven cable system. Nurses operate an ultrasound device to locate the vein, do the needle puncture (<em>puncionamento com agulha</em>), and assemble the catheter kit piece by piece. Wherever I could, components are interactable rather than scripted.
     </div>
     <div class="paragraph">
-        Above the interactions, there's the <strong>objective system</strong>, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
+        Above the interactions, there's the <strong>objective system</strong>, a node-based procedure builder I designed so a new simulation or evaluation is assembled without code. Virtua now has five procedures of 40 to 70 steps each, and an intern built two of them. A configurable scoring pass grades each action in real time, and every procedure is networked by default, so an instructor and trainees share the same scene.
+    </div>
+    <div class="paragraph">
+        One of the five is an evaluation with a short set of questions. The instructor shows ultrasound-guided vein access at the neck, arm, wrist, and leg, each in short-axis and long-axis views, and the trainee answers. The needle simulation exists only for the neck, with both an artery (the patient bleeds out) and a normal vein (the correct procedure).
     </div>
     <div class="paragraph">
         In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I <strong>migrated the entire networking layer from Photon to FishNet</strong>. To minimize risk in a large production codebase, I built a <strong>compatibility layer on top of FishNet</strong> that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required <strong>Roslyn source generators</strong> for RPC method scaffolding and <strong>IL post-processing</strong> (Mono.Cecil) to rewrite RPC call sites at compile time.
@@ -122,7 +129,8 @@ export const allProjects = [
         <ul>
             <li>Interaction layer: gesture grabs with animation blending, catheter cable physics, ultrasound, needle puncture, component-level catheter assembly</li>
             <li>PC + Rift to Quest 2+ standalone port, single codebase for both targets</li>
-            <li>Step-by-step objective/procedure system for non-engineer authoring</li>
+            <li>Node-based authoring system for procedures and evaluations without code: five procedures of 40 to 70 steps each, two of them built by an intern, all networked by default</li>
+            <li>Ultrasound-guided access evaluation at four sites in two views, with needle simulation for artery and vein at the neck</li>
             <li>Configurable scoring evaluator</li>
             <li>Runtime content loading via <strong>Asset Bundles</strong></li>
             <li>Photon to FishNet networking migration with a custom RPC-weaving compat layer (Roslyn codegen + Mono.Cecil IL post-processing)</li>
@@ -133,10 +141,10 @@ export const allProjects = [
 
     new ProjectData("edu-portal", "FormulaXR - Educational Portal", "img/projects/edu-portal.png", `
     <div class="paragraph">
-        A web platform hosting <strong>40+ interactive science mini-games</strong> built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
+        A web platform hosting <strong>60+ interactive science mini-games</strong>, most of them built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
     </div>
     <div class="paragraph">
-        I architected the <strong>shared Unity SDK</strong> that all 40+ titles are built on: interaction primitives, scoring, objective tracking, and a WebGL communication bridge that talks back to the portal in real time.
+        I architected the <strong>shared Unity SDK</strong> that the 50+ Unity titles are built on: interaction primitives, scoring, objective tracking, and a WebGL communication bridge that talks back to the portal in real time.
     </div>
     <div class="paragraph">
         I also built the web portal itself, full-stack, in ASP.NET Core and Blazor WebAssembly (student accounts, progress tracking, scoring, reporting).
@@ -147,7 +155,7 @@ export const allProjects = [
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Shared Unity SDK powering all 40+ mini-games (interaction primitives, scoring, objectives)</li>
+            <li>Shared Unity SDK powering the 50+ Unity mini-games (interaction primitives, scoring, objectives)</li>
             <li>WebGL-to-portal communication bridge for student progress and scoring</li>
             <li>Full-stack web portal (ASP.NET Core + Blazor WebAssembly)</li>
             <li>Student tracking, scoring, and reporting</li>
@@ -176,7 +184,7 @@ export const allProjects = [
         Key contributions:
         <ul>
             <li>Set up the full project structure</li>
-            <li>Step-by-step <strong>objective system</strong> for guided procedure progression</li>
+            <li>Step-by-step <strong>objective system</strong> for guided procedure progression, including a 67-step procedure</li>
             <li>Refined a custom VR interaction layer for precise instrument handling</li>
             <li>Real-time multiplayer for collaborative training sessions</li>
         </ul>
@@ -195,9 +203,13 @@ export const allProjects = [
         Most of my time went into the <strong>surgical interaction system</strong>: scalpel incisions through skin, scissors cutting vessels, suturing, fat removal with forceps and a spatula together. Each tool has its own physical behavior, with the goal that procedures feel like the real thing instead of triggered animations.
     </div>
     <div class="paragraph">
+        The robotic arm also works as a force feedback device, which is a different thing from rumble. It restricts the surgeon's movement where the virtual tool meets tissue, so the scalpel resists as it cuts through skin, scissors bite on a vessel wall, and a pinch lifts fat away. I wrote the peripheral I/O that drives it.
+    </div>
+    <div class="paragraph">
         Key contributions:
         <ul>
             <li>Surgical interaction system: scalpel incisions, scissor cutting on vessels, suturing, forceps + spatula fat removal</li>
+            <li>Force feedback through the robotic arm, which restricts the surgeon's movement at contact</li>
             <li>Hardware drivers for the robotic arm (custom peripheral I/O)</li>
             <li>VR interaction layer and UI</li>
             <li>Refactored and stabilized the existing codebase</li>
@@ -210,7 +222,7 @@ export const allProjects = [
         A <strong>VR forklift simulator</strong> for <strong>Nestl&eacute;</strong>. Before driving a real forklift in the warehouse, operators put on a Quest headset and go through the safety steps: pre-operation inspection, environment awareness, load handling. Each step is scored in real time and the result is reported back.
     </div>
     <div class="paragraph">
-        Built in Unity for standalone Meta Quest.
+        Built in Unity for standalone Meta Quest. The simulator was deployed for a six-month trial. I had flagged motion sickness as a risk beforehand, and it became the main limit, so I quoted a three-monitor version. The client did not continue.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/rGpxLB2ws8I" frameborder="0" allowfullscreen></iframe>
@@ -397,14 +409,14 @@ export const allProjects = [
         <strong>Truco Animado</strong> is an established mobile card game on Google Play (Truco is one of Brazil's most popular card games). I was brought in as a freelancer to <strong>architect and ship the real-time multiplayer rewrite</strong> on top of an existing single-player codebase that already had a large player base.
     </div>
     <div class="paragraph">
-        My scope was specifically the networking layer, not the game design or content. After the multiplayer milestone shipped I handed the code back. The game's existing popularity on Google Play predates my work and stands on its own.
+        The title has <strong>1M+ downloads and 24.2K ratings</strong> on Google Play and is still being updated in 2026. Those numbers belong to the game and predate my work. My scope was the multiplayer, not the game design or content. Making an existing single-player game work online meant recreating many of its features so they ran properly in multiplayer, on top of the networking layer, matchmaking, and lobby I built. After the multiplayer milestone shipped I handed the code back.
     </div>
     <div class="paragraph">
-        Key contributions (multiplayer rewrite only):
+        Key contributions:
         <ul>
             <li>Architected and implemented the real-time multiplayer networking layer</li>
             <li>Developed the matchmaking and lobby system</li>
-            <li>Refactored core gameplay systems where required to support reliable online play</li>
+            <li>Recreated many of the game's features so they work properly in multiplayer</li>
         </ul>
     </div>
     <div class="paragraph">
@@ -417,7 +429,10 @@ export const allProjects = [
     new ProjectData("rick-dangerous", "Rick Dangerous - Remake", "img/projects/rick-dangerous.png",
     `
     <div class="paragraph">
-        A remake of the classic arcade game <strong>Rick Dangerous</strong>, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
+        A remake of the classic arcade game <strong>Rick Dangerous</strong>, a freelance project where I led a small team (an artist, two junior developers, and later two junior level designers) and taught them while we built it. It's a remake with new, higher-resolution art and was never officially released.
+    </div>
+    <div class="paragraph">
+        I began on the tile map, then moved to the code, where the juniors were struggling. I set up Corgi Engine for the character controller, created the enemies and showed the team how to build more, and created the obstacles and traps and taught them how to make new ones. I also taught the artist to make sprites with the right sizes and margins, and taught the level designers to build the tile map. One of the juniors from that team started with almost no Unity experience and went on to develop VR and AR solutions professionally.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/MZVmhxrgpsE" frameborder="0" allowfullscreen></iframe>
@@ -425,9 +440,10 @@ export const allProjects = [
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Led and mentored a team of junior developers and artists</li>
-            <li>Established workflows and taught fundamental game development skills</li>
-            <li>Built the character system, trap mechanics, and NPC behaviors</li>
+            <li>Led a team of an artist and two junior developers, and taught two junior level designers</li>
+            <li>Set up Corgi Engine for the character controller</li>
+            <li>Created the enemies, obstacles, and traps, and taught the team to create new ones</li>
+            <li>Taught the artist to make sprites with the right sizes and margins</li>
             <li>Created reusable prefabs and tilemaps for level designers</li>
         </ul>
     </div>
@@ -441,7 +457,7 @@ export const allProjects = [
     new ProjectData("fox-trot", "Fox Trot", "img/projects/fox-trot.png",
     `
     <div class="paragraph">
-        <strong>Fox Trot</strong> is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
+        <strong>Fox Trot</strong> is an endless runner for mobile. I was brought in as a freelancer to develop the core gameplay systems, including the obstacle, collectible, and daily reward mechanics. The client published it on the mobile stores and later removed it. The WebGL build is a demo only.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/s0U8bGTIkNo" frameborder="0" allowfullscreen></iframe>
@@ -449,16 +465,35 @@ export const allProjects = [
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Optimized the project for smooth WebGL performance</li>
             <li>Developed core gameplay systems (obstacles, collectibles, daily rewards)</li>
+            <li>Prepared the WebGL demo build</li>
         </ul>
     </div>
     <div class="paragraph">
         <div class="notice">
-            Playable in the browser on <a href="https://luizcarlosfx.itch.io/foxtrot" target="_blank">itch.io</a>
+            A WebGL demo is playable in the browser on <a href="https://luizcarlosfx.itch.io/foxtrot" target="_blank">itch.io</a>
         </div>
     </div>
     `, "#FFA000", "freelance", ["games"]),
+
+    new ProjectData("infinite-clockwise", "Infinite Clockwise", "img/projects/infinite-clockwise.jpg",
+    `
+    <div class="paragraph">
+        <strong>Infinite Clockwise</strong> is a casual arcade game for Android and iOS (2022). You tap to dodge moving obstacles on an ever-changing course, with scoring, progression, and unlockable achievements. I was brought in as a freelancer and built the full gameplay. The client published it on Google Play and the App Store and handled the ads and services integration. The owner has since removed it from the stores.
+    </div>
+    <div class="paragraph">
+        Key contributions:
+        <ul>
+            <li>Built the full gameplay, including the tap-to-dodge obstacle course, scoring, progression, and unlockable achievements</li>
+            <li>One Unity project shipped to Android and iOS, published by the client</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        <div class="notice">
+            A listing is still visible on <a href="https://www.taptap.io/app/259250" target="_blank">TapTap</a>
+        </div>
+    </div>
+    `, "#FF7043", "freelance", ["games"]),
 
     // ===== Personal =====
     new ProjectData("pivot-editor", "Pivot Editor", "img/projects/pivot-editor.png",
@@ -473,7 +508,7 @@ export const allProjects = [
         It sold on the Asset Store from <strong>December 2015 to 2026</strong>, reaching <strong>600+ developers</strong> at a <strong>4.8 star rating across 27 reviews</strong>. Sales held steady for eight straight years with no marketing and no feature work, which is the part worth pointing at: a small, tightly scoped tool that kept solving the same real problem while Unity's editor API changed underneath it.
     </div>
     <div class="paragraph">
-        Maintaining a public API across a decade of Unity releases is a different discipline from shipping a project. Every breaking change in the editor API landed on people who had already paid, so backwards compatibility and a small surface area mattered far more than features did.
+        Keeping a commercial Editor tool working through a decade of Unity releases is a different discipline from shipping a project. Unity's Editor API changed underneath it, and paying users were spread across many Unity versions, so keeping the tool small and tightly scoped mattered far more than adding features.
     </div>
     <div class="paragraph">
         Key contributions:
@@ -527,7 +562,13 @@ export const allProjects = [
     new ProjectData("mercenary-rush", "Mercenary Rush", "img/projects/mercenary-rush.png",
     `
     <div class="paragraph">
-        <strong>Mercenary Rush</strong> is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project pushed me hard on real-time networking, Unity's Mecanim animation system, and custom editor tooling.
+        <strong>Mercenary Rush</strong> is a 2D multiplayer platformer and shooter I built in 2014 as a capstone project during my Computer Science degree, with the whole character controller written from scratch on a raw Rigidbody2D. The idea was to run through platformer levels in multiplayer while shooting and using powers on the other players.
+    </div>
+    <div class="paragraph">
+        The controller handles short and long jumps, wall slide and wall jump, ledge hang and climb up, wall and ladder climbing, buoyancy in water, and two kinds of rope. One is a rope you climb and set swinging, and the other is a horizontal rope you grab and move along, like in Donkey Kong Country 2. The levels also have portals and laser beams. I got two weapons working, with an aim system where inverse kinematics blends into the Mecanim animations.
+    </div>
+    <div class="paragraph">
+        The transform interpolation I wrote for the networking here is still used in XRProj and Virtua today.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/6Mq_5XopKMI" frameborder="0" allowfullscreen></iframe>
@@ -538,9 +579,11 @@ export const allProjects = [
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Built a responsive 2D platformer character controller</li>
-            <li>Implemented real-time networking for fast-paced multiplayer gameplay</li>
-            <li>Created custom editor tools (inspectors, windows, menus) for rapid iteration</li>
+            <li>Character controller from scratch on Rigidbody2D, covering jumps, wall slide and wall jump, ledge hang and climb up, ladders, wall climbing, swinging ropes, horizontal ropes and buoyancy</li>
+            <li>Aim system with inverse kinematics blended into the animations</li>
+            <li>Level mechanics including portals and laser beams</li>
+            <li>Real-time multiplayer with transform interpolation, the approach XRProj and Virtua still use</li>
+            <li>Custom editor tools (inspectors, windows, menus) for rapid iteration</li>
         </ul>
     </div>
     `, "#AB47BC", "personal", ["games"]),
@@ -548,7 +591,7 @@ export const allProjects = [
     new ProjectData("dk-clone", "Donkey Kong 2 - Clone", "img/projects/dk-clone.png",
     `
     <div class="paragraph">
-        A love letter to my childhood favorite, a faithful recreation of <strong>Donkey Kong</strong> built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.
+        A hobby remake of <strong>Donkey Kong</strong>, built in Unity. The part worth showing is the sprite pipeline. With no artist on the team, I took ripped spritesheets from community resources and had to turn them into aligned, working animations. I built an in-engine tool that lets me move an animation frame pixel by pixel while it plays, until it looks right. The character controller is unfinished, because preparing the sprites took more work than I wanted to put into a side project.
     </div>
     <div class="paragraph">
         <div class="notice">
@@ -558,9 +601,10 @@ export const allProjects = [
     <div class="paragraph">
         Key contributions:
         <ul>
-            <li>Built custom editor tools for sprite cutting and positioning from raw spritesheets</li>
-            <li>Developed a 2D character controller with dual playable characters</li>
-            <li>Created collectible, damage, and NPC systems</li>
+            <li>In-engine tool to align animation frames pixel by pixel while the animation plays</li>
+            <li>Sprite cutting and positioning from raw spritesheets</li>
+            <li>2D character controller with dual playable characters (unfinished)</li>
+            <li>Collectible, damage, and NPC systems</li>
         </ul>
     </div>
     `, "#EF5350", "personal", ["games"]),
@@ -572,6 +616,7 @@ export const allProjects = [
 
 export const allOrder: string[] = [
     "virtua",
+    "pivot-editor",
     "vr-classroom",
     "ortovr",
     "threejs-editor",
@@ -580,7 +625,6 @@ export const allOrder: string[] = [
     "vr-basketball",
     "xrproj",
     "xrtracker",
-    "pivot-editor",
     "purge-all-heroes",
     "vr-surgery",
     "vr-racing",
@@ -592,6 +636,7 @@ export const allOrder: string[] = [
     "mercenary-rush",
     "ortosintese-fh",
     "dk-clone",
+    "infinite-clockwise",
     "fox-trot",
     "wind-tunnel",
     "casa-fitness",
@@ -605,14 +650,29 @@ export const allOrder: string[] = [
 export const tabOverrides: Record<string, string[]> = {
     games: [
         "truco-animado",
+        "purge-all-heroes",
+        "vr-basketball",
+        "mercenary-rush",
         "rick-dangerous",
         "vr-racing",
-        "vr-basketball",
-        "purge-all-heroes",
         "hyundai-vr",
-        "mercenary-rush",
-        "dk-clone",
+        "infinite-clockwise",
         "fox-trot",
         "sanja-runner",
+        "dk-clone",
     ],
 };
+
+// Short or older pieces. The All and Games tabs fold these behind a "More work" button
+// so the first screen shows the projects with the strongest evidence. Every other tab shows them in full.
+export const moreWorkIds: string[] = [
+    "dk-clone",
+    "sanja-runner",
+    "wind-tunnel",
+    "dupont-vr",
+    "ortosintese-fh",
+    "climatempo-vr",
+    "casa-fitness",
+];
+
+export const moreWorkTabs: string[] = ["all", "games"];

@@ -46,8 +46,8 @@ I co-founded FormulaXR in 2015 and have led it ever since. In a small company th
 #### Freelance Game Developer (2019 – 2024)
 
 - **Truco Animado** (Unity, Android, 2019): Architected and shipped the real-time multiplayer rewrite on an established single-player card game. Built the networking layer, matchmaking, and lobby, plus the gameplay refactors reliable online play required. The title has 1M+ downloads and 24.2K ratings on Google Play (https://play.google.com/store/apps/details?id=br.com.delotech.trucoindie) and is still being updated in 2026.
-- **Fox Trot** (Unity, WebGL, 2023): Endless runner shipped to the browser. Optimized the build for WebGL performance and built the core gameplay: obstacles, collectibles, and daily rewards.
-- **Rick Dangerous** (Unity, 2023): Led and mentored a team of junior developers and artists through a full arcade platformer. Built the character system, trap mechanics, and NPC behaviours, and set up reusable prefabs and tilemaps so the level designers could work independently. Gameplay video: https://www.youtube.com/watch?v=MZVmhxrgpsE
+- **Fox Trot** (Unity, mobile, 2023): Endless runner published by the client on the mobile stores and later removed. Built the core gameplay: obstacles, collectibles, and daily rewards. A WebGL demo build is playable on itch.io.
+- **Rick Dangerous** (Unity, 2023): Led an artist and two junior developers through a full arcade platformer remake, and taught two junior level designers. Set up Corgi Engine for the character controller, built the enemies, obstacles, and traps, and set up reusable prefabs and tilemaps so the level designers could work independently. Never officially released. Gameplay video: https://www.youtube.com/watch?v=MZVmhxrgpsE
 - **VR Basketball** (Unreal 5, standalone Meta Quest 2, 2024): Built the VR interaction layer with hand presence, grab mechanics, and physics-driven throwing with realistic trajectory and spin. All gameplay logic in C++, with Blueprint and UMG over it for the visual and designer-tunable layers. Held 72-90 Hz on standalone. Gameplay video: https://www.youtube.com/watch?v=rLnq_LxKHoE
 
 Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Photon PUN, Roslyn, Mono.Cecil, ASP.NET Core, Quest, iOS, Android, PC, WebGL
@@ -82,7 +82,7 @@ Tech stack: Unity, C#, C++, Unreal Engine, PlayCanvas (TypeScript), FishNet, Pho
 - **XRProj** (xrproj.com): Multi-platform XR platform for industrial CAD visualization, collaboration, and content creation. Ships to Quest, iOS, Android, PC, and the web from one Unity codebase. Used for aircraft assembly review, packaging inspection, and infrastructure walkthroughs. Cut client training time from 5h to 3h and inspection time from 2h to 1h.
 - **Virtua**: Interactive VR medical simulation for Becton Dickinson, on the Meta Quest Store and in active use across Brazil, Mexico, Colombia, Argentina, and Chile since 2021. Trains nurses on central venous catheter insertion. Originally a training product, later extended by the client into sales enablement and event activations.
 - **XRTracker** (xrtracker.net): Commercial Unity SDK for markerless 6DOF object tracking. Locks onto real-world objects directly from a 3D mesh using classical computer vision – no markers, image targets, or training required. 4–8 ms/frame on mobile, sub-centimeter precision.
-- **FormulaXR Education Platform** (formulaxr.com): Browser-based learning platform powering 40+ interactive science mini-games. Students drag atoms to build molecules, walk virtual ecosystems for food-chain lessons, explore an interactive periodic table, and balance forces in physics puzzles. Each mini-game is a full title with its own mechanics and scoring.
+- **FormulaXR Education Platform** (formulaxr.com): Browser-based learning platform powering 60+ interactive science mini-games. Students drag atoms to build molecules, walk virtual ecosystems for food-chain lessons, explore an interactive periodic table, and balance forces in physics puzzles. Each mini-game is a full title with its own mechanics and scoring.
 - **Virtual Classroom**: Multiplayer VR education for São José dos Campos City Hall (2016). Sessions of up to 11 users (teacher + 10 students) with HTC Vive trackers wired to physical movable chairs. Built before Unity's XR Interaction Toolkit shipped – foundation of my multiplayer stack.
 
 ### Education
@@ -109,6 +109,8 @@ Projects are tagged so they can appear under multiple categories on the live sit
 **XRProj** is a **codeless authoring platform** for real-time 3D. Engineers import their own models, CAD or not, build animations and step-by-step sequences for quality checklists, training, and design review, then publish from one codebase to Quest, iOS, Android, PC (VR), HoloLens, and the web. Published on the **Meta Quest Store, Apple App Store, and Google Play**, in production since 2019.
 
 I've been the Lead Developer and Architect from day one, with the project under long-running continuous development. Used in production by **Embraer** (aircraft assembly review on Quest), and by **Nestlé, Ball Corporation, and Aegea** for collaborative 3D review and assembly validation. Distribution is enterprise/B2B rather than consumer, but the apps have been live on every major mobile and VR store since 2019.
+
+Engineers with no programming background author the procedures themselves. At one client, they documented over 24 assemblies and cut an inspection checklist from 2 hours to 1 hour. Client training time went from 5 hours to 3 hours. A client has also authored over 50 procedures and published them all through the web export. The CAD pipeline handles assemblies over 1 GB.
 
 Key contributions:
 
@@ -141,7 +143,7 @@ Key features:
 - Cross-platform: Windows, iOS (ARKit), Android (ARCore)
 - Designed for Industry 4.0: Poka-Yoke workflows, assembly guidance, and task validation
 
-Visit xrtracker.net (https://xrtracker.net) or read the documentation (https://docs.xrtracker.net)
+Visit xrtracker.net (https://xrtracker.net), read the documentation (https://docs.xrtracker.net), or browse the public, versioned Unity package on GitHub (https://github.com/FormulaXR/xrtracker-package)
 
 ---
 
@@ -162,6 +164,7 @@ Key features:
 - Node-based shader graph
 - Animation timeline and sequencing
 - Cameras, UI, and a physics layer
+- Light by design: a working project is about 60 MB, a shipped simulation is under 11 MB, testing on a device means opening a URL, and a release is a 30 to 60 second packaging step
 - Single **JSON schema**: the same format for visual editing and AI authoring
 - Built spec-driven, with an automated harness (type checks, regression tests, headless-browser screenshots) that verifies the work before I review it
 
@@ -176,7 +179,9 @@ It started as a PC + Oculus Rift project (Quest 2 didn't exist yet, and earlier 
 
 The bulk of the engineering was the interaction layer. Hand-tracking gestures map to grabbing equipment, with the gesture input blended into procedural animations so the grip looks and feels natural rather than mechanical. Catheter tubing has its own physics-driven cable system. Nurses operate an ultrasound device to locate the vein, do the needle puncture (*puncionamento com agulha*), and assemble the catheter kit piece by piece. Wherever I could, components are interactable rather than scripted.
 
-Above the interactions, there's the **objective system**, a step-by-step procedure builder. Non-engineers can author training sequences without touching code, and a configurable scoring pass grades each action in real time.
+Above the interactions, there's the **objective system**, a node-based procedure builder I designed so a new simulation or evaluation is assembled without code. Virtua now has five procedures of 40 to 70 steps each, and an intern built two of them. A configurable scoring pass grades each action in real time, and every procedure is networked by default, so an instructor and trainees share the same scene.
+
+One of the five is an evaluation with a short set of questions. The instructor shows ultrasound-guided vein access at the neck, arm, wrist, and leg, each in short-axis and long-axis views, and the trainee answers. The needle simulation exists only for the neck, with both an artery (the patient bleeds out) and a normal vein (the correct procedure).
 
 In 2024, the client needed the online multiplayer to also work locally without internet, and Photon's licensing costs for industry use were prohibitive. I **migrated the entire networking layer from Photon to FishNet**. To minimize risk in a large production codebase, I built a **compatibility layer on top of FishNet** that preserved the same architecture and API surface (SyncVars, RPCs, and ownership semantics all behaved identically to the original Photon implementation). This required **Roslyn source generators** for RPC method scaffolding and **IL post-processing** (Mono.Cecil) to rewrite RPC call sites at compile time.
 
@@ -184,7 +189,8 @@ Key contributions:
 
 - Interaction layer: gesture grabs with animation blending, catheter cable physics, ultrasound, needle puncture, component-level catheter assembly
 - PC + Rift to Quest 2+ standalone port, single codebase for both targets
-- Step-by-step objective/procedure system for non-engineer authoring
+- Node-based authoring system for procedures and evaluations without code: five procedures of 40 to 70 steps each, two of them built by an intern, all networked by default
+- Ultrasound-guided access evaluation at four sites in two views, with needle simulation for artery and vein at the neck
 - Configurable scoring evaluator
 - Runtime content loading via **Asset Bundles**
 - Photon to FishNet networking migration with a custom RPC-weaving compat layer (Roslyn codegen + Mono.Cecil IL post-processing)
@@ -195,15 +201,15 @@ Key contributions:
 ### FormulaXR - Educational Portal
 *Tags: serious-games*
 
-A web platform hosting **40+ interactive science mini-games** built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
+A web platform hosting **60+ interactive science mini-games**, most of them built in Unity. Students drag atoms to build molecules, walk through a virtual ecosystem to learn about food chains, explore an interactive periodic table, balance forces in physics puzzles, and so on. Each one is a small playable title with its own mechanics, scoring, and objectives.
 
-I architected the **shared Unity SDK** that all 40+ titles are built on: interaction primitives, scoring, objective tracking, and a WebGL communication bridge that talks back to the portal in real time.
+I architected the **shared Unity SDK** that the 50+ Unity titles are built on: interaction primitives, scoring, objective tracking, and a WebGL communication bridge that talks back to the portal in real time.
 
 I also built the web portal itself, full-stack, in ASP.NET Core and Blazor WebAssembly (student accounts, progress tracking, scoring, reporting).
 
 Key contributions:
 
-- Shared Unity SDK powering all 40+ mini-games (interaction primitives, scoring, objectives)
+- Shared Unity SDK powering the 50+ Unity mini-games (interaction primitives, scoring, objectives)
 - WebGL-to-portal communication bridge for student progress and scoring
 - Full-stack web portal (ASP.NET Core + Blazor WebAssembly)
 - Student tracking, scoring, and reporting
@@ -220,7 +226,7 @@ Visit formulaxr.com (https://formulaxr.com)
 Key contributions:
 
 - Set up the full project structure
-- Step-by-step **objective system** for guided procedure progression
+- Step-by-step **objective system** for guided procedure progression, including a 67-step procedure
 - Refined a custom VR interaction layer for precise instrument handling
 - Real-time multiplayer for collaborative training sessions
 
@@ -233,9 +239,12 @@ A **proof-of-concept** for **Hospital Beneficência Portuguesa de São Paulo (BP
 
 Most of my time went into the **surgical interaction system**: scalpel incisions through skin, scissors cutting vessels, suturing, fat removal with forceps and a spatula together. Each tool has its own physical behavior, with the goal that procedures feel like the real thing instead of triggered animations.
 
+The robotic arm also works as a force feedback device, which is a different thing from rumble. It restricts the surgeon's movement where the virtual tool meets tissue, so the scalpel resists as it cuts through skin, scissors bite on a vessel wall, and a pinch lifts fat away. I wrote the peripheral I/O that drives it.
+
 Key contributions:
 
 - Surgical interaction system: scalpel incisions, scissor cutting on vessels, suturing, forceps + spatula fat removal
+- Force feedback through the robotic arm, which restricts the surgeon's movement at contact
 - Hardware drivers for the robotic arm (custom peripheral I/O)
 - VR interaction layer and UI
 - Refactored and stabilized the existing codebase
@@ -247,7 +256,7 @@ Key contributions:
 
 A **VR forklift simulator** for **Nestlé**. Before driving a real forklift in the warehouse, operators put on a Quest headset and go through the safety steps: pre-operation inspection, environment awareness, load handling. Each step is scored in real time and the result is reported back.
 
-Built in Unity for standalone Meta Quest.
+Built in Unity for standalone Meta Quest. The simulator was deployed for a six-month trial. I had flagged motion sickness as a risk beforehand, and it became the main limit, so I quoted a three-monitor version. The client did not continue.
 
 Key contributions:
 
@@ -380,13 +389,13 @@ Key highlights:
 
 **Truco Animado** is an established mobile card game on Google Play (Truco is one of Brazil's most popular card games). I was brought in as a freelancer to **architect and ship the real-time multiplayer rewrite** on top of an existing single-player codebase that already had a large player base.
 
-My scope was specifically the networking layer, not the game design or content. After the multiplayer milestone shipped I handed the code back. The game's existing popularity on Google Play predates my work and stands on its own.
+The title has **1M+ downloads and 24.2K ratings** on Google Play and is still being updated in 2026. Those numbers belong to the game and predate my work. My scope was the multiplayer, not the game design or content. Making an existing single-player game work online meant recreating many of its features so they ran properly in multiplayer, on top of the networking layer, matchmaking, and lobby I built. After the multiplayer milestone shipped I handed the code back.
 
-Key contributions (multiplayer rewrite only):
+Key contributions:
 
 - Architected and implemented the real-time multiplayer networking layer
 - Developed the matchmaking and lobby system
-- Refactored core gameplay systems where required to support reliable online play
+- Recreated many of the game's features so they work properly in multiplayer
 
 Available on Google Play (https://play.google.com/store/apps/details?id=br.com.delotech.trucoindie)
 
@@ -395,13 +404,16 @@ Available on Google Play (https://play.google.com/store/apps/details?id=br.com.d
 ### Rick Dangerous - Remake
 *Tags: games*
 
-A remake of the classic arcade game **Rick Dangerous**, developed as a freelance mentorship-driven project where I guided a team of junior artists and developers through the full game development process.
+A remake of the classic arcade game **Rick Dangerous**, a freelance project where I led a small team (an artist, two junior developers, and later two junior level designers) and taught them while we built it. It's a remake with new, higher-resolution art and was never officially released.
+
+I began on the tile map, then moved to the code, where the juniors were struggling. I set up Corgi Engine for the character controller, created the enemies and showed the team how to build more, and created the obstacles and traps and taught them how to make new ones. I also taught the artist to make sprites with the right sizes and margins, and taught the level designers to build the tile map. One of the juniors from that team started with almost no Unity experience and went on to develop VR and AR solutions professionally.
 
 Key contributions:
 
-- Led and mentored a team of junior developers and artists
-- Established workflows and taught fundamental game development skills
-- Built the character system, trap mechanics, and NPC behaviors
+- Led a team of an artist and two junior developers, and taught two junior level designers
+- Set up Corgi Engine for the character controller
+- Created the enemies, obstacles, and traps, and taught the team to create new ones
+- Taught the artist to make sprites with the right sizes and margins
 - Created reusable prefabs and tilemaps for level designers
 
 Playable in the browser on itch.io (https://luizcarlosfx.itch.io/rick-dangerous)
@@ -411,14 +423,28 @@ Playable in the browser on itch.io (https://luizcarlosfx.itch.io/rick-dangerous)
 ### Fox Trot
 *Tags: games*
 
-**Fox Trot** is an endless runner game built for WebGL. Brought in as a freelancer to optimize performance and develop the core gameplay systems including obstacle, collectible, and daily reward mechanics.
+**Fox Trot** is an endless runner for mobile. I was brought in as a freelancer to develop the core gameplay systems, including the obstacle, collectible, and daily reward mechanics. The client published it on the mobile stores and later removed it. The WebGL build is a demo only.
 
 Key contributions:
 
-- Optimized the project for smooth WebGL performance
 - Developed core gameplay systems (obstacles, collectibles, daily rewards)
+- Prepared the WebGL demo build
 
-Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
+A WebGL demo is playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
+
+---
+
+### Infinite Clockwise
+*Tags: games*
+
+**Infinite Clockwise** is a casual arcade game for Android and iOS (2022). You tap to dodge moving obstacles on an ever-changing course, with scoring, progression, and unlockable achievements. I was brought in as a freelancer and built the full gameplay. The client published it on Google Play and the App Store and handled the ads and services integration. The owner has since removed it from the stores.
+
+Key contributions:
+
+- Built the full gameplay, including the tap-to-dodge obstacle course, scoring, progression, and unlockable achievements
+- One Unity project shipped to Android and iOS, published by the client
+
+A listing is still visible on TapTap (https://www.taptap.io/app/259250)
 
 ---
 
@@ -431,7 +457,7 @@ Playable in the browser on itch.io (https://luizcarlosfx.itch.io/foxtrot)
 
 It sold on the Asset Store from **December 2015 to 2026**, reaching **600+ developers** at a **4.8 star rating across 27 reviews**. Sales held steady for eight straight years with no marketing and no feature work, which is the part worth pointing at: a small, tightly scoped tool that kept solving the same real problem while Unity's editor API changed underneath it.
 
-Maintaining a public API across a decade of Unity releases is a different discipline from shipping a project. Every breaking change in the editor API landed on people who had already paid, so backwards compatibility and a small surface area mattered far more than features did.
+Keeping a commercial Editor tool working through a decade of Unity releases is a different discipline from shipping a project. Unity's Editor API changed underneath it, and paying users were spread across many Unity versions, so keeping the tool small and tightly scoped mattered far more than adding features.
 
 Key contributions:
 
@@ -471,28 +497,35 @@ The project is currently on hold; revisiting it in the future is on the roadmap.
 ### Mercenary Rush
 *Tags: games*
 
-**Mercenary Rush** is a 2D multiplayer platformer developed as a capstone project during my Computer Science degree. The project pushed me hard on real-time networking, Unity's Mecanim animation system, and custom editor tooling.
+**Mercenary Rush** is a 2D multiplayer platformer and shooter I built in 2014 as a capstone project during my Computer Science degree, with the whole character controller written from scratch on a raw Rigidbody2D. The idea was to run through platformer levels in multiplayer while shooting and using powers on the other players.
+
+The controller handles short and long jumps, wall slide and wall jump, ledge hang and climb up, wall and ladder climbing, buoyancy in water, and two kinds of rope. One is a rope you climb and set swinging, and the other is a horizontal rope you grab and move along, like in Donkey Kong Country 2. The levels also have portals and laser beams. I got two weapons working, with an aim system where inverse kinematics blends into the Mecanim animations.
+
+The transform interpolation I wrote for the networking here is still used in XRProj and Virtua today.
 
 Key contributions:
 
-- Built a responsive 2D platformer character controller
-- Implemented real-time networking for fast-paced multiplayer gameplay
-- Created custom editor tools (inspectors, windows, menus) for rapid iteration
+- Character controller from scratch on Rigidbody2D, covering jumps, wall slide and wall jump, ledge hang and climb up, ladders, wall climbing, swinging ropes, horizontal ropes and buoyancy
+- Aim system with inverse kinematics blended into the animations
+- Level mechanics including portals and laser beams
+- Real-time multiplayer with transform interpolation, the approach XRProj and Virtua still use
+- Custom editor tools (inspectors, windows, menus) for rapid iteration
 
 ---
 
 ### Donkey Kong 2 - Clone
 *Tags: games*
 
-A love letter to my childhood favorite, a faithful recreation of **Donkey Kong** built in Unity. With no dedicated artist on the team, I collected sprites from community resources and built custom editor tools to streamline the asset pipeline.
+A hobby remake of **Donkey Kong**, built in Unity. The part worth showing is the sprite pipeline. With no artist on the team, I took ripped spritesheets from community resources and had to turn them into aligned, working animations. I built an in-engine tool that lets me move an animation frame pixel by pixel while it plays, until it looks right. The character controller is unfinished, because preparing the sprites took more work than I wanted to put into a side project.
 
 Watch the development playlist on YouTube (https://www.youtube.com/playlist?list=PLedBjvIQnDOFqD_1fc-kaYi6rJwkAHIXX)
 
 Key contributions:
 
-- Built custom editor tools for sprite cutting and positioning from raw spritesheets
-- Developed a 2D character controller with dual playable characters
-- Created collectible, damage, and NPC systems
+- In-engine tool to align animation frames pixel by pixel while the animation plays
+- Sprite cutting and positioning from raw spritesheets
+- 2D character controller with dual playable characters (unfinished)
+- Collectible, damage, and NPC systems
 
 ---
 
