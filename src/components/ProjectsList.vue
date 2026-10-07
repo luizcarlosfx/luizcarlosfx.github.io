@@ -19,7 +19,7 @@
       </div>
 
       <ProjectDetailsOverlay
-        v-on:close="showPopup = false"
+        v-on:close="closeDetails"
         :visible="showPopup"
         :title="popupTitle"
         :htmlContent="popupContent"
@@ -32,6 +32,7 @@
 import Vue from "vue";
 import ProjectDetailsOverlay from "@/components/ProjectDetailsOverlay.vue";
 import ProjectData from "@/data/ProjectData.ts";
+import { trackProjectOpen, trackProjectClose } from "@/analytics";
 
 export default Vue.extend({
   name: "ProjectsList",
@@ -46,16 +47,37 @@ export default Vue.extend({
       showPopup: false,
       popupTitle: "",
       popupColor: "",
-      popupContent: ""
+      popupContent: "",
+      openedId: "",
+      openedName: "",
+      openedAt: 0
     };
+  },
+  beforeDestroy: function () {
+    this.finishView();
   },
   methods: {
     showDetails: function (item: ProjectData) {
+      this.finishView();
       this.popupTitle = item.name;
       this.popupColor = item.accentColor;
       this.popupContent = item.htmlDescription;
       this.showPopup = true;
+      this.openedId = item.id;
+      this.openedName = item.name;
+      this.openedAt = Date.now();
+      trackProjectOpen(item.id, item.name);
       window.scrollTo(0,0);
+    },
+    closeDetails: function () {
+      this.showPopup = false;
+      this.finishView();
+    },
+    finishView: function () {
+      if (!this.openedId) return;
+      const seconds = Math.round((Date.now() - this.openedAt) / 1000);
+      trackProjectClose(this.openedId, this.openedName, seconds);
+      this.openedId = "";
     },
   },
 });
