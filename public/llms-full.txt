@@ -156,6 +156,8 @@ Everything is defined by a versioned **JSON schema**. A scene can be authored vi
 
 I work **spec-driven**: every feature starts as a versioned schema, a written contract that comes before any implementation. A **harness** of rules, reusable skills, and a feature loop with automated gates sits on top of that. Type checks, regression tests, and a headless browser that drives the editor and screenshots it all run before any change reaches me. The model does the heavy coding within those guidelines, while I write the guidelines and review the architecture. The editor is in production, powering FormulaXR's education simulations.
 
+Over a dozen simulations are now in production on it. A new one starts from a scaffold project that already carries more than 20 authoring skills, so an agent can bootstrap a scene, author prefabs, animations and shader graphs, import assets, localize, and export. Two full simulations have shipped in a single week.
+
 Key features:
 
 - Scene graph with full undo/redo
@@ -166,6 +168,7 @@ Key features:
 - Cameras, UI, and a physics layer
 - Light by design: a working project is about 60 MB, a shipped simulation is under 11 MB, testing on a device means opening a URL, and a release is a 30 to 60 second packaging step
 - Single **JSON schema**: the same format for visual editing and AI authoring
+- More than 20 authoring skills on top of the schema (scene bootstrap, prefabs, animation, shader graphs, localization, export), plus a scaffold project to start each simulation from
 - Built spec-driven, with an automated harness (type checks, regression tests, headless-browser screenshots) that verifies the work before I review it
 
 ---

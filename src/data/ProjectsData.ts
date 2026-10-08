@@ -82,6 +82,9 @@ export const allProjects = [
     <div class="paragraph">
         I work <strong>spec-driven</strong>: every feature starts as a versioned schema, a written contract that comes before any implementation. A <strong>harness</strong> of rules, reusable skills, and a feature loop with automated gates sits on top of that. Type checks, regression tests, and a headless browser that drives the editor and screenshots it all run before any change reaches me. The model does the heavy coding within those guidelines, while I write the guidelines and review the architecture. The editor is in production, powering FormulaXR's education simulations.
     </div>
+    <div class="paragraph">
+        Over a dozen simulations are now in production on it. A new one starts from a scaffold project that already carries more than 20 authoring skills, so an agent can bootstrap a scene, author prefabs, animations and shader graphs, import assets, localize, and export. Two full simulations have shipped in a single week.
+    </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/1iSKBVyhH2s" frameborder="0" allowfullscreen></iframe>
     </div>
@@ -96,6 +99,7 @@ export const allProjects = [
             <li>Cameras, UI, and a physics layer</li>
             <li>Light by design: a working project is about 60 MB, a shipped simulation is under 11 MB, testing on a device means opening a URL, and a release is a 30 to 60 second packaging step</li>
             <li>Single <strong>JSON schema</strong>: the same format for visual editing and AI authoring</li>
+            <li>More than 20 authoring skills on top of the schema (scene bootstrap, prefabs, animation, shader graphs, localization, export), plus a scaffold project to start each simulation from</li>
             <li>Built spec-driven, with an automated harness (type checks, regression tests, headless-browser screenshots) that verifies the work before I review it</li>
         </ul>
     </div>
