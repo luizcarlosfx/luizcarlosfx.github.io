@@ -104,7 +104,7 @@ export const allProjects = [
     new ProjectData("virtua", "Virtua - Interactive Medical Simulation", "img/projects/virtua.png",
     `
     <div class="paragraph">
-        <strong>Virtua</strong> is an interactive VR medical simulation developed for <strong>Becton Dickinson (BD)</strong>. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. <strong>Published on the Meta Quest Store</strong>, in production since 2021 across <strong>Brazil, Mexico, Colombia, Argentina, and Chile</strong>. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years.
+        <strong>Virtua</strong> is an interactive VR medical simulation developed for <strong>Becton Dickinson (BD)</strong>. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. <strong>Published on the Meta Quest Store</strong>, in production since 2021 across <strong>Brazil, Mexico, Colombia, Argentina, and Chile</strong>. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years, with <strong>2,185 training sessions in the last two years</strong>.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/AmMjGSMS-zs" frameborder="0" allowfullscreen></iframe>

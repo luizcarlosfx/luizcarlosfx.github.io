@@ -173,7 +173,7 @@ Key features:
 ### Virtua - Interactive Medical Simulation
 *Tags: serious-games, vr*
 
-**Virtua** is an interactive VR medical simulation developed for **Becton Dickinson (BD)**. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. **Published on the Meta Quest Store**, in production since 2021 across **Brazil, Mexico, Colombia, Argentina, and Chile**. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years.
+**Virtua** is an interactive VR medical simulation developed for **Becton Dickinson (BD)**. Nurses put on a headset and practice central venous catheter insertion in VR before doing it on a real patient. **Published on the Meta Quest Store**, in production since 2021 across **Brazil, Mexico, Colombia, Argentina, and Chile**. Distribution is B2B rather than consumer, but the app has been live on the store and in active use for over 5 years, with **2,185 training sessions in the last two years**.
 
 It started as a PC + Oculus Rift project (Quest 2 didn't exist yet, and earlier Quest hardware wasn't good enough). Later I ported the whole thing to standalone Quest 2+. Both targets now ship from the same codebase: PC (with Rift or Quest 2+ via Link) and Quest 2+ standalone.
 
