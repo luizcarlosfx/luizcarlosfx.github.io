@@ -39,3 +39,6 @@ pnpm-debug.log*
 
 # Playwright MCP scratch output
 .playwright-mcp/
+
+# Tailored CVs - never committed
+/tailored_cvs/
